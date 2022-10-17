@@ -207,17 +207,20 @@ code {
     justify-content: center;
     width: 90%;
     margin-left: 5%;
+    flex-wrap: wrap;
+    gap: 4em;
 }
 
 .launcher {
-    margin: 2%;
     width: 20%;
-    margin: 0px 1% 0px 1%;
+    display: flex;
+    flex-direction: column;
 }
 
 .launcher > * > img {
     height: 4em;
     width: 4em;
+    max-width: 100%;
 }
 
 .header {
@@ -240,25 +243,46 @@ code {
 }
 
 @media screen and (max-width: 1280px) {
+    .launcher > .header {
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3em;
+    }
+    .launcher > .header > .name {
+        margin-top: 0.5em;
+    }
     .launcher > .blurb {
         padding-bottom: 1em;
-        min-height: 14em;
+        position: relative;
+        min-height: 0px;
+        flex: 1;
+    }
+    .launcher > .buttons {
+        align-self: flex-center;
     }
     .installoptions { 
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
         width: 90%;
         margin-left: 5%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-items: stretch;
     }
     .launcher {
         flex: 1;
+        min-width: 15em;
+        max-width: 50em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
 .buttons {
     display: flex;
-    position: relative;
-    left: -8px;
 }
 
 .button {
@@ -276,6 +300,16 @@ code {
     white-space: nowrap;
     font-size: 1em;
     text-align: center;
+}
+
+.support {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.supporttext {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .support > .button {

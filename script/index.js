@@ -1,8 +1,10 @@
 document.addEventListener('scroll', () => {
-    if(window.scrollY > 0) {
-        document.querySelector('#top').style.backgroundColor = 'rgba(0,0,0,0.5)';
-    } else {
-        document.querySelector('#top').style.backgroundColor = 'rgba(0,0,0,0)';
+    if (window.width > 960) {
+        if(window.scrollY > 0) {
+            document.querySelector('#top').style.backgroundColor = 'rgba(8, 10, 20,0.9)';
+        } else {
+            document.querySelector('#top').style.backgroundColor = 'rgba(0,0,0,0)';
+        }
     }
 })
 

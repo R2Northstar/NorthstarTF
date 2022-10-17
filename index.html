@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northstar</title>
+
+    <link rel="preload" href="assets/titanfall.ttf" as="font">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="shortcut icon" href="assets/favicon-32.png" type="image/png">
+
+    <link rel="stylesheet" href="assets/fa/css/font-awesome.min.css">
+
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Northstar">
+    <meta name="description" content="Northstar is a modding framework client that allows users to host their own Titanfall 2 servers using custom scripts and assets to create custom content, as well as being able to host vanilla content.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://northstar.tf/">
+    <meta property="og:title" content="Northstar">
+    <meta property="og:description" content="Northstar is a modding framework client that allows users to host their own Titanfall 2 servers using custom scripts and assets to create custom content, as well as being able to host vanilla content.">
+    <meta property="og:image" content="assets/NorthstarPromoPosterOG.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://northstar.tf/">
+    <meta property="twitter:title" content="Northstar">
+    <meta property="twitter:description" content="Northstar is a modding framework client that allows users to host their own Titanfall 2 servers using custom scripts and assets to create custom content, as well as being able to host vanilla content.">
+    <meta property="twitter:image" content="assets/NorthstarPromoPosterOG.jpg">
+</head>
+<body>
+    <div id="top">
+        <div id="toplinks">
+            <a class="top-link" href="/">home</a>
+            <div class="spacer"></div>
+            <a class="top-link" href="/credits">contributors</a>
+            <a class="top-link" href="/thunderstore">mods</a>
+            <a class="top-link" href="/wiki">wiki</a>
+            <a class="top-link" href="/moddingdocs">modding docs</a>
+            <a class="top-link" href="/github">github</a>
+        </div>
+    </div>
+    <div id="videofull">
+        <video class="lazy" autoplay loop muted playsinline poster="assets/NorthstarPromoPoster.jpg"><source src="assets/NorthstarPromoVid.mp4"></video>
+        <div class="overlay"></div>
+        <div id="mainbuttons">
+            <div id="centerlogo">
+                <img class="logo" src="assets/logo_1k.png" alt="Northstar Logo"/>
+                <span class="northstartext">NORTHSTAR</span>
+            </div>
+            <p class="northstardescription"><span class="tffont">titanfall<span class="tfdivider"></span> 2</span> modding and custom server framework</p>
+            <div class="centerbuttons">
+                <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" class="button download big" download><img src="assets/manual.png" alt="Download Northstar"/><span>Download</span></a>
+                <a ondragstart="return false;" href="/discord" target="_blank" class="button big"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>Discord</span></a>
+                <a href="/wiki" class="button big"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+                <a href="/github" class="button big"><img src="assets/github.png" alt="Modding Documentation"/>GitHub</a>
+            </div>
+            <div class="scrolldown" onclick="scrollToMain();">
+                <span>Scroll down for more info</span>
+                </br>
+                <span class="rotate">></span>
+            </div>
+        </div>
+    </div>
+    <div class="pane" id="main">
+        <br style="font-size: 32px;">
+        <div class="section">Installation</div>
+        <div class="installoptions">
+            <div class="launcher">
+                <div class="header"> 
+                    <img src="assets/viper.png">
+                    <div class="name header">viper</div>
+                </div>
+                <div class="blurb">
+                    Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.
+                    </p>Supports Windows and Linux.
+                </div>
+                <div class="buttons">
+                    <a ondragstart="return false;" href="https://0negal.github.io/viper/index.html?win-setup" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/0neGal/viper" target="_blank" class="button"><img src="assets/github.png" /><span>Github</span></a>
+                </div>
+            </div>
+            <div class="launcher">
+                <div class="header"> 
+                    <img src="assets/vtol.png">
+                    <div class="name header">vtol</div>
+                </div>
+                <div class="blurb">
+                    Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab. Supports installing custom weapon/pilot skins and managing dedicated servers.
+                    </p>Supports Windows.
+                </div>
+                <div class="buttons">
+                    <a ondragstart="return false;" href="https://bit.ly/3B0whP3" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/BigSpice/VTOL" target="_blank" class="button"><img src="assets/github.png" /><span>Github</span></a>
+                </div>
+            </div>
+            <div class="launcher">
+                <div class="header"> 
+                    <img src="assets/manual.png">
+                    <div class="name header">manual</div>
+                </div>
+                <div class="blurb">
+                    You may also choose to install Northstar manually. Note that Northstar does not automatically update when installed this way.
+                </div>
+                <div class="buttons">
+                    <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" target="_blank" class="button"><img src="assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/manual-installation" target="_blank" class="button"><img src="assets/icon_wiki.svg"/><span>Guide</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pane">
+        <div class="section">Support</div>
+        <p style="text-align: center">If you're having issues with running or setting up the Northstar client or are thinking of running a dedicated server you can find help and troubleshooting tips on the wiki and the Discord server:</p>
+        <div class="center support">
+            <a ondragstart="return false;" href="/wiki" class="button"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/><span>Wiki</span></a>
+            <a ondragstart="return false;" href="/discord" target="_blank" class="button"><img src="assets/icon_discord.svg" alt="Discord Server"/><span>Discord</span></a>
+            <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/" class="button"><img src="assets/icon_moddingdocs.svg" alt="Modding Documentation"/><span>Northstar Modding Docs</span></a>
+        </div>
+    </div>
+    <!--
+    <div style="font-size: 1.5em; font-family: Titanfall; margin: 1em">
+        aaa aba aca ada aea afa aga aha aia aja aka ala ama ana aoa apa aqa ara asa ata aua ava awa axa aya aza bab bbb bcb bdb beb bfb bgb bhb bib bjb bkb blb bmb bnb bob bpb bqb brb bsb btb bub bvb bwb bxb byb bzb cac cbc ccc cdc cec cfc cgc chc cic cjc ckc clc cmc cnc coc cpc cqc crc csc ctc cuc cvc cwc cxc cyc czc dad dbd dcd ddd ded dfd dgd dhd did djd dkd dld dmd dnd dod dpd dqd drd dsd dtd dud dvd dwd dxd dyd dzd eae ebe ece ede eee efe ege ehe eie eje eke ele eme ene eoe epe eqe ere ese ete eue eve ewe exe eye eze faf fbf fcf fdf fef fff fgf fhf fif fjf fkf flf fmf fnf fof fpf fqf frf fsf ftf fuf fvf fwf fxf fyf fzf gag gbg gcg gdg geg gfg ggg ghg gig gjg gkg glg gmg gng gog gpg gqg grg gsg gtg gug gvg gwg gxg gyg gzg hah hbh hch hdh heh hfh hgh hhh hih hjh hkh hlh hmh hnh hoh hph hqh hrh hsh hth huh hvh hwh hxh hyh hzh iai ibi ici idi iei ifi igi ihi iii iji iki ili imi ini ioi ipi iqi iri isi iti iui ivi iwi ixi iyi izi jaj jbj jcj jdj jej jfj jgj jhj jij jjj jkj jlj jmj jnj joj jpj jqj jrj jsj jtj juj jvj jwj jxj jyj jzj kak kbk kck kdk kek kfk kgk khk kik kjk kkk klk kmk knk kok kpk kqk krk ksk ktk kuk kvk kwk kxk kyk kzk lal lbl lcl ldl lel lfl lgl lhl lil ljl lkl lll lml lnl lol lpl lql lrl lsl ltl lul lvl lwl lxl lyl lzl mam mbm mcm mdm mem mfm mgm mhm mim mjm mkm mlm mmm mnm mom mpm mqm mrm msm mtm mum mvm mwm mxm mym mzm nan nbn ncn ndn nen nfn ngn nhn nin njn nkn nln nmn nnn non npn nqn nrn nsn ntn nun nvn nwn nxn nyn nzn oao obo oco odo oeo ofo ogo oho oio ojo oko olo omo ono ooo opo oqo oro oso oto ouo ovo owo oxo oyo ozo pap pbp pcp pdp pep pfp pgp php pip pjp pkp plp pmp pnp pop ppp pqp prp psp ptp pup pvp pwp pxp pyp pzp qaq qbq qcq qdq qeq qfq qgq qhq qiq qjq qkq qlq qmq qnq qoq qpq qqq qrq qsq qtq quq qvq qwq qxq qyq qzq rar rbr rcr rdr rer rfr rgr rhr rir rjr rkr rlr rmr rnr ror rpr rqr rrr rsr rtr rur rvr rwr rxr ryr rzr sas sbs scs sds ses sfs sgs shs sis sjs sks sls sms sns sos sps sqs srs sss sts sus svs sws sxs sys szs tat tbt tct tdt tet tft tgt tht tit tjt tkt tlt tmt tnt tot tpt tqt trt tst ttt tut tvt twt txt tyt tzt uau ubu ucu udu ueu ufu ugu uhu uiu uju uku ulu umu unu uou upu uqu uru usu utu uuu uvu uwu uxu uyu uzu vav vbv vcv vdv vev vfv vgv vhv viv vjv vkv vlv vmv vnv vov vpv vqv vrv vsv vtv vuv vvv vwv vxv vyv vzv waw wbw wcw wdw wew wfw wgw whw wiw wjw wkw wlw wmw wnw wow wpw wqw wrw wsw wtw wuw wvw www wxw wyw wzw xax xbx xcx xdx xex xfx xgx xhx xix xjx xkx xlx xmx xnx xox xpx xqx xrx xsx xtx xux xvx xwx xxx xyx xzx yay yby ycy ydy yey yfy ygy yhy yiy yjy yky yly ymy yny yoy ypy yqy yry ysy yty yuy yvy ywy yxy yyy yzy zaz zbz zcz zdz zez zfz zgz zhz ziz zjz zkz zlz zmz znz zoz zpz zqz zrz zsz ztz zuz zvz zwz zxz zyz zzz
+    </div>
+    -->
+
+    <br style="font-size: 5em;">
+    <div class="footer pane">
+        <a href="/wiki"><img src="assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+        <a href="/github"><img src="assets/github.png" alt="Modding Documentation"/>GitHub</a>
+        <a href="https://r2northstar.readthedocs.io/"><img src="assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
+        <a href="/discord"><img src="assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>

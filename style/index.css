@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #141a32;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#videofull {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background: url(/assets/NorthstarPromoPoster.jpg) center / cover; */
+    overflow: hidden;
+}
+#videofull > video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    filter: blur(0.5vw) brightness(40%);
+}
+#videofull > .overlay {
+    background-color: rgba(20, 26, 50, 0.5);
+    background: linear-gradient(180deg, rgba(20, 26, 50, 0.5) 0%, rgba(20, 26, 50, 0.5) 85%, rgba(20, 26, 50, 1) 100%);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#centerlogo {
+    width: 100%;
+    vertical-align: middle;
+    user-select: none !important;
+    pointer-events: none;
+    filter: drop-shadow(0px 4px 16px rgba(0,0,32,.75));
+}
+#centerlogo > .logo {
+    width: 192px;
+    height: 192px;
+    vertical-align: middle;
+}
+#centerlogo > .northstartext {
+    font-family: Titanfall, Arial, Helvetica, sans-serif;
+    font-size: 84px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-right: 16px;
+    filter: drop-shadow(0px 4px 16px rgba(0,0,0,.75));
+}
+#centerlogo > .northstartext::before {
+    content: '';
+    height: 128px;
+    width: 8px;
+    margin-left: 0px;
+    margin-right: 32px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: white;
+    transform: skewY(-25deg);
+    box-shadow: rgba(127,127,127,0.5) 5px 5px 0px;
+}
+#mainbuttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 30vh;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#centerlogo > img {
+    margin-right: 0.5vw;
+}
+
+.centerbuttons {
+    margin-top: 0.0em;
+}
+
+.northstardescription {
+    margin-top: 1.25em;
+    font-size: 1.4em;
+}
+
+#videofull .northstardescription .tfdivider {
+    height: 18px;
+    width: 2px;
+    margin-left: 4px;
+    margin-right: -3px;
+    vertical-align: text-bottom;
+    display: inline-block;
+    background-color: white;
+    transform: skewY(-25deg);
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 960px) {
+    #centerlogo > .logo {
+        width: 19.2vw;
+        height: 19.2vw;
+    }
+    #centerlogo > .northstartext {
+        font-size: 8.4vw;
+        margin-right: 1.6vw;
+    }
+    #centerlogo > .northstartext::before {
+        height: 12.8vw;
+        width: 0.8vw;
+        margin-left: 1.2vw;
+        margin-right: 3.2vw;
+        box-shadow: rgba(127,127,127,0.5) 0.5vw 0.5vw 0px;
+    }
+    @media screen and (max-width: 480px) {
+        #mainbuttons {
+            width: fit-content;
+        }
+    }
+}
+
+a.big-button {
+    margin: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 64px;
+    background-color: rgba(33, 43, 78, 0.9);
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    height: 50px;
+    white-space: nowrap;
+}
+
+a.big-button > span {
+    vertical-align: middle;
+}
+
+a.big-button > img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    transform: scale(1.25);
+    margin-right: 12px;
+    pointer-events: none;
+}
+
+.pane {
+    background: #141a32;
+    padding: 32px 0px 0px 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.pane > .section {
+    font-family: Titanfall;
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+}
+
+a {
+    color: white
+}
+a:hover {
+    color: #aaa
+}
+a:active {
+    color: #777
+}
+
+li {
+    line-height: 1.5;
+}
+ol img {
+    width: 256px;
+}
+code {
+    font-size: 15px;
+    background: #eeeeee;
+    border-radius: 2px;
+    color: #141a32;
+    padding: 1px 6px;
+    vertical-align: bottom;
+}
+
+.tffont {
+    font-family: Titanfall, Arial, Helvetica, sans-serif;
+}
+
+.installoptions { 
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.launcher {
+    margin: 2%;
+    width: 20%;
+    margin: 0px 1% 0px 1%;
+}
+
+.launcher > * > img {
+    height: 4em;
+    width: 4em;
+}
+
+.header {
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.name {
+    font-family: Titanfall;
+    font-size: 1.8em;
+    align-self: center;
+    margin-left: -0.1em;
+    margin-top: 0.05em;
+}
+
+.blurb {
+    padding-bottom: 1em;
+    min-height: 11em;
+}
+
+@media screen and (max-width: 1280px) {
+    .launcher > .blurb {
+        padding-bottom: 1em;
+        min-height: 14em;
+    }
+    .installoptions { 
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .launcher {
+        flex: 1;
+    }
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    left: -8px;
+}
+
+.button {
+    margin: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 64px;
+    background-color: rgba(37, 45, 80, 0.9);
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1em;
+    text-align: center;
+}
+
+.support > .button {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+}
+
+.big {
+    margin: 8px;
+    padding: 0.7em 1em 0.7em 1em;
+    font-size: 1.25em;
+}
+
+.launcher > * > .button {
+    width: 100%;
+}
+
+.button:hover {
+    background-color: rgba(30, 40, 74, 0.9);
+}
+
+.button:active {
+    background-color: rgba(20, 30, 60, 0.9);
+}
+
+img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    pointer-events: none;
+    margin-top: -2px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.scrolldown {
+    margin-top: 10em;
+    font-size: 1.5em;
+    font-family: Titanfall;
+    cursor: pointer;
+}
+
+.rotate {
+    font-weight: bold;
+    transform: rotate(0deg) scaleY(0.75);
+    writing-mode: vertical-rl;
+    font-size: 3em;
+    margin-top: 0.2em;
+}

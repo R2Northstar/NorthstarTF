@@ -349,7 +349,7 @@ img {
 }
 
 .scrolldown {
-    margin-top: 10em;
+    margin-top: 10.5em;
     font-size: 1.5em;
     font-family: Titanfall;
     cursor: pointer;
@@ -357,8 +357,8 @@ img {
 
 .rotate {
     font-weight: bold;
-    transform: rotate(0deg) scaleY(0.75);
+    transform: rotate(0deg) scaleY(0.6);
     writing-mode: vertical-rl;
     font-size: 3em;
-    margin-top: 0.2em;
+    margin-top: 0em;
 }

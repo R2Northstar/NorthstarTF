@@ -1,5 +1,5 @@
 document.addEventListener('scroll', () => {
-    if (window.width > 960) {
+    if (window.innerWidth > 960) {
         if(window.scrollY > 0) {
             document.querySelector('#top').style.backgroundColor = 'rgba(8, 10, 20,0.9)';
         } else {

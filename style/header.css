@@ -30,7 +30,7 @@ label img {
     height: 64px;
     z-index: 100;
     transition: background-color 0.2s;
-    background-color: rgba(8, 10, 20, 0.9);
+    background-color: rgba(8, 10, 20, 0.0);
 }
 
 .spacer {

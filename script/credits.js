@@ -1,5 +1,3 @@
-console.log("test");
-
 var template = `
 <div class="contributor" >
     <img src="ICONNAME" onclick="window.open('URL')">
@@ -21,11 +19,11 @@ function addContributor(group, url, icon, name, description) {
 addContributor("core", "https://github.com/BobTheBob9", "https://avatars.githubusercontent.com/u/32057864?v=4", "bobthebob", "Big Man, Founder")
 addContributor("core", "https://github.com/emma-miler", "https://avatars.githubusercontent.com/u/27428383?v=4", "emmam", "Plugins, Invites, DiscordRPC, Launcher, Moderator, Security")
 addContributor("core", "https://github.com/RoyalBlue1", "https://avatars.githubusercontent.com/u/11448698?v=4", "royalblue", "Squirrel, Frontier Defense, Tool Developer")
-addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.githubusercontent.com/u/40122905?v=4", "gecko", "Release Management, Moderator, Security")
+addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.githubusercontent.com/u/40122905?v=4", "gecko", "Release Management, Moderator, Security, Launchers")
 addContributor("core", "https://github.com/pg9182", "https://avatars.githubusercontent.com/u/96569817?v=4", "pg9182", "Atlas, Server Container, Stubs, Linux, Security")
 addContributor("core", "https://github.com/wolf109909", "https://avatars.githubusercontent.com/u/84360921?v=4", "wolf109909", "NorthstarCN")
 
-addContributor("core", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "KittenPopo", "Exploit fixes, Security")
+addContributor("core", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "kittenpopo", "Exploit fixes, Security")
 addContributor("core", "https://github.com/p0358", "https://avatars.githubusercontent.com/u/5182588?v=4", "p0358", "Source Genius, TFO, DLL Injector, Origin LSX")
 
 addContributor("contrib", "https://github.com/BigSpice", "https://avatars.githubusercontent.com/u/23240514?v=4", "juicy", "VTOL, Skins")
@@ -45,8 +43,8 @@ addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.
 addContributor("contrib", "https://github.com/Legonzaur", "https://avatars.githubusercontent.com/u/34353603?v=4", "legonzaur", "Discord Bot")
 addContributor("contrib", "https://github.com/catornot", "https://avatars.githubusercontent.com/u/41955154?v=4", "cat_or_not", "Co-Op Singleplayer")
 addContributor("contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
-addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubusercontent.com/u/22678145?v=4", "x3karma", "Moderator, Modding")
-addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations")
+addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubusercontent.com/u/22678145?v=4", "x3karma", "Moderator, Modding, Frontier Defense")
+addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations, Launchers, Documentation")
 addContributor("contrib", "https://github.com/Dinorush", "https://avatars.githubusercontent.com/u/62536724?v=4", "dinorush", "Gamemodes")
 addContributor("contrib", "https://github.com/hummusbird", "https://avatars.githubusercontent.com/u/38541651?v=4", "birb", "Server Bot")
 addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Co-Op Singleplayer")

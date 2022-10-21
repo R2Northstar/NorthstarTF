@@ -1,13 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-body {
-    background: #141a32;
-    color: white;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 #videofull {
     width: 100%;
     height: 100vh;
@@ -63,9 +53,10 @@ body {
     vertical-align: middle;
     display: inline-block;
     background-color: white;
-    transform: skewY(-25deg);
+    transform: skewY(-40deg);
     box-shadow: rgba(127,127,127,0.5) 5px 5px 0px;
 }
+
 #mainbuttons {
     position: absolute;
     width: 100%;
@@ -90,11 +81,11 @@ body {
     font-size: 1.4em;
 }
 
-#videofull .northstardescription .tfdivider {
-    height: 18px;
+.tfdivider {
+    height: 23px;
     width: 2px;
     margin-left: 4px;
-    margin-right: -3px;
+    margin-right: -6px;
     vertical-align: text-bottom;
     display: inline-block;
     background-color: white;
@@ -123,79 +114,6 @@ body {
             width: fit-content;
         }
     }
-}
-
-a.big-button {
-    margin: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 16px 32px;
-    border-radius: 64px;
-    background-color: rgba(33, 43, 78, 0.9);
-    white-space: nowrap;
-    display: inline-block;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    height: 50px;
-    white-space: nowrap;
-}
-
-a.big-button > span {
-    vertical-align: middle;
-}
-
-a.big-button > img {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    transform: scale(1.25);
-    margin-right: 12px;
-    pointer-events: none;
-}
-
-.pane {
-    background: #141a32;
-    padding: 32px 0px 0px 0px;
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-wrap: break-word;
-}
-
-.pane > .section {
-    font-family: Titanfall;
-    font-weight: 900;
-    font-size: 48px;
-    margin: 0;
-    width: 100vw;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 0.7em;
-}
-
-a {
-    color: white
-}
-a:hover {
-    color: #aaa
-}
-a:active {
-    color: #777
-}
-
-li {
-    line-height: 1.5;
-}
-ol img {
-    width: 256px;
-}
-code {
-    font-size: 15px;
-    background: #eeeeee;
-    border-radius: 2px;
-    color: #141a32;
-    padding: 1px 6px;
-    vertical-align: bottom;
 }
 
 .tffont {
@@ -285,23 +203,6 @@ code {
     display: flex;
 }
 
-.button {
-    margin: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px;
-    border-radius: 64px;
-    background-color: rgba(37, 45, 80, 0.9);
-    white-space: nowrap;
-    display: inline-block;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    white-space: nowrap;
-    font-size: 1em;
-    text-align: center;
-}
-
 .support {
     display: flex;
     flex-wrap: wrap;
@@ -324,14 +225,6 @@ code {
 
 .launcher > * > .button {
     width: 100%;
-}
-
-.button:hover {
-    background-color: rgba(30, 40, 74, 0.9);
-}
-
-.button:active {
-    background-color: rgba(20, 30, 60, 0.9);
 }
 
 img {

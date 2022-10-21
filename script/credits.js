@@ -1,7 +1,7 @@
 console.log("test");
 
 var template = `
-<div class="coreuser" >
+<div class="contributor" >
     <img src="ICONNAME" onclick="window.open('URL')">
     <a class="name header">USERNAME</a>
     <div class="blurb">

@@ -1,7 +1,6 @@
 {
-    "github":       "https://github.com/R2Northstar",
-	"discord":      "https://discord.gg/northstar",
-	"wiki":         "https://r2northstar.gitbook.io/",
-	"thunderstore": "https://northstar.thunderstore.io",
-    "credits":      "https://northstar.tf/credits.html"
+    "github": "https://github.com/R2Northstar",
+    "discord": "https://discord.gg/northstar",
+    "wiki": "https://r2northstar.gitbook.io/",
+    "thunderstore": "https://northstar.thunderstore.io"
 }

@@ -35,7 +35,7 @@ addContributor("contrib", "https://github.com/warmist", "https://avatars.githubu
 addContributor("contrib", "https://github.com/Erlite", "https://avatars.githubusercontent.com/u/25248023?v=4", "erlite", "Spyglass, WebSquirrel, Security")
 addContributor("contrib", "https://github.com/Mauler125", "https://avatars.githubusercontent.com/u/48657826?v=4", "amos", "Source Genius, RCON, R5R, Security")
 addContributor("contrib", "https://github.com/ASpoonPlaysGames", "https://avatars.githubusercontent.com/u/66967891?v=4", "spoon", "RPak/Starpak, PDiff")
-addContributor("contrib", "https://github.com/cpdt", "https://avatars.githubusercontent.com/u/16081865?v=4", "cpdt", "Chathooks, Server Browser")
+addContributor("contrib", "https://github.com/cpdt", "https://avatars.githubusercontent.com/u/16081865?v=4", "snnag", "Chathooks, Server Browser, Exploit fixes, Security")
 addContributor("contrib", "https://github.com/F1F7Y", "https://avatars.githubusercontent.com/u/64418963?v=4", "f1f7y", "Server Browser, Attrition, Maps")
 addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.githubusercontent.com/u/36507175?v=4", "b1scuit", "Maps")
 
@@ -47,7 +47,7 @@ addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubu
 addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations, Launchers, Documentation")
 addContributor("contrib", "https://github.com/Dinorush", "https://avatars.githubusercontent.com/u/62536724?v=4", "dinorush", "Gamemodes")
 addContributor("contrib", "https://github.com/hummusbird", "https://avatars.githubusercontent.com/u/38541651?v=4", "birb", "Server Bot")
-addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Co-Op Singleplayer")
+addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Moderator, Server Bot, Co-Op Singleplayer")
 addContributor("contrib", "https://github.com/uniboi", "https://avatars.githubusercontent.com/u/64006268?v=4", "uniboi", "Modding Docs")
 
 addContributor("contrib", "https://github.com/r-ex", "https://avatars.githubusercontent.com/u/67599507?v=4", "rexx", "Custom Models, </br> Legion, RePak")

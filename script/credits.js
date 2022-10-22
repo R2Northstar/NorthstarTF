@@ -47,7 +47,7 @@ addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubu
 addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations, Launchers, Documentation")
 addContributor("contrib", "https://github.com/Dinorush", "https://avatars.githubusercontent.com/u/62536724?v=4", "dinorush", "Gamemodes")
 addContributor("contrib", "https://github.com/hummusbird", "https://avatars.githubusercontent.com/u/38541651?v=4", "birb", "Server Bot")
-addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Co-Op Singleplayer")
+addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Moderator, Server Bot, Co-Op Singleplayer")
 addContributor("contrib", "https://github.com/uniboi", "https://avatars.githubusercontent.com/u/64006268?v=4", "uniboi", "Modding Docs")
 
 addContributor("contrib", "https://github.com/r-ex", "https://avatars.githubusercontent.com/u/67599507?v=4", "rexx", "Custom Models, </br> Legion, RePak")

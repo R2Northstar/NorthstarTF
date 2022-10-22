@@ -27,9 +27,13 @@ body > svg {
     display: none;
 }
 
-#top {
-    position: static;
+header {
     grid-area: header;
+    height: 64px;
+}
+#top {
+    position: absolute;
+    top: 0;
     user-select: none;
     font-size: 1rem;
 }
@@ -410,6 +414,10 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr auto auto;
     }
+    #top {
+        position: fixed;
+        top: 0;
+    }
     #filters {
         overflow: visible;
     }
@@ -422,6 +430,9 @@ footer {
     }
     #filters .form-collapse {
         display: none;
+    }
+    .table-header-row {
+        top: 64px;
     }
 }
 @media (max-width: 700px) {

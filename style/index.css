@@ -157,7 +157,6 @@
 
 .blurb {
     padding-bottom: 1em;
-    min-height: 11em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -169,12 +168,6 @@
     }
     .launcher > .header > .name {
         margin-top: 0.5em;
-    }
-    .launcher > .blurb {
-        padding-bottom: 1em;
-        position: relative;
-        min-height: 0px;
-        flex: 1;
     }
     .launcher > .buttons {
         align-self: flex-center;
@@ -201,6 +194,7 @@
 
 .buttons {
     display: flex;
+    margin-top: auto;
 }
 
 .support {

@@ -35,7 +35,7 @@ addContributor("contrib", "https://github.com/warmist", "https://avatars.githubu
 addContributor("contrib", "https://github.com/Erlite", "https://avatars.githubusercontent.com/u/25248023?v=4", "erlite", "Spyglass, WebSquirrel, Security")
 addContributor("contrib", "https://github.com/Mauler125", "https://avatars.githubusercontent.com/u/48657826?v=4", "amos", "Source Genius, RCON, R5R, Security")
 addContributor("contrib", "https://github.com/ASpoonPlaysGames", "https://avatars.githubusercontent.com/u/66967891?v=4", "spoon", "RPak/Starpak, PDiff")
-addContributor("contrib", "https://github.com/cpdt", "https://avatars.githubusercontent.com/u/16081865?v=4", "cpdt", "Chathooks, Server Browser")
+addContributor("contrib", "https://github.com/cpdt", "https://avatars.githubusercontent.com/u/16081865?v=4", "snnag", "Chathooks, Server Browser, Exploit fixes, Security")
 addContributor("contrib", "https://github.com/F1F7Y", "https://avatars.githubusercontent.com/u/64418963?v=4", "f1f7y", "Server Browser, Attrition, Maps")
 addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.githubusercontent.com/u/36507175?v=4", "b1scuit", "Maps")
 

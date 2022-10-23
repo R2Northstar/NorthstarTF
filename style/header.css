@@ -7,7 +7,7 @@ input[type="checkbox"][id^="cb"] {
     display: none;
 }
 
-label {
+#top label {
     display: block;
     position: relative;
     margin: 10px;
@@ -16,7 +16,7 @@ label {
     display: none;
 }
 
-label img {
+#top label img {
     height: 2.5em;
     width: 2.5em;
     margin-left: 1.1em;
@@ -63,7 +63,7 @@ label img {
     background-color: rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .menu-selector {
         display: inline;
     }
@@ -74,10 +74,10 @@ label img {
         flex-direction: column;
         transition: width 0.2s, background-color 1s;
     }
-    label img {
+    #top label img {
         display: inline;
     }
-    label {
+    #top label {
         display: block;
     }
     #top {

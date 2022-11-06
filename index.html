@@ -52,19 +52,19 @@
         </div>
     </div>
     <div id="videofull">
-        <video class="lazy" autoplay loop muted playsinline poster="/assets/NorthstarPromoPoster.jpg"><source src="/assets/NorthstarPromoVid.mp4"></video>
+        <video id="lazyvideo" class="lazy" autoplay loop muted playsinline poster="/assets/NorthstarPromoPoster.jpg"><source src=""></video>
         <div class="overlay"></div>
         <div id="mainbuttons">
             <div id="centerlogo">
-                <img class="logo" src="/assets/logo_1k.png" alt="Northstar Logo"/>
+                <img class="logo" src="/assets/logo_192.png" alt="Northstar Logo"/>
                 <span class="northstartext">NORTHSTAR</span>
             </div>
             <p class="northstardescription"><span class="tffont">titanfall<span class="tfdivider"></span> 2</span> modding and custom server framework</p>
             <div class="centerbuttons">
                 <a ondragstart="return false;" href="/discord" target="_blank" class="button big"><img src="/assets/icon_discord.svg" alt="Discord Server"/><span>Discord</span></a>
                 <a href="/wiki" class="button big"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
-                <a href="/github" class="button big"><img src="/assets/github.png" alt="Modding Documentation"/>GitHub</a>
-                <a href="/servers" class="button big"><img src="/assets/globe.png" alt="Modding Documentation"/>Server Browser</a>
+                <a href="/github" class="button big"><img src="" class="gh_img" alt="Github"/>GitHub</a>
+                <a href="/servers" class="button big"><img id="browser-globe" src="" alt="Server Browser"/>Server Browser</a>
             </div>
             <div class="scrolldown" onclick="scrollToMain();">
                 <span>Scroll down for more info</span>
@@ -77,8 +77,7 @@
         <div class="section">Installation</div>
         <div class="installoptions">
             <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/viper.png">
+                <div id="viperh" class="header"> 
                     <div class="name header">viper</div>
                 </div>
                 <div class="blurb">
@@ -86,13 +85,12 @@
                     </p>Supports Windows and Linux.
                 </div>
                 <div class="buttons">
-                    <a ondragstart="return false;" href="https://0negal.github.io/viper/index.html?win-setup" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/0neGal/viper" target="_blank" class="button"><img src="/assets/github.png" /><span>Github</span></a>
+                    <a ondragstart="return false;" href="https://0negal.github.io/viper/index.html?win-setup" target="_blank" class="button"><img class="mn_img" src="" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/0neGal/viper" target="_blank" class="button"><img class="gh_img" src="" /><span>Github</span></a>
                 </div>
             </div>
             <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/vtol.png">
+                <div id="vtolh" class="header"> 
                     <div class="name header">vtol</div>
                 </div>
                 <div class="blurb">
@@ -100,20 +98,20 @@
                     </p>Supports Windows.
                 </div>
                 <div class="buttons">
-                    <a ondragstart="return false;" href="https://bit.ly/3B0whP3" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/BigSpice/VTOL" target="_blank" class="button"><img src="/assets/github.png" /><span>Github</span></a>
+                    <a ondragstart="return false;" href="https://bit.ly/3B0whP3" target="_blank" class="button"><img class="mn_img" src="" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/BigSpice/VTOL" target="_blank" class="button"><img class="gh_img" src="" /><span>Github</span></a>
                 </div>
             </div>
             <div class="launcher">
                 <div class="header"> 
-                    <img src="/assets/manual.png">
+                    <img class="mn_img" src="">
                     <div class="name header">manual</div>
                 </div>
                 <div class="blurb">
                     You may also choose to install Northstar manually. Note that Northstar does not automatically update when installed this way.
                 </div>
                 <div class="buttons">
-                    <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
+                    <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" target="_blank" class="button"><img class="mn_img" src="" /><span>Download</span></a>
                     <a ondragstart="return false;" href="https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/manual-installation" target="_blank" class="button"><img src="/assets/icon_wiki.svg"/><span>Guide</span></a>
                 </div>
             </div>
@@ -121,7 +119,8 @@
     </div>
     <div class="pane">
         <div class="section">Support</div>
-        <p style="text-align: center" class="supporttext">If you're having issues with running or setting up the Northstar client or are thinking of running a dedicated server you can find help and troubleshooting tips on the wiki and the Discord server:</p>
+        <p style="text-align: center" class="supporttext">
+            If you're having issues with running or setting up the Northstar client or are thinking of running a dedicated server you can find help and troubleshooting tips on the wiki and the Discord server:</p>
         <div class="center support">
             <a ondragstart="return false;" href="/wiki" class="button"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/><span>Wiki</span></a>
             <a ondragstart="return false;" href="/discord" target="_blank" class="button"><img src="/assets/icon_discord.svg" alt="Discord Server"/><span>Discord</span></a>
@@ -132,7 +131,7 @@
     <br style="font-size: 5em;">
     <div class="footer pane">
         <a ondragstart="return false;" href="/wiki"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
-        <a ondragstart="return false;" href="/github"><img src="/assets/github.png" alt="Modding Documentation"/>GitHub</a>
+        <a ondragstart="return false;" href="/github"><img class="gh_img" src="" alt="Modding Documentation"/>GitHub</a>
         <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
         <a ondragstart="return false;" href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
     </div>

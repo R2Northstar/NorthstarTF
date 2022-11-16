@@ -2,8 +2,8 @@
 # Create an issue or a pull request on the
 # Northstar Github page
 
-# Northstar Master Server
-https://github.com/R2Northstar/NorthstarMasterServer
+# Northstar Atlas (Master Server)
+https://github.com/R2Northstar/Atlas
 
 # Northstar Launcher
 https://github.com/R2Northstar/NorthstarLauncher

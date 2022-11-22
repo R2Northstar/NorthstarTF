@@ -368,7 +368,7 @@ function uiRender() {
         $row.appendChild($actionCell);
 
         const $regionCell = document.createElement('div');
-        $regionCell.textContent = server.region;
+        $regionCell.textContent = server.region ?? '';
         $row.appendChild($regionCell);
 
         const $detailsCell = document.createElement('div');

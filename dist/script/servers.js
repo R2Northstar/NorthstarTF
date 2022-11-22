@@ -1,5 +1,4 @@
 const REFETCH_WAIT_MS = 60000; // 60 seconds
-const REGION_REGEX = /^\[(.+?)\]/;
 const DEFAULT_QUERY = {
     filter: '',
     regions: [],
@@ -195,10 +194,6 @@ function setCurrentQuery(newQuery) {
     }
 }
 
-function simplifyRegion(region) {
-    return region.toUpperCase().replace(/ /g, "-");
-}
-
 function displayGamemode(gamemode) {
     return KNOWN_GAMEMODES[gamemode] || gamemode;
 }
@@ -283,9 +278,8 @@ function uiUpdateSelectors() {
     const modsSet = new Set();
 
     for (const server of serverList) {
-        const regionMatch = server.name.match(REGION_REGEX);
-        if (regionMatch !== null) {
-            regionsSet.add(simplifyRegion(regionMatch[1]));
+        if (server.region) {
+            regionsSet.add(server.region);
         }
 
         for (const mod of server.modInfo.Mods) {
@@ -318,11 +312,8 @@ function uiRender() {
         if (currentQuery.filter !== '' && server.name.toLowerCase().indexOf(currentQuery.filter.toLowerCase()) === -1) {
             return false;
         }
-        if (currentQuery.regions.length > 0) {
-            const simplifiedName = simplifyRegion(server.name);
-            if (!currentQuery.regions.some(region => simplifiedName.startsWith(`[${region}]`))) {
-                return false;
-            }
+        if (currentQuery.regions.length > 0 && currentQuery.regions.indexOf(server.region) === -1) {
+            return false;
         }
         if (currentQuery.gamemodes.length > 0 && currentQuery.gamemodes.indexOf(server.playlist) === -1) {
             return false;
@@ -330,7 +321,7 @@ function uiRender() {
         if (currentQuery.maps.length > 0 && currentQuery.maps.indexOf(server.map) === -1) {
             return false;
         }
-        if (!currentQuery.mods.every(modName => server.modInfo.Mods.some(mod => displayMod(mod) === modName))) {
+        if (currentQuery.mods.length > 0 && !currentQuery.mods.some(modName => server.modInfo.Mods.some(mod => displayMod(mod) === modName))) {
             return false;
         }
         if (!currentQuery.includeFull && server.playerCount === server.maxPlayers) {
@@ -376,6 +367,10 @@ function uiRender() {
         }
         $row.appendChild($actionCell);
 
+        const $regionCell = document.createElement('div');
+        $regionCell.textContent = server.region;
+        $row.appendChild($regionCell);
+
         const $detailsCell = document.createElement('div');
         $detailsCell.classList.add('server-details');
         const $serverName = document.createElement('h3');
@@ -407,13 +402,6 @@ function uiRender() {
             $mods.appendChild($mod);
         }
         $details.append($mods);
-
-        // const $longJoinButton = document.createElement('button');
-        // $longJoinButton.classList.add('play-button');
-        // $longJoinButton.appendChild($useSvg('play-icon', 24, 24));
-        // $longJoinButton.append('Join server');
-        // $longJoinButton.onclick = () => uiJoinServer(server);
-        // $details.appendChild($longJoinButton);
 
         $detailsCell.appendChild($details);
         $row.appendChild($detailsCell);

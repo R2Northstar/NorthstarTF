@@ -49,6 +49,7 @@ addContributor("contrib", "https://github.com/Dinorush", "https://avatars.github
 addContributor("contrib", "https://github.com/hummusbird", "https://avatars.githubusercontent.com/u/38541651?v=4", "birb", "Server Bot")
 addContributor("contrib", "https://github.com/H0L0theBard", "https://avatars.githubusercontent.com/u/97146561?v=4", "h0l0", "Moderator, Server Bot, Co-Op Singleplayer")
 addContributor("contrib", "https://github.com/uniboi", "https://avatars.githubusercontent.com/u/64006268?v=4", "uniboi", "Modding Docs")
+addContributor("contrib", "https://github.com/EladNLG", "https://avatars.githubusercontent.com/u/44613424?v=4", "eladnlg", "UI, Modding, Roguelike")
 
 addContributor("contrib", "https://github.com/r-ex", "https://avatars.githubusercontent.com/u/67599507?v=4", "rexx", "Custom Models, </br> Legion, RePak")
 addContributor("contrib", "https://github.com/headassbtw", "https://avatars.githubusercontent.com/u/16214950?v=4", "headass", "Custom Models")

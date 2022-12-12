@@ -135,3 +135,10 @@ img {
     display: flex;
     justify-content: center;
 }
+
+.attribution {
+    opacity: 0.5;
+    margin-top: 16px;
+    font-size: .875em;
+    text-align: center;
+}

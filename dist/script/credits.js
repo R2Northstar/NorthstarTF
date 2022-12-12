@@ -54,3 +54,6 @@ addContributor("contrib", "https://github.com/EladNLG", "https://avatars.githubu
 addContributor("contrib", "https://github.com/r-ex", "https://avatars.githubusercontent.com/u/67599507?v=4", "rexx", "Custom Models, </br> Legion, RePak")
 addContributor("contrib", "https://github.com/headassbtw", "https://avatars.githubusercontent.com/u/16214950?v=4", "headass", "Custom Models")
 addContributor("contrib", "https://github.com/Masterliberty", "https://avatars.githubusercontent.com/u/94194459?v=4", "masterliberty", "Custom Models")
+
+addContributor("contrib", "https://github.com/KyleGospo", "https://avatars.githubusercontent.com/u/10704358?v=4", "kylegospo", "LatencyFlex")
+addContributor("contrib", "https://github.com/geniiii", "https://avatars.githubusercontent.com/u/24881499?v=4", "geni", "Early Fixes")

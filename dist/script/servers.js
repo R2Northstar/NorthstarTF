@@ -50,6 +50,7 @@ const KNOWN_GAMEMODES = {
     sns: 'Sticks and Stones',
     tffa: 'Titan FFA',
     tt: 'Titan Tag',
+    fw: 'Frontier War',
 
     sp_coop: 'Campaign Coop',
 };

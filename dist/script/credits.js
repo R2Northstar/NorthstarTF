@@ -29,6 +29,7 @@ addContributor("core", "https://github.com/p0358", "https://avatars.githubuserco
 addContributor("contrib", "https://github.com/BigSpice", "https://avatars.githubusercontent.com/u/23240514?v=4", "juicy", "VTOL, Skins")
 addContributor("contrib", "https://github.com/taskinoz", "https://avatars.githubusercontent.com/u/7439692?v=4", "taskinoz", "Moderator, NavMeshes")
 addContributor("contrib", "https://github.com/laundmo", "https://avatars.githubusercontent.com/u/24855949?v=4", "laundmo", "Modding Docs, Chathooks")
+addContributor("contrib", "https://github.com/DBmaoha/", "https://avatars.githubusercontent.com/u/56738369?v=4", "VoyageDB", "Frontier War, Bounty Hut, Squirrel bug fixes")
 addContributor("contrib", "https://github.com/barnabwhy", "https://avatars.githubusercontent.com/u/22575741?v=4", "barnaby", "Master Server, Website")
 addContributor("contrib", "https://github.com/warmist", "https://avatars.githubusercontent.com/u/917145?v=4", "warmist", "NavMeshes")
 

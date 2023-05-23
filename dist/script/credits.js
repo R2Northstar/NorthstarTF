@@ -19,7 +19,7 @@ function addContributor(group, url, icon, name, description) {
 addContributor("core", "https://github.com/BobTheBob9", "https://avatars.githubusercontent.com/u/32057864?v=4", "bobthebob", "Big Man, Founder")
 addContributor("core", "https://github.com/emma-miler", "https://avatars.githubusercontent.com/u/27428383?v=4", "emmam", "Plugins, Invites, DiscordRPC, Launcher, Moderator, Security")
 addContributor("core", "https://github.com/RoyalBlue1", "https://avatars.githubusercontent.com/u/11448698?v=4", "royalblue", "Squirrel, Frontier Defense, Tool Developer")
-addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.githubusercontent.com/u/40122905?v=4", "gecko", "Release Management, Moderator, Security, Launchers")
+addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.githubusercontent.com/u/40122905?v=4", "gecko", "Release Management, Maintainer, Security, FlightCore")
 addContributor("core", "https://github.com/pg9182", "https://avatars.githubusercontent.com/u/96569817?v=4", "pg9182", "Atlas, Server Container, Stubs, Linux, Security")
 addContributor("core", "https://github.com/wolf109909", "https://avatars.githubusercontent.com/u/84360921?v=4", "wolf109909", "NorthstarCN")
 

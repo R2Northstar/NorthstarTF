@@ -43,7 +43,6 @@ addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.
 
 addContributor("contrib", "https://github.com/Legonzaur", "https://avatars.githubusercontent.com/u/34353603?v=4", "legonzaur", "Discord Bot")
 addContributor("contrib", "https://github.com/catornot", "https://avatars.githubusercontent.com/u/41955154?v=4", "cat_or_not", "Co-Op Singleplayer")
-addContributor("contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
 addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubusercontent.com/u/22678145?v=4", "x3karma", "Moderator, Modding, Frontier Defense")
 addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations, Launchers, Documentation")
 addContributor("contrib", "https://github.com/Dinorush", "https://avatars.githubusercontent.com/u/62536724?v=4", "dinorush", "Gamemodes")
@@ -60,4 +59,5 @@ addContributor("contrib", "https://github.com/KyleGospo", "https://avatars.githu
 
 addContributor("contrib", "https://github.com/Zanieon", "https://avatars.githubusercontent.com/u/11906641?v=4", "Zanieon", "Navmeshes, Frontier Defense")
 
+addContributor("past-contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
 addContributor("past-contrib", "https://github.com/geniiii", "https://avatars.githubusercontent.com/u/24881499?v=4", "geni", "Early Fixes")

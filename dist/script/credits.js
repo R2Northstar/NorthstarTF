@@ -23,7 +23,6 @@ addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.gith
 addContributor("core", "https://github.com/pg9182", "https://avatars.githubusercontent.com/u/96569817?v=4", "pg9182", "Atlas, Server Container, Stubs, Linux, Security")
 addContributor("core", "https://github.com/wolf109909", "https://avatars.githubusercontent.com/u/84360921?v=4", "wolf109909", "NorthstarCN")
 
-addContributor("core", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "kittenpopo", "Exploit fixes, Security")
 addContributor("core", "https://github.com/p0358", "https://avatars.githubusercontent.com/u/5182588?v=4", "p0358", "Source Genius, TFO, DLL Injector, Origin LSX")
 
 addContributor("contrib", "https://github.com/BigSpice", "https://avatars.githubusercontent.com/u/23240514?v=4", "juicy", "VTOL, Skins")
@@ -43,7 +42,6 @@ addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.
 
 addContributor("contrib", "https://github.com/Legonzaur", "https://avatars.githubusercontent.com/u/34353603?v=4", "legonzaur", "Discord Bot")
 addContributor("contrib", "https://github.com/catornot", "https://avatars.githubusercontent.com/u/41955154?v=4", "cat_or_not", "Co-Op Singleplayer")
-addContributor("contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
 addContributor("contrib", "https://github.com/x3Karma", "https://avatars.githubusercontent.com/u/22678145?v=4", "x3karma", "Moderator, Modding, Frontier Defense")
 addContributor("contrib", "https://github.com/Alystrasz", "https://avatars.githubusercontent.com/u/11993538?v=4", "alystrasz", "Localisations, Launchers, Documentation")
 addContributor("contrib", "https://github.com/Dinorush", "https://avatars.githubusercontent.com/u/62536724?v=4", "dinorush", "Gamemodes")
@@ -57,6 +55,9 @@ addContributor("contrib", "https://github.com/headassbtw", "https://avatars.gith
 addContributor("contrib", "https://github.com/Masterliberty", "https://avatars.githubusercontent.com/u/94194459?v=4", "masterliberty", "Custom Models")
 
 addContributor("contrib", "https://github.com/KyleGospo", "https://avatars.githubusercontent.com/u/10704358?v=4", "kylegospo", "LatencyFlex")
-addContributor("contrib", "https://github.com/geniiii", "https://avatars.githubusercontent.com/u/24881499?v=4", "geni", "Early Fixes")
 
 addContributor("contrib", "https://github.com/Zanieon", "https://avatars.githubusercontent.com/u/11906641?v=4", "Zanieon", "Navmeshes, Frontier Defense")
+
+addContributor("past-contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
+addContributor("past-contrib", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "kittenpopo", "Exploit fixes, Security")
+addContributor("past-contrib", "https://github.com/geniiii", "https://avatars.githubusercontent.com/u/24881499?v=4", "geni", "Early Fixes")

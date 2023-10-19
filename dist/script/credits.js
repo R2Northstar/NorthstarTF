@@ -57,6 +57,7 @@ addContributor("contrib", "https://github.com/Masterliberty", "https://avatars.g
 addContributor("contrib", "https://github.com/KyleGospo", "https://avatars.githubusercontent.com/u/10704358?v=4", "kylegospo", "LatencyFlex")
 
 addContributor("contrib", "https://github.com/Zanieon", "https://avatars.githubusercontent.com/u/11906641?v=4", "Zanieon", "Navmeshes, Frontier Defense")
+addContributor("contrib", "https://github.com/Jan200101/", "https://avatars.githubusercontent.com/u/15076013?v=4", "Jan200101", "Linux support, Launcher development/code-cleanup")
 
 addContributor("past-contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
 addContributor("past-contrib", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "kittenpopo", "Exploit fixes, Security")

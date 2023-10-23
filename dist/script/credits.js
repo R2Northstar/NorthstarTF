@@ -24,6 +24,7 @@ addContributor("core", "https://github.com/pg9182", "https://avatars.githubuserc
 addContributor("core", "https://github.com/wolf109909", "https://avatars.githubusercontent.com/u/84360921?v=4", "wolf109909", "NorthstarCN")
 
 addContributor("core", "https://github.com/p0358", "https://avatars.githubusercontent.com/u/5182588?v=4", "p0358", "Source Genius, TFO, DLL Injector, Origin LSX")
+addContributor("core", "https://github.com/ASpoonPlaysGames", "https://avatars.githubusercontent.com/u/66967891?v=4", "spoon", "RPak/Starpak, Stats/Progression, Persistence, Advocate, Bug fixes")
 
 addContributor("contrib", "https://github.com/BigSpice", "https://avatars.githubusercontent.com/u/23240514?v=4", "juicy", "VTOL, Skins")
 addContributor("contrib", "https://github.com/taskinoz", "https://avatars.githubusercontent.com/u/7439692?v=4", "taskinoz", "Moderator, NavMeshes")
@@ -34,7 +35,6 @@ addContributor("contrib", "https://github.com/warmist", "https://avatars.githubu
 
 addContributor("contrib", "https://github.com/Erlite", "https://avatars.githubusercontent.com/u/25248023?v=4", "erlite", "Spyglass, WebSquirrel, Security")
 addContributor("contrib", "https://github.com/Mauler125", "https://avatars.githubusercontent.com/u/48657826?v=4", "amos", "Source Genius, RCON, R5R, Security")
-addContributor("contrib", "https://github.com/ASpoonPlaysGames", "https://avatars.githubusercontent.com/u/66967891?v=4", "spoon", "RPak/Starpak, PDiff")
 addContributor("contrib", "https://github.com/cpdt", "https://avatars.githubusercontent.com/u/16081865?v=4", "snnag", "Chathooks, Server Browser, Exploit fixes, Security")
 addContributor("contrib", "https://github.com/F1F7Y", "https://avatars.githubusercontent.com/u/64418963?v=4", "f1f7y", "Server Browser, Attrition, Maps")
 addContributor("contrib", "https://github.com/snake-biscuits", "https://avatars.githubusercontent.com/u/36507175?v=4", "b1scuit", "Maps")

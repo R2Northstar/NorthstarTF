@@ -31,7 +31,6 @@ addContributor("contrib", "https://github.com/taskinoz", "https://avatars.github
 addContributor("contrib", "https://github.com/laundmo", "https://avatars.githubusercontent.com/u/24855949?v=4", "laundmo", "Modding Docs, Chathooks")
 addContributor("contrib", "https://github.com/DBmaoha/", "https://avatars.githubusercontent.com/u/56738369?v=4", "VoyageDB", "Frontier War, Bounty Hunt, Squirrel bug fixes")
 addContributor("contrib", "https://github.com/barnabwhy", "https://avatars.githubusercontent.com/u/22575741?v=4", "barnaby", "Master Server, Website")
-addContributor("contrib", "https://github.com/warmist", "https://avatars.githubusercontent.com/u/917145?v=4", "warmist", "NavMeshes")
 
 addContributor("contrib", "https://github.com/Erlite", "https://avatars.githubusercontent.com/u/25248023?v=4", "erlite", "Spyglass, WebSquirrel, Security")
 addContributor("contrib", "https://github.com/Mauler125", "https://avatars.githubusercontent.com/u/48657826?v=4", "amos", "Source Genius, RCON, R5R, Security")
@@ -63,3 +62,4 @@ addContributor("contrib", "https://github.com/EM4Volts", "https://avatars.github
 addContributor("past-contrib", "https://github.com/abarichello", "https://avatars.githubusercontent.com/u/16687318?v=4", "barichello", "Code Formatting, Github-CI")
 addContributor("past-contrib", "https://github.com/KittenPopo", "https://avatars.githubusercontent.com/u/28826980?v=4", "kittenpopo", "Exploit fixes, Security")
 addContributor("past-contrib", "https://github.com/geniiii", "https://avatars.githubusercontent.com/u/24881499?v=4", "geni", "Early Fixes")
+addContributor("past-contrib", "https://github.com/warmist", "https://avatars.githubusercontent.com/u/917145?v=4", "warmist", "NavMeshes")

@@ -21,9 +21,9 @@ function addContributor(group, url, icon, name, description) {
  */
 function loadCredits() {
     // Load core contributors
-    fetch('/data/core.json') // Fetch the JSON file
-        .then(response => response.json()) // Parse the JSON data
-        .then(data => { // Add each member to least
+    fetch('/data/core.json')
+        .then(response => response.json())
+        .then(data => {
             data.forEach(item => {
                 addContributor("core", item.url, item.icon, item.name, item.description);
             });
@@ -31,9 +31,9 @@ function loadCredits() {
         .catch(error => console.error('Error fetching the JSON file:', error));
 
     // Load contributors
-    fetch('/data/contrib.json') // Fetch the JSON file
-        .then(response => response.json()) // Parse the JSON data
-        .then(data => { // Add each member to least
+    fetch('/data/contrib.json')
+        .then(response => response.json())
+        .then(data => {
             data.forEach(item => {
                 addContributor("contrib", item.url, item.icon, item.name, item.description);
             });
@@ -41,9 +41,9 @@ function loadCredits() {
         .catch(error => console.error('Error fetching the JSON file:', error));
 
     // Load past contributors
-    fetch('/data/past-contrib.json') // Fetch the JSON file
-        .then(response => response.json()) // Parse the JSON data
-        .then(data => { // Add each member to least
+    fetch('/data/past-contrib.json')
+        .then(response => response.json())
+        .then(data => {
             data.forEach(item => {
                 addContributor("past-contrib", item.url, item.icon, item.name, item.description);
             });

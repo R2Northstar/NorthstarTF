@@ -16,15 +16,22 @@ function addContributor(group, url, icon, name, description) {
     document.getElementById(group).insertAdjacentHTML("beforeend", x);
 }
 
-addContributor("core", "https://github.com/BobTheBob9", "https://avatars.githubusercontent.com/u/32057864?v=4", "bobthebob", "Big Man, Founder")
-addContributor("core", "https://github.com/emma-miler", "https://avatars.githubusercontent.com/u/27428383?v=4", "emmam", "Plugins, Invites, DiscordRPC, Launcher, Moderator, Security")
-addContributor("core", "https://github.com/RoyalBlue1", "https://avatars.githubusercontent.com/u/11448698?v=4", "royalblue", "Squirrel, Frontier Defense, Tool Developer")
-addContributor("core", "https://github.com/GeckoEidechse", "https://avatars.githubusercontent.com/u/40122905?v=4", "gecko", "Release Management, Maintainer, Security, FlightCore")
-addContributor("core", "https://github.com/pg9182", "https://avatars.githubusercontent.com/u/96569817?v=4", "pg9182", "Atlas, Server Container, Stubs, Linux, Security")
-addContributor("core", "https://github.com/wolf109909", "https://avatars.githubusercontent.com/u/84360921?v=4", "wolf109909", "NorthstarCN")
+/**
+ * Loads the members of various categories from JSON
+ */
+function loadCredits() {
+    // Load core contributors
+    fetch('/data/core.json') // Fetch the JSON file
+        .then(response => response.json()) // Parse the JSON data
+        .then(data => { // Add each member to least
+            data.forEach(item => {
+                addContributor("core", item.url, item.icon, item.name, item.description);
+            });
+        })
+        .catch(error => console.error('Error fetching the JSON file:', error));
+}
 
-addContributor("core", "https://github.com/p0358", "https://avatars.githubusercontent.com/u/5182588?v=4", "p0358", "Source Genius, TFO, DLL Injector, Origin LSX")
-addContributor("core", "https://github.com/ASpoonPlaysGames", "https://avatars.githubusercontent.com/u/66967891?v=4", "spoon", "RPak/Starpak, Stats/Progression, Persistence, Advocate, Bug fixes")
+loadCredits();
 
 addContributor("contrib", "https://github.com/BigSpice", "https://avatars.githubusercontent.com/u/23240514?v=4", "juicy", "VTOL, Skins")
 addContributor("contrib", "https://github.com/taskinoz", "https://avatars.githubusercontent.com/u/7439692?v=4", "taskinoz", "Moderator, NavMeshes")

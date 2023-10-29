@@ -15,6 +15,12 @@ class Contributor:
 
 
 @dataclass
+class CommunityContributor:
+    url: str
+    icon: str
+
+
+@dataclass
 class OrgRepoCombo:
     org: str
     repo: str
@@ -101,6 +107,23 @@ for contributor in manual_contribs:
 filtered_contributors = [
     contrib for contrib in all_contributors if contrib not in contributor_usernames
 ]
+
+# Load list of previously saved contributors
+previously_saved_contributors = list()
+try:
+    with open(f"{json_file_path}/community.json", "rt") as f:
+        data = json.load(f)
+        for item in data:
+            contributor = CommunityContributor(url=item["url"], icon=item["icon"])
+            previously_saved_contributors.append(contributor)
+except FileNotFoundError:
+    print("File not found, no cache")
+
+
+# Turn into dictionary so we can access by key
+saved_community_contribs_dict = {
+    item.url: item.icon for item in previously_saved_contributors
+}
 
 # Get profile pics
 for username in filtered_contributors:

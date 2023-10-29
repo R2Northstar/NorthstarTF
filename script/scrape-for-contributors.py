@@ -1,10 +1,17 @@
 # %%
 import requests
 from typing import List, Optional
+from dataclasses import dataclass
 
 
-def get_contributors(repo_owner: str, repo_name: str) -> Optional[List[str]]:
-    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contributors"
+@dataclass
+class OrgRepoCombo:
+    org: str
+    repo: str
+
+
+def get_contributors(org_repo_combo: OrgRepoCombo) -> Optional[List[str]]:
+    url = f"https://api.github.com/repos/{org_repo_combo.org}/{org_repo_combo.repo}/contributors"
     response = requests.get(url)
     if response.status_code == 200:
         contributors = response.json()
@@ -45,12 +52,12 @@ orgs = ["R2Northstar", "R2NorthstarTools"]
 repo_org_combos = list()
 for org_name in orgs:
     repositories = get_organization_repositories(org_name)
-    repo_org_combos += [(org_name, repo) for repo in repositories]
+    repo_org_combos += [OrgRepoCombo(org=org_name, repo=repo) for repo in repositories]
 
 # Get list of all contributors
 all_contributors = set()
-for repo_owner, repo_name in repo_org_combos:
-    contributors = get_contributors(repo_owner, repo_name)
+for org_repo_combo in repo_org_combos:
+    contributors = get_contributors(org_repo_combo)
     all_contributors.update(contributors)
 
 all_contributors = list(all_contributors)

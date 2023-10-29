@@ -29,6 +29,8 @@ class OrgRepoCombo:
 json_files = ["core.json", "contrib.json", "past-contrib.json"]
 json_file_path = "../dist/data/"
 
+community_contrib_json_file = "community.json"
+
 
 def get_contributors(org_repo_combo: OrgRepoCombo) -> Optional[List[str]]:
     url = f"https://api.github.com/repos/{org_repo_combo.org}/{org_repo_combo.repo}/contributors"
@@ -111,7 +113,7 @@ filtered_contributors = [
 # Load list of previously saved contributors
 previously_saved_contributors = list()
 try:
-    with open(f"{json_file_path}/community.json", "rt") as f:
+    with open(f"{json_file_path}/{community_contrib_json_file}", "rt") as f:
         data = json.load(f)
         for item in data:
             contributor = CommunityContributor(url=item["url"], icon=item["icon"])
@@ -153,6 +155,6 @@ json_data = json.dumps(
 )
 
 # Save the JSON data to a file
-output_file_path = f"{json_file_path}/community.json"
+output_file_path = f"{json_file_path}/{community_contrib_json_file}"
 with open(output_file_path, "w") as f:
     f.write(json_data)

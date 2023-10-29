@@ -126,8 +126,22 @@ saved_community_contribs_dict = {
 }
 
 # Get profile pics
+community_contributors = list()
 for username in filtered_contributors:
     github_username = username
-    profile_picture_link = get_profile_picture_link(github_username)
+    profile_url = f"https://github.com/{github_username}"
+
+    # Grab profile pic link from cache or via API
+    profile_picture_link = None
+    if profile_url in saved_community_contribs_dict:
+        profile_picture_link = saved_community_contribs_dict[profile_url]
+    else:
+        profile_picture_link = get_profile_picture_link(github_username)
+
+    # Add to the list of community contributors
     if profile_picture_link:
-        print(f"Profile Picture Link for {github_username}: {profile_picture_link}")
+        community_contributors.append(
+            CommunityContributor(url=profile_url, icon=profile_picture_link)
+        )
+    else:
+        break  # We just go struck by ratelimit

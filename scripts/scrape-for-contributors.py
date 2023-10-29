@@ -2,12 +2,26 @@
 import requests
 from typing import List, Optional
 from dataclasses import dataclass
+import json
+import re
+
+
+@dataclass
+class Contributor:
+    url: str
+    icon: str
+    name: str
+    description: str
 
 
 @dataclass
 class OrgRepoCombo:
     org: str
     repo: str
+
+
+json_files = ["core.json", "contrib.json", "past-contrib.json"]
+json_file_path = "../dist/data/"
 
 
 def get_contributors(org_repo_combo: OrgRepoCombo) -> Optional[List[str]]:
@@ -62,8 +76,34 @@ for org_repo_combo in repo_org_combos:
 
 all_contributors = list(all_contributors)
 
+# Parse manually tracked contributors
+manual_contribs = []
+for json_file in json_files:
+    full_json_path = f"{json_file_path}{json_file}"
+    with open(full_json_path, "rt") as f:
+        data = json.load(f)
+        for item in data:
+            contributor = Contributor(
+                url=item["url"],
+                icon=item["icon"],
+                name=item["name"],
+                description=item["description"],
+            )
+            manual_contribs.append(contributor)
+
+# Get their usernames
+contributor_usernames = set()
+for contributor in manual_contribs:
+    username = re.search("github.com/([A-Za-z0-9-]+/?)", contributor.url).group(1)
+    contributor_usernames.add(username)
+
+# Remove manually tracked contributors from the list of scraped ones
+filtered_contributors = [
+    contrib for contrib in all_contributors if contrib not in contributor_usernames
+]
+
 # Get profile pics
-for username in all_contributors:
+for username in filtered_contributors:
     github_username = username
     profile_picture_link = get_profile_picture_link(github_username)
     if profile_picture_link:

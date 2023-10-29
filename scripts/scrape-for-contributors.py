@@ -145,3 +145,14 @@ for username in filtered_contributors:
         )
     else:
         break  # We just go struck by ratelimit
+
+# Convert the list of dataclass objects to a JSON string while sorting by username
+json_data = json.dumps(
+    sorted([data.__dict__ for data in community_contributors], key=lambda x: x["url"]),
+    indent=4,
+)
+
+# Save the JSON data to a file
+output_file_path = f"{json_file_path}/community.json"
+with open(output_file_path, "w") as f:
+    f.write(json_data)

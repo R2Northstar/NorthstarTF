@@ -71,62 +71,7 @@
     </div>
     <div class="pane" id="main">
         <div class="section">Installation</div>
-        <div class="installoptions">
-            <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/flightcore.png">
-                    <div class="name header">flightcore</div>
-                </div>
-                <div class="blurb">
-                    Fast and easy to use Northstar installer, updater, launcher, and mod-manager. Features built-in mod browser and allows for easy installation of pre-release versions of Northstar.
-                    </p>Supports Windows and Linux.
-                </div>
-                <div class="buttons">
-                    <a ondragstart="return false;" href="https://r2northstartools.github.io/FlightCore/index.html?win-setup" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/R2NorthstarTools/FlightCore/" target="_blank" class="button"><img src="/assets/github.png" /><span>Github</span></a>
-                </div>
-            </div>
-            <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/vtol.png">
-                    <div class="name header">vtol</div>
-                </div>
-                <div class="blurb">
-                    Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab. Supports installing custom weapon/pilot skins and managing dedicated servers.
-                    </p>Supports Windows.
-                </div>
-                <div class="buttons">
-                    <a ondragstart="return false;" href="https://github.com/BigSpice/VTOL/releases/latest/download/VTOL_Installer.msi" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/BigSpice/VTOL" target="_blank" class="button"><img src="/assets/github.png" /><span>Github</span></a>
-                </div>
-            </div>
-            <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/viper.png">
-                    <div class="name header">viper</div>
-                </div>
-                <div class="blurb">
-                    Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.
-                    </p>Supports Windows and Linux.
-                </div>
-                <div class="buttons">
-                    <a ondragstart="return false;" href="https://0negal.github.io/viper" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://github.com/0neGal/viper" target="_blank" class="button"><img src="/assets/github.png" /><span>Github</span></a>
-                </div>
-            </div>
-            <div class="launcher">
-                <div class="header"> 
-                    <img src="/assets/manual.png">
-                    <div class="name header">manual</div>
-                </div>
-                <div class="blurb">
-                    You may also choose to install Northstar manually. Note that Northstar does not automatically update when installed this way.
-                </div>
-                <div class="buttons">
-                    <a ondragstart="return false;" href="https://github.com/R2Northstar/Northstar/releases/latest" target="_blank" class="button"><img src="/assets/manual.png" /><span>Download</span></a>
-                    <a ondragstart="return false;" href="https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/manual-installation" target="_blank" class="button"><img src="/assets/icon_wiki.svg"/><span>Guide</span></a>
-                </div>
-            </div>
+        <div class="installoptions" id="installers">
         </div>
     </div>
     <div class="pane">
@@ -148,6 +93,7 @@
         <!-- Mastodon verification -->
         <a rel="me" href="https://fosstodon.org/@R2Northstar" style="display: none; visibility: hidden;">Mastodon</a>
     </div>
+    <script src="/script/installers.js" onload="loadsInstallers()"></script>
     <script src="/script/index.js"></script>
 </body>
 </html>

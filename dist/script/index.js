@@ -1,12 +1,13 @@
-document.addEventListener('scroll', () => {
-    if (window.innerWidth > 960) {
-        if(window.scrollY > 0) {
-            document.querySelector('#top').style.backgroundColor = 'rgba(8, 10, 20,0.9)';
-        } else {
-            document.querySelector('#top').style.backgroundColor = 'rgba(0,0,0,0)';
-        }
+function scrollHandler() {
+    if(window.scrollY > 0) {
+        document.querySelector('#top').classList.add('scroll');
+    } else {
+        document.querySelector('#top').classList.remove('scroll');
     }
-})
+}
+
+window.addEventListener('scroll', scrollHandler);
+window.addEventListener('resize', scrollHandler);
 
 function scrollToMain() {
     var elem = document.getElementById("main")

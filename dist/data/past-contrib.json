@@ -1,25 +1,25 @@
 [
     {
         "url": "https://github.com/abarichello",
-        "icon": "https://avatars.githubusercontent.com/u/16687318?v=4",
+        "icon": "https://avatars.githubusercontent.com/u/16687318?v=4&s=128",
         "name": "barichello",
         "description": "Code Formatting, Github-CI"
     },
     {
         "url": "https://github.com/KittenPopo",
-        "icon": "https://avatars.githubusercontent.com/u/28826980?v=4",
+        "icon": "https://avatars.githubusercontent.com/u/28826980?v=4&s=128",
         "name": "kittenpopo",
         "description": "Exploit fixes, Security"
     },
     {
         "url": "https://github.com/geniiii",
-        "icon": "https://avatars.githubusercontent.com/u/24881499?v=4",
+        "icon": "https://avatars.githubusercontent.com/u/24881499?v=4&s=128",
         "name": "geni",
         "description": "Early Fixes"
     },
     {
         "url": "https://github.com/warmist",
-        "icon": "https://avatars.githubusercontent.com/u/917145?v=4",
+        "icon": "https://avatars.githubusercontent.com/u/917145?v=4&s=128",
         "name": "warmist",
         "description": "NavMeshes"
     }

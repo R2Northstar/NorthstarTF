@@ -5,6 +5,7 @@
     /* background: url(/assets/NorthstarPromoPoster.jpg) center / cover; */
     overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }

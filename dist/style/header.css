@@ -33,6 +33,10 @@ input[type="checkbox"][id^="cb"] {
     background-color: rgba(8, 10, 20, 0.0);
 }
 
+#top.scroll {
+    background-color: rgba(8, 10, 20, 0.9);
+}
+
 .spacer {
     width: 100%;
 }
@@ -80,7 +84,7 @@ input[type="checkbox"][id^="cb"] {
     #top label {
         display: block;
     }
-    #top {
+    #top:has(:checked) {
         background-color: rgba(8, 10, 20, 0.9);
     }
     :checked ~ #toplinks {

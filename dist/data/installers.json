@@ -9,11 +9,11 @@
         ],
         "buttons": {
             "Download": {
-                "icon": "/assets/manual.png",
+                "icon": "/assets/manual.svg",
                 "url": "https://r2northstartools.github.io/FlightCore/index.html?win-setup"
             },
             "Github": {
-                "icon": "/assets/github.png",
+                "icon": "/assets/github.svg",
                 "url": "https://github.com/R2NorthstarTools/FlightCore/"
             }
         }
@@ -27,11 +27,11 @@
         ],
         "buttons": {
             "Download": {
-                "icon": "/assets/manual.png",
+                "icon": "/assets/manual.svg",
                 "url": "https://github.com/BigSpice/VTOL/releases/latest/download/VTOL_Installer.msi"
             },
             "Github": {
-                "icon": "/assets/github.png",
+                "icon": "/assets/github.svg",
                 "url": "https://github.com/BigSpice/VTOL"
             }
         }
@@ -45,17 +45,17 @@
         ],
         "buttons": {
             "Download": {
-                "icon": "/assets/manual.png",
+                "icon": "/assets/manual.svg",
                 "url": "https://0negal.github.io/viper"
             },
             "Github": {
-                "icon": "/assets/github.png",
+                "icon": "/assets/github.svg",
                 "url": "https://github.com/0neGal/viper"
             }
         }
     },
     {
-        "icon": "/assets/manual.png",
+        "icon": "/assets/manual.svg",
         "name": "Manual",
         "description": "You can install Northstar manually if you want to. Note that Northstar does not automatically update when installed this way.",
         "tags": [
@@ -64,7 +64,7 @@
         ],
         "buttons": {
             "Download": {
-                "icon": "/assets/manual.png",
+                "icon": "/assets/manual.svg",
                 "url": "https://github.com/R2Northstar/Northstar/releases/latest"
             },
             "Guide": {

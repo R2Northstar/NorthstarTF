@@ -4,6 +4,9 @@
     position: relative;
     /* background: url(/assets/NorthstarPromoPoster.jpg) center / cover; */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #videofull > video {
     top: 0;
@@ -14,6 +17,7 @@
     object-fit: cover;
     pointer-events: none;
     filter: blur(0.5vw) brightness(40%);
+    z-index: -2;
 }
 #videofull > .overlay {
     background-color: rgba(20, 26, 50, 0.5);
@@ -23,6 +27,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 #centerlogo {
     width: 100%;
@@ -58,10 +63,8 @@
 }
 
 #mainbuttons {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    margin-top: 30vh;
+    height: auto;
     text-align: center;
     vertical-align: center;
     display: flex;
@@ -236,10 +239,13 @@ img {
 }
 
 .scrolldown {
-    margin-top: 10.5em;
     font-size: 1.5em;
     font-family: Titanfall;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
 }
 
 .rotate {

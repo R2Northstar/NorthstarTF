@@ -10,17 +10,18 @@ input[type="checkbox"][id^="cb"] {
 #top label {
     display: block;
     position: relative;
-    margin: 10px;
+    height: 64px;
+    line-height: 64px;
     cursor: pointer;
     user-select: none !important;
     display: none;
 }
 
 #top label img {
-    height: 2.5em;
-    width: 2.5em;
-    margin-left: 1.1em;
-    margin-top: 0.25em;
+    height: 2em;
+    width: 2em;
+    margin-left: 2em;
+    vertical-align: middle;
     display: none;
 }
 

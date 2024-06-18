@@ -1,6 +1,6 @@
 var template = `
 <div class="contributor" >
-    <img src="ICONNAME" onclick="window.open('URL')">
+    <img src="ICONNAME" onclick="window.open('URL')" loading="lazy">
     <a class="name header">USERNAME</a>
     <div class="blurb">
         DESCRIPTION

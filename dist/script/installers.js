@@ -8,7 +8,7 @@ var button_template = `
 <a
     ondragstart="return false;"
     href="URL"
-    target="_blank"
+    target="TARGET"
     class="button"
 >
     <img src="ICON" />
@@ -34,7 +34,7 @@ var template = `
 </div>
 `
 
-function addInstaller(group, icon, name, description, tags, buttons) {
+function addInstaller(group, icon, name, description, tags, buttons, target) {
     var tagsstr = "";
     var buttonsstr = "";
 
@@ -46,7 +46,8 @@ function addInstaller(group, icon, name, description, tags, buttons) {
         buttonsstr += button_template
             .replace("NAME", name)
             .replace("URL", buttons[name].url)
-            .replace("ICON", buttons[name].icon);
+            .replace("ICON", buttons[name].icon)
+            .replace("TARGET", target);
     }
 
     var x = template.replace("ICONNAME", icon)
@@ -58,13 +59,16 @@ function addInstaller(group, icon, name, description, tags, buttons) {
     document.getElementById(group).insertAdjacentHTML("beforeend", x);
 }
 
-function loadsInstallers() {
+function loadsInstallers(home) {
     fetch('/data/installers.json')
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
-                addInstaller("installers", item.icon, item.name, item.description, item.tags, item.buttons);
+                if (home && !item.featured) return;
+                addInstaller("installers", item.icon, item.name, item.description, item.tags, item.buttons, "_blank");
             });
+            if (home)
+                addInstaller("installers", "/assets/icon_wiki.svg", "Other Installers", "See a full list of Northstar Installers", [], {"Other Installers": {"icon": "/assets/icon_wiki.svg", "url": "/installers"}}, "");
         })
         .catch(error => console.error('Error fetching the JSON file:', error));
 }

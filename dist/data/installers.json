@@ -3,6 +3,7 @@
         "icon": "/assets/flightcore.png",
         "name": "FlightCore",
         "description": "Fast and easy to use Northstar installer, updater, launcher, and mod-manager. Features built-in mod browser and allows for easy installation of pre-release versions of Northstar.",
+        "featured": true,
         "tags": [
             "Windows",
             "Linux"
@@ -22,6 +23,7 @@
         "icon": "/assets/vtol.png",
         "name": "VTOL",
         "description": "Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab. Supports installing custom weapon/pilot skins and managing dedicated servers.",
+        "featured": true,
         "tags": [
             "Windows"
         ],
@@ -40,6 +42,7 @@
         "icon": "/assets/viper.png",
         "name": "Viper",
         "description": "Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.",
+        "featured": true,
         "tags": [
             "Windows"
         ],
@@ -58,6 +61,7 @@
         "icon": "/assets/manual.svg",
         "name": "Manual",
         "description": "You can install Northstar manually if you want to. Note that Northstar does not automatically update when installed this way.",
+        "featured": true,
         "tags": [
             "Windows",
             "Linux"

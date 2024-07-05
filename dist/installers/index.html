@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Northstar</title>
-    <link rel="canonical" href="https://northstar.tf/credits/">
+    <link rel="canonical" href="https://northstar.tf/installers/">
 
-    <link rel="stylesheet" href="/style/credits.css">
+    <link rel="stylesheet" href="/style/installers.css">
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/common.css">
@@ -15,21 +15,24 @@
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Northstar">
-    <meta name="description" content="The contributors to the Northstar project.">
+    <meta name="description" content="Installers for Northstar.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://northstar.tf/">
     <meta property="og:title" content="Northstar">
-    <meta property="og:description" content="The contributors to the Northstar project.">
+    <meta property="og:description" content="Installers for Northstar.">
     <meta property="og:image" content="/assets/NorthstarPromoPosterOG.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://northstar.tf/">
     <meta property="twitter:title" content="Northstar">
-    <meta property="twitter:description" content="The contributors to the Northstar project.">
+    <meta property="twitter:description" content="Installers for Northstar">
     <meta property="twitter:image" content="/assets/NorthstarPromoPosterOG.jpg">
+
+    <link rel="preload" href="/assets/titanfall_new.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/data/installers.json" as="fetch" crossorigin>
 </head>
 <body>
     <div id="top">
@@ -49,34 +52,23 @@
         </div>
     </div>
     <div class="pane">
-        <div class="section">Core</div>
-        <div class="contributors" id="core"/>
+        <div class="section">All Installers</div>
+        <div class="installoptions" id="installers"/>
     </div>
     <div class="pane">
-        <div class="section">Contributors</div>
-        <div class="contributors small" id="contrib"/>
-    </div>
-    <div class="pane">
-        <div class="section">Past contributors</div>
-        <p class="blurb">We are ever greatful for past contributions by these developers and wish them all their best on their journey beyond Northstar</p>
-        <div class="contributors small" id="past-contrib"/>
-    </div>
-    <div class="pane">
-        <div class="attribution">
-            Missing anyone on this list? Outdated entries? Feel free to <a href="https://github.com/R2Northstar/NorthstarTF/">open a pull request</a> to make changes to this site.
-            <br />
-            <br />
-            This site or product includes IP2Location LITE data available from <a href="https://lite.ip2location.com">https://lite.ip2location.com</a>.
+        <div class="missing">
+            Is anything missing from this list? Outdated entries? Feel free to <a href="https://github.com/R2Northstar/NorthstarTF/">open a pull request</a> to make changes to this site.
         </div>
     </div>
+
     <br style="font-size: 32px;">
     <div class="footer pane">
-        <a href="/wiki"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
-        <a href="/github"><img src="/assets/github.svg" alt="GitHub"/>GitHub</a>
-        <a href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
-        <a href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
+        <a ondragstart="return false;" href="/wiki"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+        <a ondragstart="return false;" href="/github"><img src="/assets/github.svg" alt="GitHub"/>GitHub</a>
+        <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
+        <a ondragstart="return false;" href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
     </div>
-    <script src="/script/credits.js" type="module"></script>
+    <script src="/script/installers.js" onload="loadsInstallers(false)"></script>
     <script src="/script/index.js"></script>
 </body>
 </html>

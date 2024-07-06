@@ -68,7 +68,7 @@ input[type="checkbox"][id^="cb"] {
     background-color: rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1430px) {
     .menu-selector {
         display: inline;
     }

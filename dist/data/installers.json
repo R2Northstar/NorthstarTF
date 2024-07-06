@@ -44,7 +44,8 @@
         "description": "Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.",
         "featured": true,
         "tags": [
-            "Windows"
+            "Windows",
+            "Linux"
         ],
         "buttons": {
             "Download": {

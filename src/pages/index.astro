@@ -31,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
             </p>
             <div class="centerbuttons">
                 <a
-                    ondragstart="return false;"
+                    draggable="false"
                     href="/discord"
                     target="_blank"
                     class="button big"
@@ -41,15 +41,18 @@ import Layout from "../layouts/Layout.astro";
                     /><span>Discord</span></a
                 >
                 <a href="/wiki" class="button big"
+                    draggable="false"
                     ><img
                         src="/assets/icon_wiki.svg"
                         alt="Northstar Wiki"
                     />Wiki</a
                 >
                 <a href="/github" class="button big"
+                    draggable="false"
                     ><img src="/assets/github.svg" alt="GitHub" />GitHub</a
                 >
                 <a href="/servers" class="button big"
+                    draggable="false"
                     ><img
                         src="/assets/globe.svg"
                         alt="Modding Documentation"

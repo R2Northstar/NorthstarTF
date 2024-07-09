@@ -80,7 +80,7 @@ export const installers: Installer[] = [
         name: "Manual",
         description:
             "You can install Northstar manually if you want to. Note that Northstar does not automatically update when installed this way.",
-        featured: false,
+        featured: true,
         tags: ["Windows", "Linux"],
         buttons: [
             {

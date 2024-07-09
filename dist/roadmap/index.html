@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/roadmap.css">
     <link rel="shortcut icon" href="/assets/favicon-32.png" type="image/png">
 
     <!-- Primary Meta Tags -->
@@ -32,6 +33,7 @@
     <meta property="twitter:image" content="/assets/NorthstarPromoPosterOG.jpg">
 
     <link rel="preload" href="/assets/titanfall_new.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/data/roadmap.json" as="fetch" crossorigin>
 </head>
 <body>
     <div id="top">
@@ -53,16 +55,7 @@
     </div>
     <div class="pane">
         <div class="section">Roadmap</div>
-        <ul>
-            <li>Frontier Defense</li>
-            <li>Mod download on server join</li>
-            <li>Titanfall1 maps</li>
-            <li>Custom maps and corresponding tooling</li>
-            <li>Custom RUI</li>
-            <li>Modded persistence</li>
-            <li>Party system</li>
-            <li>...and whatever else the future holds</li>
-        </ul>
+        <div class="roadmap-container" id="roadmap"/>
     </div>
 
     <br style="font-size: 32px;">
@@ -72,6 +65,7 @@
         <a ondragstart="return false;" href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
         <a ondragstart="return false;" href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
     </div>
-    <script src="/script/index.js"></script>
+    <script src="/script/roadmap.js" onload="loadsRoadmap()"></script>
+    <script src="/script/index.js"></script>    
 </body>
 </html>

@@ -20,8 +20,8 @@
     {
         "title": "Custom maps",
         "description": "Create tools for building custom maps so that the community can create their own maps",
-        "image": "/assets/NorthstarPromoPosterOG.jpg",
-        "image_alt_text": "The Northstar Promo poster showing a Northstar Titan using their FlightCore ability with the Northstar logo and text in front of it."
+        "image": "/assets/screenshot-dust2-northstar.png",
+        "image_alt_text": "A screenshot of a development version of the dust2 map in Northstar."
     },
     {
         "title": "Custom RUI",

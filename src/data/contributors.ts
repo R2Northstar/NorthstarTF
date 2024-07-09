@@ -105,7 +105,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/barnabwhy",
         icon: "https://avatars.githubusercontent.com/u/22575741?v=4&s=128",
         name: "barnaby",
-        description: "Master Server, Website",
+        description: "Master Server, Website, TFO",
         type: ContributorType.CONTRIBUTOR,
     },
     {

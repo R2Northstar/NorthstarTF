@@ -1,0 +1,55 @@
+---
+import Contributors from "../components/Contributors.astro";
+import { ContributorType } from "../data/contributors";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Northstar | Credits" bgFade>
+    <div class="pane">
+        <div class="section">Core</div>
+        <Contributors type={ContributorType.CORE} />
+    </div>
+
+    <div class="pane">
+        <div class="section">Contributors</div>
+        <Contributors type={ContributorType.CONTRIBUTOR} small />
+    </div>
+
+    <div class="pane">
+        <div class="section">Past contributors</div>
+        <p class="blurb">We are ever greatful for past contributions by these developers and wish them all their best on their journey beyond Northstar</p>
+        <Contributors type={ContributorType.PAST} small />
+    </div>
+
+    <div class="pane">
+        <div class="attribution">
+            Missing anyone on this list? Outdated entries? Feel free to <a
+                href="https://github.com/R2Northstar/NorthstarTF/"
+                >open a pull request</a
+            > to make changes to this site.
+            <br />
+            <br />
+            This site or product includes IP2Location LITE data available from <a
+                href="https://lite.ip2location.com"
+                >https://lite.ip2location.com</a
+            >.
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .blurb {
+        padding-bottom: 1em;
+        text-align: center;
+        color: #999;
+        text-overflow: wrap;
+        height: 3em;
+    }
+
+    .attribution {
+        opacity: 0.5;
+        margin-top: 16px;
+        font-size: 0.875em;
+        text-align: center;
+    }
+</style>

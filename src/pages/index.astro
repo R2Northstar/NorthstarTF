@@ -5,6 +5,7 @@ import Contributors from "../components/Contributors.astro";
 import Installers from "../components/Installers.astro";
 import { ContributorType } from "../data/contributors";
 import Layout from "../layouts/Layout.astro";
+import Roadmap from "../components/Roadmap.astro";
 ---
 
 <Layout title="Northstar">
@@ -81,6 +82,14 @@ import Layout from "../layouts/Layout.astro";
                 <span>See more</span>
             </a>
         </div>
+    </div>
+    
+    <div class="pane">
+        <div class="section">Roadmap</div>
+        <p style="text-align: center">
+            Our community is always working on new features and improvements for Northstar.
+        </p>
+        <Roadmap />
     </div>
 
     <div class="pane">

@@ -1,40 +1,32 @@
 ---
 import { Image } from "astro:assets";
-import Layout from "../layouts/Layout.astro";
-
 import { roadmap } from "../data/roadmap.ts";
 ---
 
-<Layout title="Northstar | Roadmap" bgFade>
-    <div class="pane">
-        <div class="section">Roadmap</div>
-        <div class="roadmap">
-            {
-                roadmap.map((stage) => (
-                    <div class="roadmap-stage">
-                        <span class="title">{stage.title}</span>
-                        <div class="items">
-                            {stage.items.map((item) => (
-                                <div class="roadmap-item">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.alt}
-                                        width="256"
-                                        height="128"
-                                    />
-                                    <span class="title">{item.title}</span>
-                                    <span class="description">
-                                        {item.description}
-                                    </span>
-                                </div>
-                            ))}
+<div class="roadmap">
+    {
+        roadmap.map((stage) => (
+            <div class="roadmap-stage">
+                <span class="title">{stage.title}</span>
+                <div class="items">
+                    {stage.items.map((item) => (
+                        <div class="roadmap-item">
+                            <Image
+                                src={item.image}
+                                alt={item.alt}
+                                width="256"
+                                height="128"
+                                draggable="false"
+                            />
+                            <span class="title">{item.title}</span>
+                            <span class="description">{item.description}</span>
                         </div>
-                    </div>
-                ))
-            }
-        </div>
-    </div>
-</Layout>
+                    ))}
+                </div>
+            </div>
+        ))
+    }
+</div>
 
 <style>
     .roadmap {
@@ -68,12 +60,12 @@ import { roadmap } from "../data/roadmap.ts";
         right: 100%;
         width: 0.5rem;
         background: white;
-        height: 100%;
+        height: calc(100% - 1rem);
         margin: 1rem 3.75rem 0 0;
         border-radius: 0.25rem;
     }
 
-    .roadmap-stage::after {
+    .roadmap-stage::before {
         content: "";
         position: absolute;
         top: 0.75rem;

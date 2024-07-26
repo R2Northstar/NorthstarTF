@@ -1,0 +1,121 @@
+
+@font-face {
+    font-family: Titanfall;
+    src: url("/assets/titanfall_new.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #141a32;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100vw / 16 * 9);
+    max-height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(20, 26, 50, 0) 0%, rgba(20, 26, 50, 1.0) 100%),
+        url(/assets/NorthstarPromoPoster.jpg) no-repeat center top / cover;
+    filter: blur(1rem);
+    opacity: 0.1;
+}
+
+main {
+    flex: 1;
+}
+
+.button {
+    margin: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    border-radius: 64px;
+    background-color: rgba(37, 45, 80, 0.9);
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1em;
+    text-align: center;
+}
+
+.button > img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    pointer-events: none;
+    margin-top: -2px;
+}
+
+.button:hover {
+    background-color: rgba(30, 40, 74, 0.9);
+}
+
+.button:active {
+    background-color: rgba(20, 30, 60, 0.9);
+}
+
+.pane {
+    padding: 2.5rem;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+.pane:first-child {
+    margin-top: 5rem;
+}
+
+.pane.dark {
+    background-color: rgb(16, 21, 39);
+}
+
+.pane > .section {
+    font-family: Titanfall;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+    .pane {
+        padding: 2.5rem 1rem;
+    }
+    .pane > .section {
+        font-size: 2.5rem;
+    }
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: #aaa;
+}
+a:active {
+    color: #777;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,83 @@
+---
+import "../styles/global.css";
+
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+interface Meta {
+    url: string;
+    title: string;
+    description: string;
+    image: string;
+}
+
+const defaultMeta: Meta = {
+    url: "https://northstar.tf/",
+    title: "Northstar",
+    description:
+        "Northstar is a modding framework client that allows users to host their own Titanfall 2 servers using custom scripts and assets to create custom content, as well as being able to host vanilla content.",
+    image: "/assets/NorthstarPromoPosterOG.jpg",
+};
+
+interface Props {
+    title: string;
+    bgFade?: boolean;
+    meta?: Meta;
+}
+
+const { title, bgFade, meta } = Astro.props as Props;
+
+const m = meta ?? defaultMeta;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <link rel="canonical" href="https://northstar.tf/" />
+
+        <link
+            rel="shortcut icon"
+            href="/assets/favicon-32.png"
+            type="image/png"
+        />
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content={m.title} />
+        <meta name="description" content={m.description} />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={m.url} />
+        <meta property="og:title" content={m.title} />
+        <meta property="og:description" content={m.description} />
+        <meta property="og:image" content={m.image} />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={m.url} />
+        <meta property="twitter:title" content={m.title} />
+        <meta property="twitter:description" content={m.description} />
+        <meta property="twitter:image" content={m.image} />
+
+        <link
+            rel="preload"
+            href="/assets/titanfall_new.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+    </head>
+    <body>
+        {bgFade && <div class="bg-fade" />}
+        <Header />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+    </body>
+</html>

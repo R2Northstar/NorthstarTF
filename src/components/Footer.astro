@@ -1,0 +1,37 @@
+---
+
+---
+
+<div class="footer pane">
+    <a draggable="false" href="/wiki"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+    <a draggable="false" href="/github"><img src="/assets/github.svg" alt="GitHub"/>GitHub</a>
+    <a draggable="false" href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
+    <a draggable="false" href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
+    <!-- Mastodon verification -->
+    <a rel="me" href="https://fosstodon.org/@R2Northstar" style="display: none; visibility: hidden;">Mastodon</a>
+</div>
+
+<style>
+    .footer {
+        display: flex;
+        grid-template-columns: 128px 128px;
+        padding: 0px;
+        justify-content: center;
+        background-color: rgb(16, 21, 39);
+        flex-wrap: wrap;
+    }
+    .footer > a {
+        margin: 1.2em;
+        text-decoration: none;
+        user-select: none !important;
+    }
+
+    .footer > * > img {
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.2em;
+        pointer-events: none;
+        margin-top: -2px;
+    }
+</style>

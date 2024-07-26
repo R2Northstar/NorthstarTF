@@ -1,0 +1,110 @@
+---
+import Header from "../components/Header.astro"
+
+// Doesn't use much fancy astro stuff cause it's too complicated to justify all that effort
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Northstar Servers</title>
+        <link rel="canonical" href="https://northstar.tf/servers/">
+
+        <link rel="stylesheet" href="/style/header.css">
+        <link rel="stylesheet" href="/style/footer.css">
+        <link rel="stylesheet" href="/style/common.css">
+        <link rel="stylesheet" href="/style/servers.css">
+        <link rel="shortcut icon" href="/assets/favicon-32.png" type="image/png">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Northstar Servers">
+        <meta name="description" content="A list of all available Northstar servers.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://northstar.tf/servers/">
+        <meta property="og:title" content="Northstar Servers">
+        <meta property="og:description" content="A list of all available Northstar servers.">
+        <meta property="og:image" content="/assets/NorthstarPromoPosterOG.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://northstar.tf/servers/">
+        <meta property="twitter:title" content="Northstar Servers">
+        <meta property="twitter:description" content="A list of all available Northstar servers.">
+        <meta property="twitter:image" content="/assets/NorthstarPromoPosterOG.jpg">
+    </head>
+    <body class="loading-state">
+        <svg width="0" height="0">
+            <defs>
+                <path id="lock-icon" d="M12 2a4 4 0 0 1 4 4v2h2.5A1.5 1.5 0 0 1 20 9.5v11a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 20.5v-11A1.5 1.5 0 0 1 5.5 8H8V6a4 4 0 0 1 4-4Zm0 11.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM12 4a2 2 0 0 0-2 2v2h4V6a2 2 0 0 0-2-2Z" fill="currentColor" />
+                <path id="arrow-down-icon" d="M11.883 4.01 12 4.003a1 1 0 0 1 .993.884l.007.116v11.584l2.293-2.294a1 1 0 0 1 1.32-.084l.094.084a1 1 0 0 1 .084 1.32l-.084.094-3.996 4a1 1 0 0 1-1.32.084l-.094-.084-4.004-4a1 1 0 0 1 1.32-1.498l.094.084L11 16.582V5.003a1 1 0 0 1 .883-.993L12 4.003l-.117.007Z" fill="currentColor" />
+                <path id="clear-icon" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm3.53 6.47-.084-.073a.75.75 0 0 0-.882-.007l-.094.08L12 10.939l-2.47-2.47-.084-.072a.75.75 0 0 0-.882-.007l-.094.08-.073.084a.75.75 0 0 0-.007.882l.08.094L10.939 12l-2.47 2.47-.072.084a.75.75 0 0 0-.007.882l.08.094.084.073a.75.75 0 0 0 .882.007l.094-.08L12 13.061l2.47 2.47.084.072a.75.75 0 0 0 .882.007l.094-.08.073-.084a.75.75 0 0 0 .007-.882l-.08-.094L13.061 12l2.47-2.47.072-.084a.75.75 0 0 0 .007-.882l-.08-.094-.084-.073.084.073Z" fill="currentColor" />
+                <path id="play-icon" d="M5 5.274c0-1.707 1.826-2.792 3.325-1.977l12.362 6.726c1.566.853 1.566 3.101 0 3.953L8.325 20.702C6.826 21.518 5 20.432 5 18.726V5.274Z" fill="currentColor" />
+                <path id="arrow-right-icon" d="M13.704 4.284a1 1 0 1 0-1.403 1.424L17.67 11H4a1 1 0 1 0 0 2h13.665L12.3 18.285a1 1 0 0 0 1.403 1.424l6.925-6.822a1.25 1.25 0 0 0 0-1.78l-6.925-6.823Z" fill="currentColor" />
+            </defs>
+        </svg>
+
+        <header>
+            <Header />
+        </header>
+
+        <div id="filters">
+            <form id="form">
+                <div class="textbox"><input type="text" id="filter" placeholder="Search servers..." size="10" aria-label="Server search" /></div>
+                <div id="extra-filters" class="form-collapse">
+                    <label class="dropdown-label" id="regions-label">Regions:</label>
+                    <div class="dropdown dropdown-or" id="regions" aria-labelledby="regions-label"></div>
+                    <label class="dropdown-label" id="gamemodes-label">Gamemodes:</label>
+                    <div class="dropdown dropdown-or" id="gamemodes" aria-labelledby="gamemodes-label"></div>
+                    <label class="dropdown-label" id="maps-label">Maps:</label>
+                    <div class="dropdown dropdown-or" id="maps" aria-labelledby="maps-label"></div>
+                    <label class="dropdown-label" id="mods-label">Mods:</label>
+                    <div class="dropdown dropdown-or" id="mods" aria-labelledby="mods-label"></div>
+                    <label class="checkbox-label top-checkbox-label"><input type="checkbox" id="include-full" />Include full</label>
+                    <label class="checkbox-label"><input type="checkbox" id="include-empty" />Include empty</label>
+                    <label class="checkbox-label"><input type="checkbox" id="include-private" />Include private</label>
+                </div>
+                <button id="set-filters-button">Set filters...</button>
+            </form>
+        </div>
+
+        <div id="stats">
+            <div>Last updated <span id="last-updated-stat"></span></div>
+            <div>
+                <span id="servers-listed-stat"></span> servers listed, <span id="servers-online-stat"></span> total
+            </div>
+            <div>
+                <span id="players-listed-stat"></span> players listed, <span id="players-online-stat"></span> total
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="table-header-row">
+                <div class="table-header" aria-label="Privacy" role="button" id="privacy-header" data-by="hasPassword"></div>
+                <div class="table-header" role="button" id="region-header" data-by="region">Region</div>
+                <div class="table-header" role="button" id="name-header" data-by="name">Name</div>
+                <div class="table-header" role="button" id="players-header" data-by="playerCount">Players</div>
+                <div class="table-header" role="button" id="gamemode-header" data-by="playlist">Gamemode</div>
+                <div class="table-header" role="button" id="map-header" data-by="map">Map</div>
+            </div>
+            <div id="servers"></div>
+            <p class="status" id="loading-state">Loading, hold on...</p>
+            <p class="status" id="error-state">Couldn't refresh the server list, try again later?</p>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <a href="/wiki"><img src="/assets/icon_wiki.svg" alt="Northstar Wiki"/>Wiki</a>
+                <a href="/github"><img src="/assets/github.svg" alt="GitHub"/>GitHub</a>
+                <a href="https://r2northstar.readthedocs.io/"><img src="/assets/icon_moddingdocs.svg" alt="Modding Documentation"/>Modding Docs</a>
+                <a href="/discord"><img src="/assets/icon_discord.svg" alt="Discord Server"/>Discord</a>
+            </div>
+        </footer>
+
+        <script src="/script/servers.js" is:inline></script>
+    </body>
+</html>

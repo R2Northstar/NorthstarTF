@@ -210,7 +210,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/r-ex",
         icon: "https://avatars.githubusercontent.com/u/67599507?v=4&s=128",
         name: "rexx",
-        description: "Custom Models, </br> Legion, RePak",
+        description: "Custom Models, Legion, RePak",
         type: ContributorType.CONTRIBUTOR,
     },
     {

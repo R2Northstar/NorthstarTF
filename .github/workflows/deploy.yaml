@@ -1,0 +1,30 @@
+name: Deploy to branch
+
+on:
+  # Trigger the workflow every push to `main` branch
+  push:
+    branches: [main]
+  # Allow running workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Build the site
+      run: yarn build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist # Location from which to grab the files to deploy
+        destination_dir: ./dist # Subfolder to deploy to
+        publish_branch: deploy  # Branch name to deploy to
+        force_orphan: true # Always reset branch to deploy to

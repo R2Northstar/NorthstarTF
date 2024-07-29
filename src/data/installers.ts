@@ -40,7 +40,7 @@ export const installers: Installer[] = [
         name: "VTOL",
         description:
             "Easy to use and extensive Northstar installer and mod-manager. Supports installing from Thunderstore as well as from outside sources like GitHub/GitLab. Supports installing custom weapon/pilot skins and managing dedicated servers.",
-        featured: true,
+        featured: false,
         tags: ["Windows"],
         buttons: [
             {
@@ -60,7 +60,7 @@ export const installers: Installer[] = [
         name: "Viper",
         description:
             "Simple and easy to use Northstar installer and auto-updater. Allows launching both Northstar and vanilla Titanfall 2. Features mod-manager and built-in mod browser for Thunderstore.",
-        featured: true,
+        featured: false,
         tags: ["Windows", "Linux"],
         buttons: [
             {

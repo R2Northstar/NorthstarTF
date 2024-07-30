@@ -1,0 +1,159 @@
+<script>
+    function scrollHandler() {
+        if (window.scrollY > 0) {
+            document.querySelector(".header")?.classList.add("scroll");
+        } else {
+            document.querySelector(".header")?.classList.remove("scroll");
+        }
+    }
+
+    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("resize", scrollHandler);
+
+    scrollHandler();
+</script>
+
+<div class="header">
+    <input type="checkbox" id="cb1" />
+    <label for="cb1"><img src="/assets/menu.svg" /></label>
+    <div class="header-links">
+        <a class="header-link big-screen-only" href="/">
+            <img src="/assets/logo.png" alt="Home" />
+        </a>
+        <a class="header-link collapsed-only" href="/">Home</a>
+        <div class="spacer"></div>
+        <a class="header-link" href="/servers">Servers</a>
+        <a class="header-link" href="/thunderstore">Mods</a>
+        <a class="header-link" href="/wiki">Wiki</a>
+        <a class="header-link" href="/moddingdocs">Modding docs</a>
+        <a class="header-link" href="/github">GitHub</a>
+        <a class="header-link" href="/blog">Blog</a>
+    </div>
+</div>
+
+<style>
+    input[type="checkbox"][id^="cb"] {
+        display: none;
+    }
+
+    .header label {
+        display: block;
+        position: relative;
+        height: 64px;
+        line-height: 64px;
+        cursor: pointer;
+        user-select: none !important;
+        display: none;
+    }
+
+    .header label img {
+        height: 2em;
+        width: 2em;
+        margin-left: 2em;
+        vertical-align: middle;
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 64px;
+        z-index: 100;
+        transition: background-color 0.2s;
+        background-color: rgba(8, 10, 20, 0);
+    }
+
+    .header.scroll {
+        background-color: rgba(8, 10, 20, 0.9);
+    }
+
+    .spacer {
+        width: 100%;
+    }
+
+    .header-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-link {
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        line-height: 16px;
+        padding: 24px 32px;
+        white-space: nowrap;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        user-select: none !important;
+        font-family: Titanfall;
+    }
+    .header-link:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .header-link:active {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-link:has(img) {
+        padding: 1rem;
+        height: 4rem;
+    }
+
+    .header-link > img {
+        height: 2em;
+        margin: 0;
+    }
+
+    .header-link.collapsed-only {
+        display: none;
+        visibility: hidden;
+    }
+
+    @media screen and (max-width: 1430px) {
+        .menu-selector {
+            display: inline;
+        }
+        .header-links {
+            width: 0vw;
+            height: 100vh;
+            overflow-x: hidden;
+            flex-direction: column;
+            transition:
+                width 0.2s,
+                background-color 1s;
+        }
+        .header label img {
+            display: inline;
+        }
+        .header label {
+            display: block;
+        }
+        .header:has(:checked) {
+            background-color: rgba(8, 10, 20, 0.9);
+        }
+        :checked ~ .header-links {
+            display: flex;
+            background-color: rgba(8, 10, 20, 0.9);
+            height: 100vh;
+            width: 100vw;
+            transition:
+                width 0.2s,
+                background-color 0s;
+        }
+        .header-link {
+            display: inline;
+        }
+
+        .header-link.big-screen-only {
+            display: none;
+            visibility: hidden;
+        }
+        .header-link.collapsed-only {
+            display: inline;
+            visibility: visible;
+        }
+    }
+</style>

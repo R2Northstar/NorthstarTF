@@ -1,0 +1,141 @@
+---
+import { type Installer } from "../data/installers.ts";
+
+const { installer } = Astro.props as { installer: Installer };
+---
+
+<div class="launcher">
+    <div class="header">
+        <img src={installer.icon} />
+        <div class="name header">{installer.name}</div>
+    </div>
+    <div class="blurb">{installer.description}</div>
+    <div class="tags">
+        {installer.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+    <div class="buttons">
+        {
+            installer.buttons.map((button) => (
+                <a
+                    draggable="false"
+                    href={button.href}
+                    target="_blank"
+                    class="button"
+                >
+                    <img src={button.icon} />
+                    <span>{button.text}</span>
+                </a>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    .launcher {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .launcher > * > img {
+        height: 4em;
+        width: 4em;
+        max-width: 100%;
+    }
+
+    .header {
+        display: flex;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    .name {
+        font-family: Titanfall;
+        font-size: 1.8em;
+        align-self: center;
+        margin-left: -0.1em;
+        margin-top: 0.05em;
+    }
+
+    .blurb {
+        padding-bottom: 1em;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .launcher > .header {
+            flex: 0 0 auto;
+            align-items: center;
+            justify-content: center;
+            margin-right: 3em;
+        }
+        .launcher > .header > .name {
+            margin-top: 0.5em;
+        }
+        .launcher > .buttons {
+            align-self: flex-center;
+        }
+        .launcher {
+            flex: 1;
+            min-width: 18em;
+            max-width: 36em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .launcher > .buttons {
+        margin-top: 12px;
+        gap: 12px;
+    }
+    .launcher > .buttons > .button {
+        margin: 0px;
+    }
+
+    .buttons {
+        display: flex;
+        margin-top: auto;
+    }
+
+    .launcher > * > .button {
+        width: 100%;
+    }
+
+    img {
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+        pointer-events: none;
+        margin-top: -2px;
+    }
+
+    .missing {
+        opacity: 0.5;
+        margin-top: 16px;
+        font-size: 0.875em;
+        text-align: center;
+    }
+    .tags {
+        display: flex;
+        gap: 0.8em;
+        height: 100%;
+    }
+
+    .tag {
+        font-weight: bold;
+        padding: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 64px;
+        background-color: rgba(72, 91, 174, 0.65);
+        white-space: nowrap;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+</style>

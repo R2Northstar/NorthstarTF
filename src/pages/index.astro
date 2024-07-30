@@ -1,0 +1,148 @@
+---
+import "../styles/index.css";
+
+import Contributors from "../components/Contributors.astro";
+import Installers from "../components/Installers.astro";
+import { ContributorType } from "../data/contributors";
+import Layout from "../layouts/Layout.astro";
+import Roadmap from "../components/Roadmap.astro";
+---
+
+<Layout title="Northstar">
+    <div id="videofull">
+        <video
+            class="lazy"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="/assets/NorthstarPromoPoster.jpg"
+            ><source src="/assets/NorthstarPromoVid.mp4" /></video
+        >
+        <div class="overlay"></div>
+        <div id="mainbuttons">
+            <div id="centerlogo">
+                <img class="logo" src="/assets/logo.png" alt="Northstar Logo" />
+                <span class="northstartext">NORTHSTAR</span>
+            </div>
+            <p class="northstardescription">
+                <span class="tffont"
+                    >titanfall<span class="tfdivider"></span> 2</span
+                > modding and custom server framework
+            </p>
+            <div class="centerbuttons">
+                <a
+                    draggable="false"
+                    href="/discord"
+                    target="_blank"
+                    class="button big"
+                    ><img
+                        src="/assets/icon_discord.svg"
+                        alt="Discord Server"
+                    /><span>Discord</span></a
+                >
+                <a href="/wiki" class="button big"
+                    draggable="false"
+                    ><img
+                        src="/assets/icon_wiki.svg"
+                        alt="Northstar Wiki"
+                    />Wiki</a
+                >
+                <a href="/github" class="button big"
+                    draggable="false"
+                    ><img src="/assets/github.svg" alt="GitHub" />GitHub</a
+                >
+                <a href="/servers" class="button big"
+                    draggable="false"
+                    ><img
+                        src="/assets/globe.svg"
+                        alt="Modding Documentation"
+                    />Server Browser</a
+                >
+            </div>
+            <div class="scrolldown" onclick="scrollToMain();">
+                <span>Scroll down for more info</span>
+                <br />
+                <img class="icon" src="/assets/scroll_down.svg" />
+            </div>
+        </div>
+    </div>
+
+    <div class="pane" id="main">
+        <div class="section">Installation</div>
+        <Installers />
+    </div>
+
+    <div class="pane dark">
+        <div class="section">Contributors</div>
+        <Contributors type={ContributorType.CORE} />
+        <br style="font-size: 2rem;" />
+        <div class="center">
+            <a draggable="false" href="/credits" class="button">
+                <span>See more</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="pane">
+        <div class="section">Roadmap</div>
+        <p style="text-align: center">
+            Our community is always working on new features and improvements for Northstar.
+        </p>
+        <Roadmap />
+    </div>
+
+    <div class="pane dark">
+        <div class="section">Support</div>
+        <p style="text-align: center" class="supporttext">
+            If you're having issues with running or setting up the Northstar
+            client or are thinking of running a dedicated server you can find
+            help and troubleshooting tips on the wiki and the Discord server:
+        </p>
+        <div class="center support">
+            <a draggable="false" href="/wiki" class="button"
+                ><img
+                    draggable="false"
+                    src="/assets/icon_wiki.svg"
+                    alt="Northstar Wiki"
+                /><span>Wiki</span></a
+            >
+            <a draggable="false" href="/discord" target="_blank" class="button"
+                ><img
+                    draggable="false"
+                    src="/assets/icon_discord.svg"
+                    alt="Discord Server"
+                /><span>Discord</span></a
+            >
+            <a
+                draggable="false"
+                href="https://r2northstar.readthedocs.io/"
+                class="button"
+                ><img
+                    draggable="false"
+                    src="/assets/icon_moddingdocs.svg"
+                    alt="Modding Documentation"
+                /><span>Northstar Modding Docs</span></a
+            >
+        </div>
+    </div>
+
+    <script is:inline>
+        function scrollToMain() {
+            let elem = document.getElementById("videofull");
+            let pos =
+                elem.getBoundingClientRect().bottom +
+                document.documentElement.scrollTop;
+            window.scrollTo({
+                top: pos,
+                behavior: "smooth",
+            });
+        }
+    </script>
+</Layout>
+
+<style>
+    #main {
+        margin-top: 4rem;
+    }
+</style>

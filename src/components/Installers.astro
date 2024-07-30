@@ -1,0 +1,78 @@
+---
+import Installer from "./Installer.astro";
+import { installers } from "../data/installers.ts";
+---
+
+<div class="installers">
+    <div class="install-options">
+        {
+            installers
+                .filter((i) => i.featured)
+                .map((installer) => <Installer installer={installer} />)
+        }
+    </div>
+    {
+        installers.filter((i) => !i.featured).length > 0 && (
+            <details>
+                <summary class="button">Other installers</summary>
+                <div class="install-options">
+                    {installers
+                        .filter((i) => !i.featured)
+                        .map((installer) => (
+                            <Installer installer={installer} />
+                        ))}
+                </div>
+            </details>
+        )
+    }
+</div>
+
+<style>
+    .installers {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .install-options {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .install-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            align-items: stretch;
+        }
+    }
+
+    summary {
+        margin: 2em 0 0 0;
+        width: 100%;
+        user-select: none;
+    }
+    details[open] > summary {
+        margin: 2em 0;
+    }
+
+    summary::after {
+        content: "";
+        background: url("/assets/scroll_down.svg") no-repeat center / contain;
+        margin: 0 1em;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        vertical-align: text-top;
+    }
+    details[open] > summary::after {
+        rotate: 180deg;
+    }
+</style>

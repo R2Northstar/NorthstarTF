@@ -69,7 +69,7 @@ for org in orgs:
                     contributors[contributor["login"]] = {
                         "login": contributor["login"],
                         "contributions": contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"],
+                        "avatar_url": contributor["avatar_url"] + "&s=128", # Make sure to use lower resolution version to not overload client on load
                     }
 
 json_data = json.dumps(

@@ -10,9 +10,12 @@ orgs = ["R2Northstar", "R2NorthstarTools"]
 
 excluded_repos = ["R2Northstar/zlib"]  # zlib is kind of empty, so we can exclude it
 
-# gloriouseggroll is credited to 2k+ commits on NorthstarProton, because it's a fork, we can exclude them
-# dependabot[bot] and harmony-weblate are bots, so we can exclude them too
-exluded_users = ["GloriousEggroll", "dependabot[bot]", "harmony-weblate"]
+# List of users to exclude
+exluded_users = [
+    "GloriousEggroll",  # gloriouseggroll is credited to 2k+ commits on NorthstarProton, because it's a fork, we can exclude them
+    "dependabot[bot]",  # bot
+    "harmony-weblate",  # bot
+]
 
 
 def get_repos(org_name) -> Optional[List[str]]:

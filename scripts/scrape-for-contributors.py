@@ -8,7 +8,9 @@ github_token = (
 
 orgs = ["R2Northstar", "R2NorthstarTools"]
 
-excluded_repos = ["R2Northstar/zlib"]  # zlib is kind of empty, so we can exclude it
+excluded_repos = [
+    "R2Northstar/zlib",  # zlib is kind of empty, so we can exclude it
+]
 
 # List of users to exclude
 exluded_users = [
@@ -69,7 +71,8 @@ for org in orgs:
                     contributors[contributor["login"]] = {
                         "login": contributor["login"],
                         "contributions": contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"] + "&s=128", # Make sure to use lower resolution version to not overload client on load
+                        "avatar_url": contributor["avatar_url"]
+                        + "&s=128",  # Make sure to use lower resolution version to not overload client on load
                     }
 
 json_data = json.dumps(

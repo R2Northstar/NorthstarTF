@@ -15,7 +15,6 @@ excluded_repos = [
 
 # List of users to exclude
 exluded_users = [
-    "GloriousEggroll",  # gloriouseggroll is credited to 2k+ commits on NorthstarProton, because it's a fork, we can exclude them
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
 ]

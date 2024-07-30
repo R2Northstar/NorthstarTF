@@ -10,6 +10,7 @@ orgs = ["R2Northstar", "R2NorthstarTools"]
 
 excluded_repos = [
     "R2Northstar/zlib",  # zlib is kind of empty, so we can exclude it
+    "R2NorthstarTools/NorthstarProton",  # Ignore NorthstarProton as it's a fork and difficult to untangle contributions from upstream
 ]
 
 # List of users to exclude

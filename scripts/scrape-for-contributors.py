@@ -1,4 +1,3 @@
-import json
 import re
 import requests
 from typing import List, Optional

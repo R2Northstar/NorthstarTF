@@ -22,7 +22,7 @@ excluded_users = [
 ]
 
 
-def extract_github_usernames(contributor_list_file):
+def extract_github_usernames(contributor_list_file) -> Optional[List[str]]:
     # Regular expression to match GitHub user URLs with quotation marks
     github_url_pattern = r'"https://github\.com/([\w-]+)/?"'
 

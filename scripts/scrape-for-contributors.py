@@ -1,10 +1,13 @@
 import json
+import re
 import requests
 from typing import List, Optional
 
 github_token = (
     None  # supply a github token to avoid ratelimit, or don't, it's up to you
 )
+
+contributor_list_file = "../src/data/contributors.ts"
 
 orgs = ["R2Northstar", "R2NorthstarTools"]
 
@@ -18,6 +21,20 @@ excluded_users = [
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
 ]
+
+
+def extract_github_usernames(contributor_list_file):
+    # Regular expression to match GitHub user URLs with quotation marks
+    github_url_pattern = r'"https://github\.com/([\w-]+)"'
+
+    # Read file
+    with open(contributor_list_file, "r") as f:
+        file_contents = f.read()
+
+    # Extract GitHub usersnames
+    usernames = re.findall(github_url_pattern, file_contents)
+
+    return usernames
 
 
 def get_repos(org_name) -> Optional[List[str]]:
@@ -34,6 +51,10 @@ def get_repos(org_name) -> Optional[List[str]]:
         print(f"Failed to retrieve contributors. Status code: {response.status_code}")
         print(f"Response: {response.text}")
         return None
+
+
+# Exclude manually added contributors
+excluded_users += extract_github_usernames(contributor_list_file)
 
 
 contributors = {}

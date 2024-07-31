@@ -14,7 +14,7 @@ excluded_repos = [
 ]
 
 # List of users to exclude
-exluded_users = [
+excluded_users = [
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
 ]
@@ -55,7 +55,7 @@ for org in orgs:
         if response.status_code == 200:
             repo_contributors = response.json()
             for contributor in repo_contributors:
-                if contributor["login"] in exluded_users:
+                if contributor["login"] in excluded_users:
                     continue
 
                 if contributor["login"] in contributors:

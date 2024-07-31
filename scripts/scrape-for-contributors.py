@@ -102,6 +102,8 @@ sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])
 # Generate TypeScript code
 def generate_typescript_code(contributor_list):
 
+    file_header_string = "// Auto-generated from Python script\n"
+
     definition_string = """
 export interface CommunityContributor {
     url?: string;
@@ -127,7 +129,8 @@ export interface CommunityContributor {
         contributor
 
     return (
-        definition_string
+        file_header_string
+        + definition_string
         + list_start_string
         + contributor_list_string
         + list_end_string

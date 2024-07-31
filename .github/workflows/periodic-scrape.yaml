@@ -22,5 +22,3 @@ jobs:
         cd scripts
         python scrape-for-contributors.py
 
-    - name: Temp
-      run: echo TODO

@@ -13,5 +13,8 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
 
+    - name: Install depenencies
+      run: pip install requests
+
     - name: Temp
       run: echo TODO

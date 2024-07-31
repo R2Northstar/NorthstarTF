@@ -16,5 +16,11 @@ jobs:
     - name: Install depenencies
       run: pip install requests
 
+
+    - name: Run Python script for scraping
+      run: |
+        cd scripts
+        python scrape-for-contributors.py
+
     - name: Temp
       run: echo TODO

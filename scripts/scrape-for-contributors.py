@@ -19,6 +19,7 @@ excluded_repos = [
 excluded_users = [
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
+    "weblate",          # bot
 ]
 
 
@@ -85,14 +86,15 @@ for org in orgs:
                             "contributions"
                         ]
                         + contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"],
+                        "avatar_url": contributor["avatar_url"]
+                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
                     }
                 else:
                     contributors[contributor["login"]] = {
                         "login": contributor["login"],
                         "contributions": contributor["contributions"],
                         "avatar_url": contributor["avatar_url"]
-                        + "&s=128",  # Make sure to use lower resolution version to not overload client on load
+                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
                     }
 
 # Sort contributor list alphabetically

@@ -292,11 +292,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "theunkn0wn1",
     },
     {
-        url: "https://github.com/weblate",
-        icon: "https://avatars.githubusercontent.com/u/1607653?v=4&s=64",
-        name: "weblate",
-    },
-    {
         url: "https://github.com/xamionex",
         icon: "https://avatars.githubusercontent.com/u/57235791?v=4&s=64",
         name: "xamionex",

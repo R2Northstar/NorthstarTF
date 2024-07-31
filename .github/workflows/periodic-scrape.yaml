@@ -1,0 +1,17 @@
+name: Periodically scrape repos
+
+on:
+    push: # Temp
+    workflow_dispatch: # Manual run
+    schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Temp
+      run: echo TODO

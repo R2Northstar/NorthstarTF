@@ -1,5 +1,6 @@
 ---
 import Contributors from "../components/Contributors.astro";
+import CommunityContributors from "../components/CommunityContributors.astro";
 import { ContributorType } from "../data/contributors";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -13,6 +14,12 @@ import Layout from "../layouts/Layout.astro";
     <div class="pane">
         <div class="section">Contributors</div>
         <Contributors type={ContributorType.CONTRIBUTOR} small />
+    </div>
+
+    <div class="pane">
+        <div class="section">Community</div>
+        <p class="blurb">Smaller contributions by the wider community</p>
+        <CommunityContributors />
     </div>
 
     <div class="pane">
@@ -39,11 +46,9 @@ import Layout from "../layouts/Layout.astro";
 
 <style>
     .blurb {
-        padding-bottom: 1em;
         text-align: center;
         color: #999;
         text-overflow: wrap;
-        height: 3em;
     }
 
     .attribution {

@@ -100,12 +100,43 @@ sorted_contributors = sorted(
     contributors.values(), key=lambda x: x["contributions"], reverse=True
 )
 
-json_data = json.dumps(
-    sorted_contributors,
-    indent=4,
-)
 
-print("Writing to contributors.json")
-f = open("contributors.json", "w")
-f.write(json_data)
-f.close()
+# Generate TypeScript code
+def generate_typescript_code(contributor_list):
+
+    definition_string = """
+export interface CommunityContributor {
+    url?: string;
+    icon: string;
+    name: string;
+}
+"""
+    list_start_string = (
+        """export const community_contributors: CommunityContributor[] = ["""
+    )
+    list_end_string = """
+]
+"""
+
+    contributor_list_string = ""
+    for contributor in contributor_list:
+        contributor_list_string += f"""
+    {{
+        url: "https://github.com/{contributor['login']}",
+        icon: "{contributor['avatar_url']}",
+        name: "{contributor['login']}",
+    }},"""
+        contributor
+
+    return (
+        definition_string
+        + list_start_string
+        + contributor_list_string
+        + list_end_string
+    )
+
+
+typscript_code = generate_typescript_code(sorted_contributors)
+
+with open("../src/data/community-contributors.ts", "w") as f:
+    f.write(typscript_code)

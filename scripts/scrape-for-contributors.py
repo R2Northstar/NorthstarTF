@@ -96,8 +96,12 @@ for org in orgs:
                         + "&s=128",  # Make sure to use lower resolution version to not overload client on load
                     }
 
+sorted_contributors = sorted(
+    contributors.values(), key=lambda x: x["contributions"], reverse=True
+)
+
 json_data = json.dumps(
-    sorted(contributors.values(), key=lambda x: x["contributions"], reverse=True),
+    sorted_contributors,
     indent=4,
 )
 

@@ -19,6 +19,7 @@ excluded_repos = [
 excluded_users = [
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
+    "weblate",          # bot
 ]
 
 

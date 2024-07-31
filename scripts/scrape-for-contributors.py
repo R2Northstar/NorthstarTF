@@ -96,9 +96,8 @@ for org in orgs:
                         + "&s=128",  # Make sure to use lower resolution version to not overload client on load
                     }
 
-sorted_contributors = sorted(
-    contributors.values(), key=lambda x: x["contributions"], reverse=True
-)
+# Sort contributor list alphabetically
+sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])
 
 
 # Generate TypeScript code

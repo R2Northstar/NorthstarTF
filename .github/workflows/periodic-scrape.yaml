@@ -36,4 +36,4 @@ jobs:
     - name: Commit changes
       if: ${{ steps.git_diff.outputs.changes == 'true' }}
       run: |
-        git commit -m "Automated code changes"
+        git commit -m "Update community contributors list"

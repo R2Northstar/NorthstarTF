@@ -34,6 +34,6 @@ jobs:
         fi
 
     - name: Commit changes
-      if: steps.git_diff.outputs.changes == 'true'
+      if: ${{ steps.git_diff.outputs.changes == 'true' }}
       run: |
         git commit -m "Automated code changes"

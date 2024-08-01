@@ -16,7 +16,6 @@ jobs:
     - name: Install depenencies
       run: pip install requests
 
-
     - name: Run Python script for scraping
       run: |
         cd scripts
@@ -38,4 +37,3 @@ jobs:
       if: steps.git_diff.outputs.changes == 'true'
       run: |
         git commit -m "Automated code changes"
-

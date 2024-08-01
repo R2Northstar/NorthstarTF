@@ -21,7 +21,7 @@ jobs:
         cd scripts
         python scrape-for-contributors.py
 
-    - name: Commit changes
+    - name: Check for changes
       id: git_diff
       run: |
         git config --global user.name 'github-actions[bot]'

@@ -1,7 +1,6 @@
 name: Periodically scrape repos
 
 on:
-  push: # Temp
   workflow_dispatch: # Manual run
   schedule:
   - cron: '0 0 * * 0'

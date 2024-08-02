@@ -71,7 +71,7 @@ export const contributors: Contributor[] = [
         description: "RPak/Starpak, Stats/Progression, Persistence, Advocate, Bug fixes",
         type: ContributorType.CORE,
     },
-	{
+    {
         url: "https://github.com/Zanieon",
         icon: "https://avatars.githubusercontent.com/u/11906641?v=4&s=128",
         name: "Zanieon",

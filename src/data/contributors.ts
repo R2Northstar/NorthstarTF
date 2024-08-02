@@ -47,7 +47,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/pg9182",
         icon: "https://avatars.githubusercontent.com/u/96569817?v=4&s=128",
         name: "pg9182",
-        description: "Atlas, Server Container, Stubs, Linux, Security",
+        description: "Atlas Master Server, Server Container, Stubs, Linux, Security",
         type: ContributorType.CORE,
     },
     {

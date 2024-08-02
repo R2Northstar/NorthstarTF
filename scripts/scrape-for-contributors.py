@@ -17,6 +17,7 @@ excluded_repos = [
 
 # List of users to exclude
 excluded_users = [
+    "github-actions[bot]",  # bot
     "dependabot[bot]",  # bot
     "harmony-weblate",  # bot
     "weblate",  # bot

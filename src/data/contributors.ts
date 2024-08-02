@@ -71,6 +71,13 @@ export const contributors: Contributor[] = [
         description: "RPak/Starpak, Stats/Progression, Persistence, Advocate, Bug fixes",
         type: ContributorType.CORE,
     },
+    {
+        url: "https://github.com/Zanieon",
+        icon: "https://avatars.githubusercontent.com/u/11906641?v=4&s=128",
+        name: "Zanieon",
+        description: "Frontier Defense/Gamemodes, Squirrel maintenance, Progression, Navmeshes",
+        type: ContributorType.CORE,
+    },
 
     // Contributors
     {
@@ -232,13 +239,6 @@ export const contributors: Contributor[] = [
         icon: "https://avatars.githubusercontent.com/u/10704358?v=4&s=128",
         name: "kylegospo",
         description: "LatencyFlex",
-        type: ContributorType.CONTRIBUTOR,
-    },
-    {
-        url: "https://github.com/Zanieon",
-        icon: "https://avatars.githubusercontent.com/u/11906641?v=4&s=128",
-        name: "Zanieon",
-        description: "Navmeshes, Frontier Defense",
         type: ContributorType.CONTRIBUTOR,
     },
     {

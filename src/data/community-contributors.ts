@@ -212,6 +212,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "fvnkhead",
     },
     {
+        url: "https://github.com/github-actions[bot]",
+        icon: "https://avatars.githubusercontent.com/in/15368?v=4&s=64",
+        name: "github-actions[bot]",
+    },
+    {
         url: "https://github.com/gotimo2",
         icon: "https://avatars.githubusercontent.com/u/61739017?v=4&s=64",
         name: "gotimo2",

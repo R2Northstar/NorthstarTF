@@ -33,7 +33,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/RoyalBlue1",
         icon: "https://avatars.githubusercontent.com/u/11448698?v=4&s=128",
         name: "royalblue",
-        description: "Squirrel, Frontier Defense, Tool Developer",
+        description: "RUI, Reversing Engineering features and Tooling, Titanfall 1 maps conversion",
         type: ContributorType.CORE,
     },
     {

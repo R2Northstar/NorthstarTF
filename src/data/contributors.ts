@@ -176,7 +176,7 @@ export const contributors: Contributor[] = [
         icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
         name: "alystrasz",
         description: "Localisations, Launchers, Documentation",
-        type: ContributorType.CONTRIBUTOR,
+        type: ContributorType.CORE,
     },
     {
         url: "https://github.com/Dinorush",

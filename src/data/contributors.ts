@@ -175,7 +175,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/Alystrasz",
         icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
         name: "alystrasz",
-        description: "Localisations, Launchers, Documentation",
+        description: "MAD (mod auto-downloading), Localisation, Launchers, Documentation",
         type: ContributorType.CORE,
     },
     {

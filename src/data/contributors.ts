@@ -78,6 +78,13 @@ export const contributors: Contributor[] = [
         description: "Frontier Defense/Gamemodes, Squirrel maintenance, Progression, Navmeshes",
         type: ContributorType.CORE,
     },
+    {
+        url: "https://github.com/Alystrasz",
+        icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
+        name: "alystrasz",
+        description: "MAD (mod auto-downloading), Localisation, Launchers, Documentation",
+        type: ContributorType.CORE,
+    },
 
     // Contributors
     {
@@ -169,13 +176,6 @@ export const contributors: Contributor[] = [
         icon: "https://avatars.githubusercontent.com/u/22678145?v=4&s=128",
         name: "x3karma",
         description: "Moderator, Modding, Frontier Defense",
-        type: ContributorType.CONTRIBUTOR,
-    },
-    {
-        url: "https://github.com/Alystrasz",
-        icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
-        name: "alystrasz",
-        description: "Localisations, Launchers, Documentation",
         type: ContributorType.CONTRIBUTOR,
     },
     {

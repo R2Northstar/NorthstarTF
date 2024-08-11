@@ -12,6 +12,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "0neGal",
     },
     {
+        url: "https://github.com/3top1a",
+        icon: "https://avatars.githubusercontent.com/u/57371001?v=4&s=64",
+        name: "3top1a",
+    },
+    {
         url: "https://github.com/AdobeWallHacks",
         icon: "https://avatars.githubusercontent.com/u/78327970?v=4&s=64",
         name: "AdobeWallHacks",
@@ -40,6 +45,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Distion55x",
         icon: "https://avatars.githubusercontent.com/u/47297018?v=4&s=64",
         name: "Distion55x",
+    },
+    {
+        url: "https://github.com/DxsSucuk",
+        icon: "https://avatars.githubusercontent.com/u/53257574?v=4&s=64",
+        name: "DxsSucuk",
     },
     {
         url: "https://github.com/EnderBoy9217",
@@ -80,6 +90,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Kaze-Kami",
         icon: "https://avatars.githubusercontent.com/u/18683538?v=4&s=64",
         name: "Kaze-Kami",
+    },
+    {
+        url: "https://github.com/KenMizz",
+        icon: "https://avatars.githubusercontent.com/u/16635884?v=4&s=64",
+        name: "KenMizz",
     },
     {
         url: "https://github.com/L1ghtman2k",
@@ -197,6 +212,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "WofWca",
     },
     {
+        url: "https://github.com/XNovaDelta",
+        icon: "https://avatars.githubusercontent.com/u/31860825?v=4&s=64",
+        name: "XNovaDelta",
+    },
+    {
         url: "https://github.com/anjannair",
         icon: "https://avatars.githubusercontent.com/u/22571613?v=4&s=64",
         name: "anjannair",
@@ -255,6 +275,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/microraptor",
         icon: "https://avatars.githubusercontent.com/u/15663536?v=4&s=64",
         name: "microraptor",
+    },
+    {
+        url: "https://github.com/pcbmaster",
+        icon: "https://avatars.githubusercontent.com/u/5921091?v=4&s=64",
+        name: "pcbmaster",
     },
     {
         url: "https://github.com/piebaker",

@@ -22,6 +22,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "AnActualEmerald",
     },
     {
+        url: "https://github.com/Bobbyperson",
+        icon: "https://avatars.githubusercontent.com/u/23128094?v=4&s=64",
+        name: "Bobbyperson",
+    },
+    {
         url: "https://github.com/ConnorDoesDev",
         icon: "https://avatars.githubusercontent.com/u/69979824?v=4&s=64",
         name: "ConnorDoesDev",
@@ -80,6 +85,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/L1ghtman2k",
         icon: "https://avatars.githubusercontent.com/u/35672535?v=4&s=64",
         name: "L1ghtman2k",
+    },
+    {
+        url: "https://github.com/LumiKattlin",
+        icon: "https://avatars.githubusercontent.com/u/89748230?v=4&s=64",
+        name: "LumiKattlin",
     },
     {
         url: "https://github.com/MiloAkerman",

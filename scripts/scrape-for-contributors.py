@@ -59,6 +59,7 @@ excluded_users += extract_github_usernames(contributor_list_file)
 
 
 contributors = {}
+org_repo_list = []
 
 for org in orgs:
     repos = get_repos(org)
@@ -69,34 +70,36 @@ for org in orgs:
             continue
 
         print(f"Repo: {org}/{repo}")
-        url = f"https://api.github.com/repos/{org}/{repo}/contributors"
-        headers = {}
-        if github_token is not None:
-            headers = {"Authorization": f"Bearer {github_token}"}
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            repo_contributors = response.json()
-            for contributor in repo_contributors:
-                if contributor["login"] in excluded_users:
-                    continue
+        org_repo_list.append(f"{org}/{repo}")
 
-                if contributor["login"] in contributors:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributors[contributor["login"]][
-                            "contributions"
-                        ]
-                        + contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
-                else:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
+for org_repo in org_repo_list:
+    print(f"Scraping: {org_repo}")
+    url = f"https://api.github.com/repos/{org_repo}/contributors"
+    headers = {}
+    if github_token is not None:
+        headers = {"Authorization": f"Bearer {github_token}"}
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        repo_contributors = response.json()
+        for contributor in repo_contributors:
+            if contributor["login"] in excluded_users:
+                continue
+
+            if contributor["login"] in contributors:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributors[contributor["login"]]["contributions"]
+                    + contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
+            else:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
 
 # Sort contributor list alphabetically
 sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])

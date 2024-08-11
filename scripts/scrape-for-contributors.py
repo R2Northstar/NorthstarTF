@@ -10,6 +10,11 @@ contributor_list_file = "../src/data/contributors.ts"
 
 orgs = ["R2Northstar", "R2NorthstarTools"]
 
+# List of repos outside of Northstar orgs to additionally add
+additional_repos = [
+    "0neGal/viper",
+]
+
 excluded_repos = [
     "R2Northstar/zlib",  # zlib is kind of empty, so we can exclude it
     "R2NorthstarTools/NorthstarProton",  # Ignore NorthstarProton as it's a fork and difficult to untangle contributions from upstream
@@ -60,6 +65,7 @@ excluded_users += extract_github_usernames(contributor_list_file)
 
 contributors = {}
 org_repo_list = []
+org_repo_list += additional_repos
 
 for org in orgs:
     repos = get_repos(org)

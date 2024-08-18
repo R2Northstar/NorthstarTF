@@ -22,39 +22,14 @@ export const community_contributors: CommunityContributor[] = [
         name: "AdobeWallHacks",
     },
     {
-        url: "https://github.com/Aida-Enna",
-        icon: "https://avatars.githubusercontent.com/u/5483362?v=4&s=64",
-        name: "Aida-Enna",
-    },
-    {
         url: "https://github.com/AnActualEmerald",
         icon: "https://avatars.githubusercontent.com/u/4367791?v=4&s=64",
         name: "AnActualEmerald",
     },
     {
-        url: "https://github.com/Anreol",
-        icon: "https://avatars.githubusercontent.com/u/12176932?v=4&s=64",
-        name: "Anreol",
-    },
-    {
         url: "https://github.com/Bobbyperson",
         icon: "https://avatars.githubusercontent.com/u/23128094?v=4&s=64",
         name: "Bobbyperson",
-    },
-    {
-        url: "https://github.com/BotchedRPR",
-        icon: "https://avatars.githubusercontent.com/u/68894028?v=4&s=64",
-        name: "BotchedRPR",
-    },
-    {
-        url: "https://github.com/CTalvio",
-        icon: "https://avatars.githubusercontent.com/u/4365015?v=4&s=64",
-        name: "CTalvio",
-    },
-    {
-        url: "https://github.com/Caznix",
-        icon: "https://avatars.githubusercontent.com/u/131402549?v=4&s=64",
-        name: "Caznix",
     },
     {
         url: "https://github.com/ConnorDoesDev",
@@ -67,19 +42,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "Coopyy",
     },
     {
-        url: "https://github.com/CozyMerc",
-        icon: "https://avatars.githubusercontent.com/u/88903493?v=4&s=64",
-        name: "CozyMerc",
-    },
-    {
         url: "https://github.com/Distion55x",
         icon: "https://avatars.githubusercontent.com/u/47297018?v=4&s=64",
         name: "Distion55x",
-    },
-    {
-        url: "https://github.com/Dundurhedd",
-        icon: "https://avatars.githubusercontent.com/u/42916683?v=4&s=64",
-        name: "Dundurhedd",
     },
     {
         url: "https://github.com/DxsSucuk",
@@ -97,16 +62,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "FerretWithAGun",
     },
     {
-        url: "https://github.com/GUSSlNATOR",
-        icon: "https://avatars.githubusercontent.com/u/61028296?v=4&s=64",
-        name: "GUSSlNATOR",
-    },
-    {
-        url: "https://github.com/GalacticMoblin",
-        icon: "https://avatars.githubusercontent.com/u/100473309?v=4&s=64",
-        name: "GalacticMoblin",
-    },
-    {
         url: "https://github.com/Glacir",
         icon: "https://avatars.githubusercontent.com/u/122596880?v=4&s=64",
         name: "Glacir",
@@ -122,21 +77,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "IncPlusPlus",
     },
     {
-        url: "https://github.com/Interesting-exe",
-        icon: "https://avatars.githubusercontent.com/u/52731127?v=4&s=64",
-        name: "Interesting-exe",
-    },
-    {
-        url: "https://github.com/IsaacShoebottom",
-        icon: "https://avatars.githubusercontent.com/u/61301629?v=4&s=64",
-        name: "IsaacShoebottom",
-    },
-    {
-        url: "https://github.com/ItsNikopol",
-        icon: "https://avatars.githubusercontent.com/u/53965568?v=4&s=64",
-        name: "ItsNikopol",
-    },
-    {
         url: "https://github.com/JJRcop",
         icon: "https://avatars.githubusercontent.com/u/5211576?v=4&s=64",
         name: "JJRcop",
@@ -147,16 +87,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "JMM889901",
     },
     {
-        url: "https://github.com/Jeremiah-Roise",
-        icon: "https://avatars.githubusercontent.com/u/56651804?v=4&s=64",
-        name: "Jeremiah-Roise",
-    },
-    {
-        url: "https://github.com/JoCa96",
-        icon: "https://avatars.githubusercontent.com/u/18483883?v=4&s=64",
-        name: "JoCa96",
-    },
-    {
         url: "https://github.com/Kaze-Kami",
         icon: "https://avatars.githubusercontent.com/u/18683538?v=4&s=64",
         name: "Kaze-Kami",
@@ -165,11 +95,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/KenMizz",
         icon: "https://avatars.githubusercontent.com/u/16635884?v=4&s=64",
         name: "KenMizz",
-    },
-    {
-        url: "https://github.com/Klemmbaustein",
-        icon: "https://avatars.githubusercontent.com/u/83748124?v=4&s=64",
-        name: "Klemmbaustein",
     },
     {
         url: "https://github.com/L1ghtman2k",
@@ -187,19 +112,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "MiloAkerman",
     },
     {
-        url: "https://github.com/MindSwipe",
-        icon: "https://avatars.githubusercontent.com/u/36076277?v=4&s=64",
-        name: "MindSwipe",
-    },
-    {
         url: "https://github.com/MysteriousRSA",
         icon: "https://avatars.githubusercontent.com/u/45333346?v=4&s=64",
         name: "MysteriousRSA",
-    },
-    {
-        url: "https://github.com/Nekailrii",
-        icon: "https://avatars.githubusercontent.com/u/77649295?v=4&s=64",
-        name: "Nekailrii",
     },
     {
         url: "https://github.com/Neoministein",
@@ -222,29 +137,14 @@ export const community_contributors: CommunityContributor[] = [
         name: "Ombrezz",
     },
     {
-        url: "https://github.com/OranGeNaL",
-        icon: "https://avatars.githubusercontent.com/u/39371893?v=4&s=64",
-        name: "OranGeNaL",
-    },
-    {
         url: "https://github.com/Orpheus2401",
         icon: "https://avatars.githubusercontent.com/u/62786393?v=4&s=64",
         name: "Orpheus2401",
     },
     {
-        url: "https://github.com/PANCHO7532B",
-        icon: "https://avatars.githubusercontent.com/u/92986867?v=4&s=64",
-        name: "PANCHO7532B",
-    },
-    {
         url: "https://github.com/PersonMeetup",
         icon: "https://avatars.githubusercontent.com/u/42787368?v=4&s=64",
         name: "PersonMeetup",
-    },
-    {
-        url: "https://github.com/RealWorldExample",
-        icon: "https://avatars.githubusercontent.com/u/98621775?v=4&s=64",
-        name: "RealWorldExample",
     },
     {
         url: "https://github.com/RootCellar",
@@ -272,11 +172,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "Slipstreamm",
     },
     {
-        url: "https://github.com/Soup-64",
-        icon: "https://avatars.githubusercontent.com/u/43444191?v=4&s=64",
-        name: "Soup-64",
-    },
-    {
         url: "https://github.com/Steveplays28",
         icon: "https://avatars.githubusercontent.com/u/62797992?v=4&s=64",
         name: "Steveplays28",
@@ -290,11 +185,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/TH3-S4LM0N",
         icon: "https://avatars.githubusercontent.com/u/99826409?v=4&s=64",
         name: "TH3-S4LM0N",
-    },
-    {
-        url: "https://github.com/Tamjow",
-        icon: "https://avatars.githubusercontent.com/u/18601697?v=4&s=64",
-        name: "Tamjow",
     },
     {
         url: "https://github.com/TheLavaLump",
@@ -322,24 +212,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "WofWca",
     },
     {
-        url: "https://github.com/WtzLAS",
-        icon: "https://avatars.githubusercontent.com/u/16971764?v=4&s=64",
-        name: "WtzLAS",
-    },
-    {
         url: "https://github.com/XNovaDelta",
         icon: "https://avatars.githubusercontent.com/u/31860825?v=4&s=64",
         name: "XNovaDelta",
-    },
-    {
-        url: "https://github.com/Zetryox",
-        icon: "https://avatars.githubusercontent.com/u/96758401?v=4&s=64",
-        name: "Zetryox",
-    },
-    {
-        url: "https://github.com/alt4",
-        icon: "https://avatars.githubusercontent.com/u/18028173?v=4&s=64",
-        name: "alt4",
     },
     {
         url: "https://github.com/anjannair",
@@ -347,19 +222,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "anjannair",
     },
     {
-        url: "https://github.com/astrojuanlu",
-        icon: "https://avatars.githubusercontent.com/u/316517?v=4&s=64",
-        name: "astrojuanlu",
-    },
-    {
         url: "https://github.com/begin-theadventure",
         icon: "https://avatars.githubusercontent.com/u/99835765?v=4&s=64",
         name: "begin-theadventure",
-    },
-    {
-        url: "https://github.com/castella-cake",
-        icon: "https://avatars.githubusercontent.com/u/65476384?v=4&s=64",
-        name: "castella-cake",
     },
     {
         url: "https://github.com/connieprice",
@@ -370,16 +235,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/cyrv6737",
         icon: "https://avatars.githubusercontent.com/u/68307100?v=4&s=64",
         name: "cyrv6737",
-    },
-    {
-        url: "https://github.com/dilirity",
-        icon: "https://avatars.githubusercontent.com/u/11799079?v=4&s=64",
-        name: "dilirity",
-    },
-    {
-        url: "https://github.com/faky1337",
-        icon: "https://avatars.githubusercontent.com/u/2706225?v=4&s=64",
-        name: "faky1337",
     },
     {
         url: "https://github.com/fvnkhead",
@@ -407,24 +262,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "jakubiakdev",
     },
     {
-        url: "https://github.com/jerbmega",
-        icon: "https://avatars.githubusercontent.com/u/6520237?v=4&s=64",
-        name: "jerbmega",
-    },
-    {
         url: "https://github.com/jeremychone",
         icon: "https://avatars.githubusercontent.com/u/74671?v=4&s=64",
         name: "jeremychone",
-    },
-    {
-        url: "https://github.com/lachlanmaclean",
-        icon: "https://avatars.githubusercontent.com/u/15061511?v=4&s=64",
-        name: "lachlanmaclean",
-    },
-    {
-        url: "https://github.com/lapaxx",
-        icon: "https://avatars.githubusercontent.com/u/93734793?v=4&s=64",
-        name: "lapaxx",
     },
     {
         url: "https://github.com/luludotdev",
@@ -432,24 +272,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "luludotdev",
     },
     {
-        url: "https://github.com/m4t7w",
-        icon: "https://avatars.githubusercontent.com/u/97262476?v=4&s=64",
-        name: "m4t7w",
-    },
-    {
         url: "https://github.com/microraptor",
         icon: "https://avatars.githubusercontent.com/u/15663536?v=4&s=64",
         name: "microraptor",
-    },
-    {
-        url: "https://github.com/okvdai",
-        icon: "https://avatars.githubusercontent.com/u/108829133?v=4&s=64",
-        name: "okvdai",
-    },
-    {
-        url: "https://github.com/overestimate",
-        icon: "https://avatars.githubusercontent.com/u/58041173?v=4&s=64",
-        name: "overestimate",
     },
     {
         url: "https://github.com/pcbmaster",
@@ -460,11 +285,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/piebaker",
         icon: "https://avatars.githubusercontent.com/u/73162560?v=4&s=64",
         name: "piebaker",
-    },
-    {
-        url: "https://github.com/popcar2",
-        icon: "https://avatars.githubusercontent.com/u/16920817?v=4&s=64",
-        name: "popcar2",
     },
     {
         url: "https://github.com/rrrfffrrr",
@@ -507,24 +327,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "theunkn0wn1",
     },
     {
-        url: "https://github.com/username24532",
-        icon: "https://avatars.githubusercontent.com/u/112632813?v=4&s=64",
-        name: "username24532",
-    },
-    {
-        url: "https://github.com/varGeneric",
-        icon: "https://avatars.githubusercontent.com/u/16168572?v=4&s=64",
-        name: "varGeneric",
-    },
-    {
         url: "https://github.com/xamionex",
         icon: "https://avatars.githubusercontent.com/u/57235791?v=4&s=64",
         name: "xamionex",
-    },
-    {
-        url: "https://github.com/zestybaby",
-        icon: "https://avatars.githubusercontent.com/u/1131256?v=4&s=64",
-        name: "zestybaby",
     },
     {
         url: "https://github.com/zxcPandora",

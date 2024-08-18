@@ -50,7 +50,7 @@ def extract_github_usernames(contributor_list_file) -> Optional[List[str]]:
 
 def get_repos(org_name) -> Optional[List[str]]:
     print(f"Org: {org}")
-    url = f"https://api.github.com/orgs/{org_name}/repos"
+    url = f"https://api.github.com/orgs/{org_name}/repos?per_page=100" # we aren't going to bother with pagination stuff here cause in no future will northstar have >100 repos
     headers = {}
     if github_token is not None:
         headers = {"Authorization": f"Bearer {github_token}"}
@@ -59,7 +59,7 @@ def get_repos(org_name) -> Optional[List[str]]:
         repos = response.json()
         return [repo["name"] for repo in repos]
     else:
-        print(f"Failed to retrieve contributors. Status code: {response.status_code}")
+        print(f"Failed to retrieve repos for org {org_name}. Status code: {response.status_code}")
         print(f"Response: {response.text}")
         return None
 
@@ -85,12 +85,20 @@ for org in orgs:
 
 for org_repo in org_repo_list:
     print(f"Scraping: {org_repo}")
-    url = f"https://api.github.com/repos/{org_repo}/contributors"
+    has_next_page = True
+    url = f"https://api.github.com/repos/{org_repo}/contributors?per_page=100"
     headers = {}
     if github_token is not None:
         headers = {"Authorization": f"Bearer {github_token}"}
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
+    while has_next_page:
+        response = requests.get(url, headers=headers)
+        if response.status_code != 200:
+            print(
+                f"Failed to retrieve contributors for {org_repo}. Status code: {response.status_code}"
+            )
+            print(f"Response: {response.text}")
+            break
+
         repo_contributors = response.json()
         for contributor in repo_contributors:
             if contributor["login"] in excluded_users:
@@ -111,6 +119,21 @@ for org_repo in org_repo_list:
                     "avatar_url": contributor["avatar_url"]
                     + "&s=64",  # Make sure to use lower resolution version to not overload client on load
                 }
+        print(f"Successfully retrieved {len(repo_contributors)} contributors for {org_repo}, total contributors: {len(contributors)}")
+
+        # Check if there are more pages
+        if "Link" in response.headers:
+            links = response.headers["Link"].split(", ")
+            for link in links:
+                if "rel=\"next\"" in link:
+                    url = link.split(";")[0][1:-1]
+                    has_next_page = True
+                    break
+            else:
+                has_next_page = False
+        else:
+            has_next_page = False
+
 
 # Sort contributor list alphabetically
 sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])

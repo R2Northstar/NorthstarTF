@@ -50,7 +50,7 @@ def extract_github_usernames(contributor_list_file) -> Optional[List[str]]:
 
 def get_repos(org_name) -> Optional[List[str]]:
     print(f"Org: {org}")
-    url = f"https://api.github.com/orgs/{org_name}/repos"
+    url = f"https://api.github.com/orgs/{org_name}/repos?per_page=100" # we aren't going to bother with pagination stuff here cause in no future will northstar have >100 repos
     headers = {}
     if github_token is not None:
         headers = {"Authorization": f"Bearer {github_token}"}

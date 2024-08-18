@@ -92,45 +92,48 @@ for org_repo in org_repo_list:
         headers = {"Authorization": f"Bearer {github_token}"}
     while has_next_page:
         response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            repo_contributors = response.json()
-            for contributor in repo_contributors:
-                if contributor["login"] in excluded_users:
-                    continue
+        if response.status_code != 200:
+            print(
+                f"Failed to retrieve contributors for {org_repo}. Status code: {response.status_code}"
+            )
+            print(f"Response: {response.text}")
+            break
 
-                if contributor["login"] in contributors:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributors[contributor["login"]]["contributions"]
-                        + contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
-                else:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
-            print(f"Successfully retrieved {len(repo_contributors)} contributors for {org_repo}, total contributors: {len(contributors)}")
+        repo_contributors = response.json()
+        for contributor in repo_contributors:
+            if contributor["login"] in excluded_users:
+                continue
 
-            # Check if there are more pages
-            if "Link" in response.headers:
-                links = response.headers["Link"].split(", ")
-                for link in links:
-                    if "rel=\"next\"" in link:
-                        url = link.split(";")[0][1:-1]
-                        has_next_page = True
-                        break
-                else:
-                    has_next_page = False
+            if contributor["login"] in contributors:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributors[contributor["login"]]["contributions"]
+                    + contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
+            else:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
+        print(f"Successfully retrieved {len(repo_contributors)} contributors for {org_repo}, total contributors: {len(contributors)}")
+
+        # Check if there are more pages
+        if "Link" in response.headers:
+            links = response.headers["Link"].split(", ")
+            for link in links:
+                if "rel=\"next\"" in link:
+                    url = link.split(";")[0][1:-1]
+                    has_next_page = True
+                    break
             else:
                 has_next_page = False
         else:
-            print(f"Failed to retrieve contributors for {org_repo}. Status code: {response.status_code}")
-            print(f"Response: {response.text}")
-            break
+            has_next_page = False
+
 
 # Sort contributor list alphabetically
 sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])

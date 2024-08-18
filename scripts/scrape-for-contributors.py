@@ -1,10 +1,15 @@
 import re
 import requests
 from typing import List, Optional
+import sys
 
 github_token = (
-    None  # supply a github token to avoid ratelimit, or don't, it's up to you
+    None
 )
+
+# supply a github token in an arg avoid ratelimit, or don't, it's up to you
+if len(sys.argv) > 1:
+    github_token = sys.argv[1]
 
 contributor_list_file = "../src/data/contributors.ts"
 

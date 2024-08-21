@@ -18,7 +18,7 @@ jobs:
     - name: Run Python script for scraping
       run: |
         cd scripts
-        python scrape-for-contributors.py
+        python scrape-for-contributors.py ${{ secrets.GITHUB_TOKEN }}
 
     - name: Check for changes
       id: git_diff

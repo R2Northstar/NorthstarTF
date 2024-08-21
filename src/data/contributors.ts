@@ -33,7 +33,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/RoyalBlue1",
         icon: "https://avatars.githubusercontent.com/u/11448698?v=4&s=128",
         name: "royalblue",
-        description: "Squirrel, Frontier Defense, Tool Developer",
+        description: "RUI, Reversing Engineering, Tool Development, Titanfall 1 maps conversion",
         type: ContributorType.CORE,
     },
     {
@@ -76,6 +76,13 @@ export const contributors: Contributor[] = [
         icon: "https://avatars.githubusercontent.com/u/11906641?v=4&s=128",
         name: "Zanieon",
         description: "Frontier Defense/Gamemodes, Squirrel maintenance, Progression, Navmeshes",
+        type: ContributorType.CORE,
+    },
+    {
+        url: "https://github.com/Alystrasz",
+        icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
+        name: "alystrasz",
+        description: "MAD (mod auto-downloading), Localisation, Launchers, Documentation",
         type: ContributorType.CORE,
     },
 
@@ -169,13 +176,6 @@ export const contributors: Contributor[] = [
         icon: "https://avatars.githubusercontent.com/u/22678145?v=4&s=128",
         name: "x3karma",
         description: "Moderator, Modding, Frontier Defense",
-        type: ContributorType.CONTRIBUTOR,
-    },
-    {
-        url: "https://github.com/Alystrasz",
-        icon: "https://avatars.githubusercontent.com/u/11993538?v=4&s=128",
-        name: "alystrasz",
-        description: "Localisations, Launchers, Documentation",
         type: ContributorType.CONTRIBUTOR,
     },
     {

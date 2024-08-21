@@ -1,14 +1,24 @@
 import re
 import requests
 from typing import List, Optional
+import sys
 
 github_token = (
-    None  # supply a github token to avoid ratelimit, or don't, it's up to you
+    None
 )
+
+# supply a github token in an arg avoid ratelimit, or don't, it's up to you
+if len(sys.argv) > 1:
+    github_token = sys.argv[1]
 
 contributor_list_file = "../src/data/contributors.ts"
 
 orgs = ["R2Northstar", "R2NorthstarTools"]
+
+# List of repos outside of Northstar orgs to additionally add
+additional_repos = [
+    "0neGal/viper",
+]
 
 excluded_repos = [
     "R2Northstar/zlib",  # zlib is kind of empty, so we can exclude it
@@ -40,7 +50,7 @@ def extract_github_usernames(contributor_list_file) -> Optional[List[str]]:
 
 def get_repos(org_name) -> Optional[List[str]]:
     print(f"Org: {org}")
-    url = f"https://api.github.com/orgs/{org_name}/repos"
+    url = f"https://api.github.com/orgs/{org_name}/repos?per_page=100" # we aren't going to bother with pagination stuff here cause in no future will northstar have >100 repos
     headers = {}
     if github_token is not None:
         headers = {"Authorization": f"Bearer {github_token}"}
@@ -49,7 +59,7 @@ def get_repos(org_name) -> Optional[List[str]]:
         repos = response.json()
         return [repo["name"] for repo in repos]
     else:
-        print(f"Failed to retrieve contributors. Status code: {response.status_code}")
+        print(f"Failed to retrieve repos for org {org_name}. Status code: {response.status_code}")
         print(f"Response: {response.text}")
         return None
 
@@ -59,6 +69,8 @@ excluded_users += extract_github_usernames(contributor_list_file)
 
 
 contributors = {}
+org_repo_list = []
+org_repo_list += additional_repos
 
 for org in orgs:
     repos = get_repos(org)
@@ -69,34 +81,59 @@ for org in orgs:
             continue
 
         print(f"Repo: {org}/{repo}")
-        url = f"https://api.github.com/repos/{org}/{repo}/contributors"
-        headers = {}
-        if github_token is not None:
-            headers = {"Authorization": f"Bearer {github_token}"}
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            repo_contributors = response.json()
-            for contributor in repo_contributors:
-                if contributor["login"] in excluded_users:
-                    continue
+        org_repo_list.append(f"{org}/{repo}")
 
-                if contributor["login"] in contributors:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributors[contributor["login"]][
-                            "contributions"
-                        ]
-                        + contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
-                else:
-                    contributors[contributor["login"]] = {
-                        "login": contributor["login"],
-                        "contributions": contributor["contributions"],
-                        "avatar_url": contributor["avatar_url"]
-                        + "&s=64",  # Make sure to use lower resolution version to not overload client on load
-                    }
+for org_repo in org_repo_list:
+    print(f"Scraping: {org_repo}")
+    has_next_page = True
+    url = f"https://api.github.com/repos/{org_repo}/contributors?per_page=100"
+    headers = {}
+    if github_token is not None:
+        headers = {"Authorization": f"Bearer {github_token}"}
+    while has_next_page:
+        response = requests.get(url, headers=headers)
+        if response.status_code != 200:
+            print(
+                f"Failed to retrieve contributors for {org_repo}. Status code: {response.status_code}"
+            )
+            print(f"Response: {response.text}")
+            break
+
+        repo_contributors = response.json()
+        for contributor in repo_contributors:
+            if contributor["login"] in excluded_users:
+                continue
+
+            if contributor["login"] in contributors:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributors[contributor["login"]]["contributions"]
+                    + contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
+            else:
+                contributors[contributor["login"]] = {
+                    "login": contributor["login"],
+                    "contributions": contributor["contributions"],
+                    "avatar_url": contributor["avatar_url"]
+                    + "&s=64",  # Make sure to use lower resolution version to not overload client on load
+                }
+        print(f"Successfully retrieved {len(repo_contributors)} contributors for {org_repo}, total contributors: {len(contributors)}")
+
+        # Check if there are more pages
+        if "Link" in response.headers:
+            links = response.headers["Link"].split(", ")
+            for link in links:
+                if "rel=\"next\"" in link:
+                    url = link.split(";")[0][1:-1]
+                    has_next_page = True
+                    break
+            else:
+                has_next_page = False
+        else:
+            has_next_page = False
+
 
 # Sort contributor list alphabetically
 sorted_contributors = sorted(contributors.values(), key=lambda x: x["login"])

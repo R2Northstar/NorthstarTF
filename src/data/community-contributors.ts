@@ -377,6 +377,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "dilirity",
     },
     {
+        url: "https://github.com/eve-v0",
+        icon: "https://avatars.githubusercontent.com/u/145144394?v=4&s=64",
+        name: "eve-v0",
+    },
+    {
         url: "https://github.com/faky1337",
         icon: "https://avatars.githubusercontent.com/u/2706225?v=4&s=64",
         name: "faky1337",

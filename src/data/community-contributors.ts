@@ -187,6 +187,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "LumiKattlin",
     },
     {
+        url: "https://github.com/Mariiibo",
+        icon: "https://avatars.githubusercontent.com/u/45979212?v=4&s=64",
+        name: "Mariiibo",
+    },
+    {
         url: "https://github.com/MiloAkerman",
         icon: "https://avatars.githubusercontent.com/u/40443620?v=4&s=64",
         name: "MiloAkerman",

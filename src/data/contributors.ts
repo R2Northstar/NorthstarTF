@@ -40,7 +40,7 @@ export const contributors: Contributor[] = [
         url: "https://github.com/GeckoEidechse",
         icon: "https://avatars.githubusercontent.com/u/40122905?v=4&s=128",
         name: "gecko",
-        description: "Release Management, Maintainer, Security, FlightCore",
+        description: "Release Management, Maintainer, Security, FlightCore, Docs",
         type: ContributorType.CORE,
     },
     {

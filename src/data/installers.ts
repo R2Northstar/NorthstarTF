@@ -91,7 +91,7 @@ export const installers: Installer[] = [
             {
                 text: "Guide",
                 icon: "/assets/icon_wiki.svg",
-                href: "https://r2northstar.gitbook.io/r2northstar-wiki/installing-northstar/manual-installation",
+                href: "https://docs.northstar.tf/Wiki/installing-northstar/manual-installation/",
             },
         ],
     },

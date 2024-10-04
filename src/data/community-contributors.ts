@@ -177,9 +177,19 @@ export const community_contributors: CommunityContributor[] = [
         name: "L1ghtman2k",
     },
     {
+        url: "https://github.com/LightBlueCube",
+        icon: "https://avatars.githubusercontent.com/u/115393812?v=4&s=64",
+        name: "LightBlueCube",
+    },
+    {
         url: "https://github.com/LumiKattlin",
         icon: "https://avatars.githubusercontent.com/u/89748230?v=4&s=64",
         name: "LumiKattlin",
+    },
+    {
+        url: "https://github.com/Mariiibo",
+        icon: "https://avatars.githubusercontent.com/u/45979212?v=4&s=64",
+        name: "Mariiibo",
     },
     {
         url: "https://github.com/MiloAkerman",
@@ -195,6 +205,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/MysteriousRSA",
         icon: "https://avatars.githubusercontent.com/u/45333346?v=4&s=64",
         name: "MysteriousRSA",
+    },
+    {
+        url: "https://github.com/NachosChipeados",
+        icon: "https://avatars.githubusercontent.com/u/103285866?v=4&s=64",
+        name: "NachosChipeados",
     },
     {
         url: "https://github.com/Nekailrii",
@@ -375,6 +390,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/dilirity",
         icon: "https://avatars.githubusercontent.com/u/11799079?v=4&s=64",
         name: "dilirity",
+    },
+    {
+        url: "https://github.com/eve-v0",
+        icon: "https://avatars.githubusercontent.com/u/145144394?v=4&s=64",
+        name: "eve-v0",
     },
     {
         url: "https://github.com/faky1337",

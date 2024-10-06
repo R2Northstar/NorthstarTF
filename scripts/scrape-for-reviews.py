@@ -3,9 +3,7 @@ from collections import defaultdict
 import datetime
 import sys
 
-github_token = (
-    None
-)
+github_token = None
 
 # supply a github token in an arg avoid ratelimit, or don't, it's up to you
 if len(sys.argv) > 1:
@@ -118,9 +116,7 @@ export interface ReviewCount {
     count: number;
 }
 """
-    list_start_string = (
-        """export const review_counts: ReviewCount[] = ["""
-    )
+    list_start_string = """export const review_counts: ReviewCount[] = ["""
     list_end_string = """
 ]
 """

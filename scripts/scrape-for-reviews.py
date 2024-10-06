@@ -74,7 +74,7 @@ def get_reviews_for_pr(repo_name, pr_number):
 repos = get_repos()
 
 # Dictionary to store the count of reviews per user
-review_counts = defaultdict(int)
+review_dict = defaultdict(int)
 
 for repo in repos:
     repo_name = repo["name"]
@@ -91,11 +91,11 @@ for repo in repos:
                 # Current object is comment on a review not an actual review, skip
                 continue
             user = review["user"]["login"]
-            review_counts[user] += 1
+            review_dict[user] += 1
 
 # Sort the review counts dictionary by count in descending order
 sorted_review_counts = sorted(
-    review_counts.items(), key=lambda item: item[1], reverse=True
+    review_dict.items(), key=lambda item: item[1], reverse=True
 )
 
 

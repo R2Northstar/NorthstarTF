@@ -1,5 +1,6 @@
 import requests
 from collections import defaultdict
+import datetime
 import sys
 
 github_token = (
@@ -74,7 +75,7 @@ def get_reviews_for_pr(repo_name, pr_number):
 repos = get_repos()
 
 # Dictionary to store the count of reviews per user
-review_dict = defaultdict(int)
+review_dict = defaultdict(list)
 
 for repo in repos:
     repo_name = repo["name"]
@@ -91,11 +92,17 @@ for repo in repos:
                 # Current object is comment on a review not an actual review, skip
                 continue
             user = review["user"]["login"]
-            review_dict[user] += 1
+            review_dict[user].append(
+                datetime.datetime.fromisoformat(
+                    review["submitted_at"].replace("Z", "+00:00")
+                )
+            )
 
 # Sort the review counts dictionary by count in descending order
 sorted_review_counts = sorted(
-    review_dict.items(), key=lambda item: item[1], reverse=True
+    {k: len(v) for k, v, in review_dict.items()}.items(),
+    key=lambda item: item[1],
+    reverse=True,
 )
 
 

@@ -107,6 +107,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "GalacticMoblin",
     },
     {
+        url: "https://github.com/Gazyi",
+        icon: "https://avatars.githubusercontent.com/u/10533703?v=4&s=64",
+        name: "Gazyi",
+    },
+    {
         url: "https://github.com/Glacir",
         icon: "https://avatars.githubusercontent.com/u/122596880?v=4&s=64",
         name: "Glacir",

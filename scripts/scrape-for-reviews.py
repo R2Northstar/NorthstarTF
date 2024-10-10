@@ -109,12 +109,19 @@ for repo in repos:
                 )
             )
 
-# Sort the review counts dictionary by count in descending order
-sorted_review_counts = sorted(
-    {k: len(v) for k, v, in review_dict.items()}.items(),
-    key=lambda item: item[1],
-    reverse=True,
-)
+
+def sum_up_reviews(reviews_dict):
+    """Sum up review counts per reviewer"""
+    return {k: len(v) for k, v, in reviews_dict.items()}
+
+
+def sort_alphabetically(reviews_dict):
+    """Sort alphabetivally by reviewer name"""
+    sorted_reviewers = sorted(
+        reviews_dict.items(),
+        key=lambda item: item[0].lower(),
+    )
+    return sorted_reviewers
 
 
 # Generate TypeScript code
@@ -152,7 +159,6 @@ export interface ReviewCount {
     )
 
 
-typscript_code = generate_typescript_code(sorted_review_counts)
-
+# Total stats
 with open("../src/data/reviewer-count.ts", "w") as f:
-    f.write(typscript_code)
+    f.write(generate_typescript_code(sort_alphabetically(sum_up_reviews(review_dict))))

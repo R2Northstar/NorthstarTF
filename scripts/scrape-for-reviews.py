@@ -75,6 +75,16 @@ repos = get_repos()
 # Dictionary to store the count of reviews per user
 review_dict = defaultdict(list)
 
+
+def is_trivial_review(review_text: str):
+    """Perform a variety of checks to determine whether a review should be discarded due to not being extensive enough"""
+    min_review_length = 20
+    if "lgtm" in review_text.lower() and len(review_text) < min_review_length:
+        return True
+
+    return False
+
+
 for repo in repos:
     repo_name = repo["name"]
     prs = get_pull_requests(repo_name)
@@ -89,6 +99,9 @@ for repo in repos:
             if review["body"] == "":
                 # Current object is comment on a review not an actual review, skip
                 continue
+            if is_trivial_review(review["body"]):
+                continue
+
             user = review["user"]["login"]
             review_dict[user].append(
                 datetime.datetime.fromisoformat(

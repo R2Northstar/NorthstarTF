@@ -86,7 +86,7 @@ for repo in repos:
         for review in reviews:
             if not review["user"] or not review["user"]["login"]:
                 continue
-            if review["body"] != "":
+            if review["body"] == "":
                 # Current object is comment on a review not an actual review, skip
                 continue
             user = review["user"]["login"]

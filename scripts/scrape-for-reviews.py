@@ -110,6 +110,38 @@ for repo in repos:
             )
 
 
+
+def filter_by_timeframe(reviews_dict, weeks=1):
+    """
+    Filters out reviews older than `weeks` weeks.
+    Additionally removes empty reviewer entries after filtering.
+    """
+    # Apply the filter using a dictionary comprehension
+    now = datetime.datetime.now(datetime.timezone.utc)
+    filtered_review_counts = defaultdict(
+        list,
+        {
+            reviewer: [
+                review_time
+                for review_time in reviews
+                if now - review_time < datetime.timedelta(weeks=weeks)
+            ]
+            for reviewer, reviews in reviews_dict.items()
+        },
+    )
+
+    # Remove empty entries
+    filtered_review_counts = defaultdict(
+        list,
+        {
+            reviewer: reviews
+            for reviewer, reviews in filtered_review_counts.items()
+            if len(reviews) > 0
+        },
+    )
+
+    return filtered_review_counts
+
 def sum_up_reviews(reviews_dict):
     """Sum up review counts per reviewer"""
     return {k: len(v) for k, v, in reviews_dict.items()}
@@ -162,3 +194,19 @@ export interface ReviewCount {
 # Total stats
 with open("../src/data/reviewer-count.ts", "w") as f:
     f.write(generate_typescript_code(sort_alphabetically(sum_up_reviews(review_dict))))
+
+# Monthly stats
+with open("../src/data/reviewer-count-monthly.ts", "w") as f:
+    f.write(
+        generate_typescript_code(
+            sort_alphabetically(sum_up_reviews(filter_by_timeframe(review_dict, weeks=4)))
+        )
+    )
+
+# Weekly stats
+with open("../src/data/reviewer-count-weekly.ts", "w") as f:
+    f.write(
+        generate_typescript_code(
+            sort_alphabetically(sum_up_reviews(filter_by_timeframe(review_dict, weeks=1)))
+        )
+    )

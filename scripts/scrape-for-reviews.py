@@ -110,7 +110,6 @@ for repo in repos:
             )
 
 
-
 def filter_by_timeframe(reviews_dict, weeks=1):
     """
     Filters out reviews older than `weeks` weeks.
@@ -142,6 +141,7 @@ def filter_by_timeframe(reviews_dict, weeks=1):
 
     return filtered_review_counts
 
+
 def sum_up_reviews(reviews_dict):
     """Sum up review counts per reviewer"""
     return {k: len(v) for k, v, in reviews_dict.items()}
@@ -158,7 +158,6 @@ def sort_alphabetically(reviews_dict):
 
 # Generate TypeScript code
 def generate_typescript_code(sorted_review_counts):
-
     file_header_string = "// Auto-generated from Python script\n"
 
     definition_string = """
@@ -199,7 +198,9 @@ with open("../src/data/reviewer-count.ts", "w") as f:
 with open("../src/data/reviewer-count-monthly.ts", "w") as f:
     f.write(
         generate_typescript_code(
-            sort_alphabetically(sum_up_reviews(filter_by_timeframe(review_dict, weeks=4)))
+            sort_alphabetically(
+                sum_up_reviews(filter_by_timeframe(review_dict, weeks=4))
+            )
         )
     )
 
@@ -207,6 +208,8 @@ with open("../src/data/reviewer-count-monthly.ts", "w") as f:
 with open("../src/data/reviewer-count-weekly.ts", "w") as f:
     f.write(
         generate_typescript_code(
-            sort_alphabetically(sum_up_reviews(filter_by_timeframe(review_dict, weeks=1)))
+            sort_alphabetically(
+                sum_up_reviews(filter_by_timeframe(review_dict, weeks=1))
+            )
         )
     )

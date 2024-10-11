@@ -1,0 +1,17 @@
+---
+import { review_counts } from "../data/reviewer-count-monthly";
+---
+
+<div class="TODO">
+    <ul>
+        {
+            review_counts
+                .sort((a, b) => b.count - a.count)
+                .map((reviewer) => (
+                    <li>
+                        {reviewer.name} - {reviewer.count}
+                    </li>
+                ))
+        }
+    </ul>
+</div>

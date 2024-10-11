@@ -1,6 +1,7 @@
 ---
 import Contributors from "../components/Contributors.astro";
 import CommunityContributors from "../components/CommunityContributors.astro";
+import Reviewers from "../components/Reviewers.astro";
 import { ContributorType } from "../data/contributors";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -26,6 +27,13 @@ import Layout from "../layouts/Layout.astro";
         <div class="section">Past contributors</div>
         <p class="blurb">We are ever greatful for past contributions by these developers and wish them all their best on their journey beyond Northstar</p>
         <Contributors type={ContributorType.PAST} small />
+    </div>
+
+    <!-- TODO have a pane for each and just pass the desired stats (weekly/monthly/all) to the component -->
+    <div class="pane">
+        <div class="section">Reviewers</div>
+        <p class="blurb">TODO</p>
+        <Reviewers />
     </div>
 
     <div class="pane">

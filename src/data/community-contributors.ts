@@ -72,6 +72,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "CozyMerc",
     },
     {
+        url: "https://github.com/D3-3109",
+        icon: "https://avatars.githubusercontent.com/u/63032814?v=4&s=64",
+        name: "D3-3109",
+    },
+    {
         url: "https://github.com/Distion55x",
         icon: "https://avatars.githubusercontent.com/u/47297018?v=4&s=64",
         name: "Distion55x",

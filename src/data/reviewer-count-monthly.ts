@@ -5,11 +5,11 @@ export interface ReviewCount {
     name: string;
     count: number;
 }
-export const review_counts: ReviewCount[] = [
+export const review_counts_monthly: ReviewCount[] = [
     {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 7,
+        count: 6,
     },
     {
         url: "https://github.com/catornot",
@@ -17,24 +17,19 @@ export const review_counts: ReviewCount[] = [
         count: 1,
     },
     {
-        url: "https://github.com/F1F7Y",
-        name: "F1F7Y",
-        count: 7,
-    },
-    {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 14,
+        count: 19,
     },
     {
         url: "https://github.com/JMM889901",
         name: "JMM889901",
-        count: 2,
+        count: 3,
     },
     {
         url: "https://github.com/NachosChipeados",
         name: "NachosChipeados",
-        count: 1,
+        count: 2,
     },
     {
         url: "https://github.com/uniboi",

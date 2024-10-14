@@ -48,6 +48,7 @@ import { review_counts_weekly } from "../data/reviewer-count-weekly";
         {
             review_counts_total
                 .sort((a, b) => b.count - a.count)
+                .filter((c) => c.count > 1) // Require at least 2 reviews to reduce table size
                 .map((reviewer) => (
                     <tr>
                         <td>{reviewer.name}</td>

@@ -78,7 +78,7 @@ review_dict = defaultdict(list)
 
 def is_trivial_review(review_text: str):
     """Perform a variety of checks to determine whether a review should be discarded due to not being extensive enough"""
-    min_review_length = 20
+    min_review_length = 30
     if "lgtm" in review_text.lower() and len(review_text) < min_review_length:
         return True
 

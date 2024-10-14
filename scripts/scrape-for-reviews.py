@@ -160,7 +160,7 @@ def sort_alphabetically(reviews_dict):
 
 
 # Generate TypeScript code
-def generate_typescript_code(sorted_review_counts):
+def generate_typescript_code(sorted_review_counts, timeframe="total"):
     file_header_string = "// Auto-generated from Python script\n"
 
     definition_string = """
@@ -170,7 +170,7 @@ export interface ReviewCount {
     count: number;
 }
 """
-    list_start_string = """export const review_counts: ReviewCount[] = ["""
+    list_start_string = f"""export const review_counts_{timeframe}: ReviewCount[] = ["""
     list_end_string = """
 ]
 """
@@ -195,7 +195,11 @@ export interface ReviewCount {
 
 # Total stats
 with open("../src/data/reviewer-count.ts", "w") as f:
-    f.write(generate_typescript_code(sort_alphabetically(sum_up_reviews(review_dict))))
+    f.write(
+        generate_typescript_code(
+            sort_alphabetically(sum_up_reviews(review_dict)), "total"
+        )
+    )
 
 # Monthly stats
 with open("../src/data/reviewer-count-monthly.ts", "w") as f:
@@ -203,7 +207,8 @@ with open("../src/data/reviewer-count-monthly.ts", "w") as f:
         generate_typescript_code(
             sort_alphabetically(
                 sum_up_reviews(filter_by_timeframe(review_dict, weeks=4))
-            )
+            ),
+            "monthly",
         )
     )
 
@@ -213,6 +218,7 @@ with open("../src/data/reviewer-count-weekly.ts", "w") as f:
         generate_typescript_code(
             sort_alphabetically(
                 sum_up_reviews(filter_by_timeframe(review_dict, weeks=1))
-            )
+            ),
+            "weekly",
         )
     )

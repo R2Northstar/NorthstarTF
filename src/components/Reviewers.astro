@@ -4,7 +4,7 @@ import { review_counts_monthly } from "../data/reviewer-count-monthly";
 import { review_counts_weekly } from "../data/reviewer-count-weekly";
 ---
 
-<div class="reviewer-stats">
+<div class="reviewer-stats-flex">
     <div>
         <h2>Weekly review count</h2>
         <table>
@@ -43,6 +43,8 @@ import { review_counts_weekly } from "../data/reviewer-count-weekly";
             }
         </table>
     </div>
+</div>
+<div class="total-reviewers">
     <div>
         <h2>Total review count</h2>
         <table>
@@ -66,10 +68,15 @@ import { review_counts_weekly } from "../data/reviewer-count-weekly";
 </div>
 
 <style>
-    .reviewer-stats {
+    .reviewer-stats-flex {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 4em;
+    }
+    .total-reviewers {
+        margin: 4em;
+        display: flex;
+        justify-content: center;
     }
 </style>

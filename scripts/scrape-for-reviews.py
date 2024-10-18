@@ -175,9 +175,9 @@ export interface ReviewCount {
 ]
 """
 
-    contributor_list_string = ""
+    reviewer_list_string = ""
     for user, count in sorted_review_counts:
-        contributor_list_string += f"""
+        reviewer_list_string += f"""
     {{
         url: "https://github.com/{user}",
         name: "{user}",
@@ -188,7 +188,7 @@ export interface ReviewCount {
         file_header_string
         + definition_string
         + list_start_string
-        + contributor_list_string
+        + reviewer_list_string
         + list_end_string
     )
 

@@ -1,0 +1,82 @@
+---
+import { review_counts_total } from "../data/reviewer-count";
+import { review_counts_monthly } from "../data/reviewer-count-monthly";
+import { review_counts_weekly } from "../data/reviewer-count-weekly";
+---
+
+<div class="reviewer-stats-flex">
+    <div>
+        <h2>Weekly review count</h2>
+        <table>
+            <tr>
+                <th>Reviewer</th>
+                <th># of reviews</th>
+            </tr>
+            {
+                review_counts_weekly
+                    .sort((a, b) => b.count - a.count)
+                    .map((reviewer) => (
+                        <tr>
+                            <td>{reviewer.name}</td>
+                            <td>{reviewer.count}</td>
+                        </tr>
+                    ))
+            }
+        </table>
+    </div>
+    <div>
+        <h2>Monthly review count</h2>
+        <table>
+            <tr>
+                <th>Reviewer</th>
+                <th># of reviews</th>
+            </tr>
+            {
+                review_counts_monthly
+                    .sort((a, b) => b.count - a.count)
+                    .map((reviewer) => (
+                        <tr>
+                            <td>{reviewer.name}</td>
+                            <td>{reviewer.count}</td>
+                        </tr>
+                    ))
+            }
+        </table>
+    </div>
+</div>
+<div class="total-reviewers">
+    <div>
+        <h2>Total review count</h2>
+        <table>
+            <tr>
+                <th>Reviewer</th>
+                <th># of reviews</th>
+            </tr>
+            {
+                review_counts_total
+                    .sort((a, b) => b.count - a.count)
+                    .filter((c) => c.count > 1) // Require at least 2 reviews to reduce table size
+                    .map((reviewer) => (
+                        <tr>
+                            <td>{reviewer.name}</td>
+                            <td>{reviewer.count}</td>
+                        </tr>
+                    ))
+            }
+        </table>
+    </div>
+</div>
+
+<style>
+    .reviewer-stats-flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+    .total-reviewers {
+        margin: 4em;
+        display: flex;
+        justify-content: center;
+    }
+</style>

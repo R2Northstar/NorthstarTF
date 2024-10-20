@@ -277,6 +277,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "RootCellar",
     },
     {
+        url: "https://github.com/S2ymi",
+        icon: "https://avatars.githubusercontent.com/u/62992185?v=4&s=64",
+        name: "S2ymi",
+    },
+    {
         url: "https://github.com/SamLam140330",
         icon: "https://avatars.githubusercontent.com/u/48656764?v=4&s=64",
         name: "SamLam140330",

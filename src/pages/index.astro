@@ -69,11 +69,11 @@ import Roadmap from "../components/Roadmap.astro";
     </div>
 
     <div class="pane" id="main">
-        <div class="section">Installation</div>
+        <div class="section" id="installation">Installation</div>
         <Installers />
     </div>
 
-    <div class="pane dark">
+    <div class="pane dark" id="contributors">
         <div class="section">Contributors</div>
         <Contributors type={ContributorType.CORE} />
         <br style="font-size: 2rem;" />
@@ -84,7 +84,7 @@ import Roadmap from "../components/Roadmap.astro";
         </div>
     </div>
     
-    <div class="pane">
+    <div class="pane" id="roadmap">
         <div class="section">Roadmap</div>
         <p style="text-align: center">
             Our community is always working on new features and improvements for Northstar.
@@ -92,7 +92,7 @@ import Roadmap from "../components/Roadmap.astro";
         <Roadmap />
     </div>
 
-    <div class="pane dark">
+    <div class="pane dark" id="support">
         <div class="section">Support</div>
         <p style="text-align: center" class="supporttext">
             If you're having issues with running or setting up the Northstar

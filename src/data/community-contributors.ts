@@ -267,6 +267,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "PersonMeetup",
     },
     {
+        url: "https://github.com/RainTrap341",
+        icon: "https://avatars.githubusercontent.com/u/30723848?v=4&s=64",
+        name: "RainTrap341",
+    },
+    {
         url: "https://github.com/RealWorldExample",
         icon: "https://avatars.githubusercontent.com/u/98621775?v=4&s=64",
         name: "RealWorldExample",

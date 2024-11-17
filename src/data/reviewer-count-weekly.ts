@@ -9,16 +9,16 @@ export const review_counts_weekly: ReviewCount[] = [
     {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 3,
+        count: 1,
     },
     {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 2,
+        count: 3,
     },
     {
-        url: "https://github.com/JMM889901",
-        name: "JMM889901",
+        url: "https://github.com/RoyalBlue1",
+        name: "RoyalBlue1",
         count: 1,
     },
 ]

@@ -27,6 +27,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "Aida-Enna",
     },
     {
+        url: "https://github.com/AllusiveWheat",
+        icon: "https://avatars.githubusercontent.com/u/154700875?v=4&s=64",
+        name: "AllusiveWheat",
+    },
+    {
         url: "https://github.com/AnActualEmerald",
         icon: "https://avatars.githubusercontent.com/u/4367791?v=4&s=64",
         name: "AnActualEmerald",

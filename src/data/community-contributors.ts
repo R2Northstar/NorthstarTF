@@ -482,6 +482,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "m4t7w",
     },
     {
+        url: "https://github.com/maeve-oake",
+        icon: "https://avatars.githubusercontent.com/u/38541651?v=4&s=64",
+        name: "maeve-oake",
+    },
+    {
         url: "https://github.com/microraptor",
         icon: "https://avatars.githubusercontent.com/u/15663536?v=4&s=64",
         name: "microraptor",

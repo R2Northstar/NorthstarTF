@@ -186,9 +186,9 @@ export const contributors: Contributor[] = [
         type: ContributorType.CONTRIBUTOR,
     },
     {
-        url: "https://github.com/hummusbird",
+        url: "https://github.com/maeve-oake",
         icon: "https://avatars.githubusercontent.com/u/38541651?v=4&s=128",
-        name: "birb",
+        name: "maeve oake",
         description: "Server Bot",
         type: ContributorType.CONTRIBUTOR,
     },

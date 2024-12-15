@@ -7,6 +7,11 @@ export interface CommunityContributor {
 }
 export const community_contributors: CommunityContributor[] = [
     {
+        url: "https://github.com/0neGal",
+        icon: "https://avatars.githubusercontent.com/u/33325154?v=4&s=64",
+        name: "0neGal",
+    },
+    {
         url: "https://github.com/3top1a",
         icon: "https://avatars.githubusercontent.com/u/57371001?v=4&s=64",
         name: "3top1a",
@@ -15,6 +20,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/AdobeWallHacks",
         icon: "https://avatars.githubusercontent.com/u/78327970?v=4&s=64",
         name: "AdobeWallHacks",
+    },
+    {
+        url: "https://github.com/Aida-Enna",
+        icon: "https://avatars.githubusercontent.com/u/5483362?v=4&s=64",
+        name: "Aida-Enna",
     },
     {
         url: "https://github.com/AllusiveWheat",
@@ -75,6 +85,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Distion55x",
         icon: "https://avatars.githubusercontent.com/u/47297018?v=4&s=64",
         name: "Distion55x",
+    },
+    {
+        url: "https://github.com/Dundurhedd",
+        icon: "https://avatars.githubusercontent.com/u/42916683?v=4&s=64",
+        name: "Dundurhedd",
     },
     {
         url: "https://github.com/DxsSucuk",

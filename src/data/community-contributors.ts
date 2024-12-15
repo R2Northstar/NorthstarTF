@@ -257,11 +257,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "OranGeNaL",
     },
     {
-        url: "https://github.com/Orpheus2401",
-        icon: "https://avatars.githubusercontent.com/u/62786393?v=4&s=64",
-        name: "Orpheus2401",
-    },
-    {
         url: "https://github.com/PANCHO7532B",
         icon: "https://avatars.githubusercontent.com/u/92986867?v=4&s=64",
         name: "PANCHO7532B",
@@ -490,6 +485,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/okvdai",
         icon: "https://avatars.githubusercontent.com/u/108829133?v=4&s=64",
         name: "okvdai",
+    },
+    {
+        url: "https://github.com/orpheushclin",
+        icon: "https://avatars.githubusercontent.com/u/62786393?v=4&s=64",
+        name: "orpheushclin",
     },
     {
         url: "https://github.com/overestimate",

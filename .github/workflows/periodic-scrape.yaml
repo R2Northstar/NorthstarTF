@@ -32,11 +32,8 @@ jobs:
           echo "changes=true" >> $GITHUB_OUTPUT
         fi
 
-    - name: Create Pull Request
+    - name: Create changes
       if: ${{ steps.git_diff.outputs.changes == 'true' }}
-      uses: peter-evans/create-pull-request@v6
-      with:
-        commit-message: "Update community contributors list"
-        branch: automated/update-community-contributes
-        title: "Update community contributors list"
-        body: "Updates the list of community contributors"
+      run: |
+          git commit -am "Update community contributors list"
+          git push

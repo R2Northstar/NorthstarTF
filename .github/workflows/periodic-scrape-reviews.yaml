@@ -32,11 +32,8 @@ jobs:
           echo "changes=true" >> $GITHUB_OUTPUT
         fi
 
-    - name: Create Pull Request
+    - name: Commit changes
       if: ${{ steps.git_diff.outputs.changes == 'true' }}
-      uses: peter-evans/create-pull-request@v6
-      with:
-        commit-message: "Update review counts"
-        branch: automated/update-reviewer-counts
-        title: "Update review counts"
-        body: "Updates the lists of review counts"
+      run: |
+          git commit -am "Update review counts"
+          git push

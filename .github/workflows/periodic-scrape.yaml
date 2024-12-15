@@ -32,7 +32,7 @@ jobs:
           echo "changes=true" >> $GITHUB_OUTPUT
         fi
 
-    - name: Create changes
+    - name: Commit changes
       if: ${{ steps.git_diff.outputs.changes == 'true' }}
       run: |
           git commit -am "Update community contributors list"

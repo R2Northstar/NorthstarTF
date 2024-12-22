@@ -9,7 +9,7 @@ export const review_counts_monthly: ReviewCount[] = [
     {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 3,
+        count: 2,
     },
     {
         url: "https://github.com/ASpoonPlaysGames",
@@ -19,21 +19,21 @@ export const review_counts_monthly: ReviewCount[] = [
     {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 9,
+        count: 6,
     },
     {
         url: "https://github.com/NachosChipeados",
         name: "NachosChipeados",
-        count: 9,
+        count: 6,
     },
     {
         url: "https://github.com/RoyalBlue1",
         name: "RoyalBlue1",
-        count: 3,
+        count: 1,
     },
     {
         url: "https://github.com/Zanieon",
         name: "Zanieon",
-        count: 3,
+        count: 2,
     },
 ]

@@ -56,6 +56,8 @@ import { installers } from "../data/installers.ts";
 
     details {
         display: flex;
+        margin: 0 auto;
+        max-width: 90%;
     }
 
     summary {
@@ -63,6 +65,13 @@ import { installers } from "../data/installers.ts";
         width: min-content;
         user-select: none;
     }
+
+    @media screen and (max-width: 797px) {
+        summary {
+            width: 100%;
+        }
+    }
+
     details[open] > summary {
         margin: 2em auto;
     }

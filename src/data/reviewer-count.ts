@@ -72,6 +72,11 @@ export const review_counts_total: ReviewCount[] = [
         count: 1,
     },
     {
+        url: "https://github.com/dr3murr",
+        name: "dr3murr",
+        count: 1,
+    },
+    {
         url: "https://github.com/EladNLG",
         name: "EladNLG",
         count: 14,
@@ -99,7 +104,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 643,
+        count: 646,
     },
     {
         url: "https://github.com/H0L0theBard",
@@ -167,11 +172,6 @@ export const review_counts_total: ReviewCount[] = [
         count: 78,
     },
     {
-        url: "https://github.com/r3muxd",
-        name: "r3muxd",
-        count: 1,
-    },
-    {
         url: "https://github.com/RoyalBlue1",
         name: "RoyalBlue1",
         count: 34,
@@ -204,7 +204,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/uniboi",
         name: "uniboi",
-        count: 77,
+        count: 78,
     },
     {
         url: "https://github.com/VITALISED",

@@ -6,6 +6,7 @@ import Installers from "../components/Installers.astro";
 import { ContributorType } from "../data/contributors";
 import Layout from "../layouts/Layout.astro";
 import Roadmap from "../components/Roadmap.astro";
+import Community from "../components/Community.astro";
 ---
 
 <Layout title="Northstar">
@@ -83,7 +84,12 @@ import Roadmap from "../components/Roadmap.astro";
             </a>
         </div>
     </div>
-    
+
+    <div class="pane dark" id="community-content">
+        <div class="section">Community Content</div>
+        <Community />
+    </div>
+
     <div class="pane" id="roadmap">
         <div class="section">Roadmap</div>
         <p style="text-align: center">

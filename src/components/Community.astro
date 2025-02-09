@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import { community_videos } from "../data/community-videos.ts";
+---
+
+<div class="community-videos">
+    {
+        community_videos.map((item) => (
+            <div class="video-item">
+                {/* <span class="comment">{item.comment}</span> */}
+                {/* <span class="creator">{item.creator}</span> */}
+                <iframe
+                    class="community-video-youtube-iframe"
+                    src={`https://www.youtube-nocookie.com/embed/${item.youtube_id}`}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                />
+            </div>
+        ))
+    }
+</div>
+
+<style>
+    .community-videos {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        max-width: calc(100% - 10rem);
+        margin: auto;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .video-item {
+        font-size: 0.9em;
+        pointer-events: none;
+        text-decoration: none;
+    }
+
+    .community-video-youtube-iframe {
+        width: 100%;
+        max-width: 300px;
+        height: 160px;
+        border: none;
+        border-radius: 1rem;
+    }
+</style>

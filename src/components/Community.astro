@@ -5,19 +5,34 @@ import { community_videos } from "../data/community-videos.ts";
 
 <div class="community-videos">
     {
-        community_videos.map((item) => (
-            <div class="video-item">
-                {/* <span class="comment">{item.comment}</span> */}
-                {/* <span class="creator">{item.creator}</span> */}
-                <iframe
-                    class="community-video-youtube-iframe"
-                    src={`https://www.youtube-nocookie.com/embed/${item.youtube_id}`}
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                />
+        Object.entries(
+            community_videos.reduce(
+                (acc: { [key: number]: typeof community_videos }, item) => {
+                    const year = new Date(item.date).getFullYear();
+                    if (!acc[year]) acc[year] = [];
+                    acc[year].push(item);
+                    return acc;
+                },
+                {},
+            ),
+        ).map(([year, videos]) => (
+            <div class="year-group">
+                <h2>{year}</h2>
+                {videos.map((item) => (
+                    <div class="video-item">
+                        {/* <span class="comment">{item.comment}</span> */}
+                        {/* <span class="creator">{item.creator}</span> */}
+                        <iframe
+                            class="community-video-youtube-iframe"
+                            src={`https://www.youtube-nocookie.com/embed/${item.youtube_id}`}
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        />
+                    </div>
+                ))}
             </div>
         ))
     }

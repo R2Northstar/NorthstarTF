@@ -6,6 +6,7 @@ import Installers from "../components/Installers.astro";
 import { ContributorType } from "../data/contributors";
 import Layout from "../layouts/Layout.astro";
 import Roadmap from "../components/Roadmap.astro";
+import Community from "../components/Community.astro";
 ---
 
 <Layout title="Northstar">
@@ -83,7 +84,7 @@ import Roadmap from "../components/Roadmap.astro";
             </a>
         </div>
     </div>
-    
+
     <div class="pane" id="roadmap">
         <div class="section">Roadmap</div>
         <p style="text-align: center">
@@ -92,7 +93,18 @@ import Roadmap from "../components/Roadmap.astro";
         <Roadmap />
     </div>
 
-    <div class="pane dark" id="support">
+    <div class="pane dark" id="community-trailers">
+        <div class="section">Community Trailers</div>
+        <Community />
+        <p style="text-align: center">
+            Missing your trailer from this list? Feel free to <a
+                href="https://github.com/R2Northstar/NorthstarTF/"
+                >open a pull request</a
+            > to add it.
+        </p>
+    </div>
+
+    <div class="pane" id="support">
         <div class="section">Support</div>
         <p style="text-align: center" class="supporttext">
             If you're having issues with running or setting up the Northstar

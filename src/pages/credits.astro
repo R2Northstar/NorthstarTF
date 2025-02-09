@@ -25,14 +25,19 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="pane">
         <div class="section">Past contributors</div>
-        <p class="blurb">We are ever greatful for past contributions by these developers and wish them all their best on their journey beyond Northstar</p>
+        <p class="blurb">
+            We are ever greatful for past contributions by these developers and
+            wish them all their best on their journey beyond Northstar
+        </p>
         <Contributors type={ContributorType.PAST} small />
     </div>
 
     <!-- TODO have a pane for each and just pass the desired stats (weekly/monthly/all) to the component -->
     <div class="pane" id="reviewer-scoreboard">
         <div class="section">Reviewer Scoreboard</div>
-        <p class="blurb">Stats for number of reviews performed over certain time durations</p>
+        <p class="blurb">
+            Stats for number of reviews performed over certain time durations
+        </p>
         <Reviewers />
     </div>
 

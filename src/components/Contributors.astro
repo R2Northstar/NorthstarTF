@@ -14,7 +14,11 @@ const { type, small } = Astro.props as {
             .filter((c) => c.type == type)
             .map((contributor) => (
                 <div class="contributor">
-                    <a href={contributor.url} target="_blank" aria-label={contributor.name}>
+                    <a
+                        href={contributor.url}
+                        target="_blank"
+                        aria-label={contributor.name}
+                    >
                         <Image src={contributor.icon} alt="" inferSize />
                     </a>
                     <span class="name header">{contributor.name}</span>

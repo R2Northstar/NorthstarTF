@@ -182,6 +182,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "KenMizz",
     },
     {
+        url: "https://github.com/Khalmee",
+        icon: "https://avatars.githubusercontent.com/u/87766895?v=4&s=64",
+        name: "Khalmee",
+    },
+    {
         url: "https://github.com/Klemmbaustein",
         icon: "https://avatars.githubusercontent.com/u/83748124?v=4&s=64",
         name: "Klemmbaustein",

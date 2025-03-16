@@ -347,11 +347,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "USBDongleGoblin",
     },
     {
-        url: "https://github.com/VITALISED",
-        icon: "https://avatars.githubusercontent.com/u/39478251?v=4&s=64",
-        name: "VITALISED",
-    },
-    {
         url: "https://github.com/VictorPLopes",
         icon: "https://avatars.githubusercontent.com/u/77900343?v=4&s=64",
         name: "VictorPLopes",
@@ -530,6 +525,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/sneakycrow",
         icon: "https://avatars.githubusercontent.com/u/106559028?v=4&s=64",
         name: "sneakycrow",
+    },
+    {
+        url: "https://github.com/sonny-tel",
+        icon: "https://avatars.githubusercontent.com/u/39478251?v=4&s=64",
+        name: "sonny-tel",
     },
     {
         url: "https://github.com/stygia-dev",

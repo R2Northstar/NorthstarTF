@@ -11,9 +11,4 @@ export const review_counts_weekly: ReviewCount[] = [
         name: "Alystrasz",
         count: 1,
     },
-    {
-        url: "https://github.com/NachosChipeados",
-        name: "NachosChipeados",
-        count: 1,
-    },
 ]

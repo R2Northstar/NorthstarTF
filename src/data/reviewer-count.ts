@@ -104,7 +104,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 648,
+        count: 649,
     },
     {
         url: "https://github.com/H0L0theBard",

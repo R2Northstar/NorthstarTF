@@ -9,6 +9,6 @@ export const review_counts_weekly: ReviewCount[] = [
     {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
-        count: 5,
+        count: 2,
     },
 ]

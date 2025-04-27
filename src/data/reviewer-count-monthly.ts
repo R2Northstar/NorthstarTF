@@ -17,6 +17,11 @@ export const review_counts_monthly: ReviewCount[] = [
         count: 1,
     },
     {
+        url: "https://github.com/EladNLG",
+        name: "EladNLG",
+        count: 1,
+    },
+    {
         url: "https://github.com/GeckoEidechse",
         name: "GeckoEidechse",
         count: 9,

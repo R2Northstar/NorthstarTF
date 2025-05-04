@@ -7,13 +7,13 @@ export interface ReviewCount {
 }
 export const review_counts_weekly: ReviewCount[] = [
     {
-        url: "https://github.com/EladNLG",
-        name: "EladNLG",
+        url: "https://github.com/Alystrasz",
+        name: "Alystrasz",
         count: 1,
     },
     {
-        url: "https://github.com/GeckoEidechse",
-        name: "GeckoEidechse",
+        url: "https://github.com/ASpoonPlaysGames",
+        name: "ASpoonPlaysGames",
         count: 1,
     },
 ]

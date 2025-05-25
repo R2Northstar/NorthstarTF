@@ -567,6 +567,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "varGeneric",
     },
     {
+        url: "https://github.com/xCynDev",
+        icon: "https://avatars.githubusercontent.com/u/181435937?v=4&s=64",
+        name: "xCynDev",
+    },
+    {
         url: "https://github.com/xamionex",
         icon: "https://avatars.githubusercontent.com/u/57235791?v=4&s=64",
         name: "xamionex",

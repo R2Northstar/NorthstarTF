@@ -232,6 +232,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "Nekailrii",
     },
     {
+        url: "https://github.com/NekoUwUGamerfnf",
+        icon: "https://avatars.githubusercontent.com/u/144500563?v=4&s=64",
+        name: "NekoUwUGamerfnf",
+    },
+    {
         url: "https://github.com/Neoministein",
         icon: "https://avatars.githubusercontent.com/u/57015772?v=4&s=64",
         name: "Neoministein",

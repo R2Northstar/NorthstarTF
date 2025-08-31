@@ -307,11 +307,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "SenorGeese",
     },
     {
-        url: "https://github.com/Slipstreamm",
-        icon: "https://avatars.githubusercontent.com/u/77130743?v=4&s=64",
-        name: "Slipstreamm",
-    },
-    {
         url: "https://github.com/Soup-64",
         icon: "https://avatars.githubusercontent.com/u/43444191?v=4&s=64",
         name: "Soup-64",
@@ -445,6 +440,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/itscynxx",
         icon: "https://avatars.githubusercontent.com/u/70904206?v=4&s=64",
         name: "itscynxx",
+    },
+    {
+        url: "https://github.com/itsvelle",
+        icon: "https://avatars.githubusercontent.com/u/77130743?v=4&s=64",
+        name: "itsvelle",
     },
     {
         url: "https://github.com/jakubiakdev",

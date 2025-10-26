@@ -6,4 +6,9 @@ export interface ReviewCount {
     count: number;
 }
 export const review_counts_weekly: ReviewCount[] = [
+    {
+        url: "https://github.com/EM4Volts",
+        name: "EM4Volts",
+        count: 1,
+    },
 ]

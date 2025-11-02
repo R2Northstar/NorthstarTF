@@ -17,6 +17,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "3top1a",
     },
     {
+        url: "https://github.com/ASillyNeko",
+        icon: "https://avatars.githubusercontent.com/u/144500563?v=4&s=64",
+        name: "ASillyNeko",
+    },
+    {
         url: "https://github.com/AdobeWallHacks",
         icon: "https://avatars.githubusercontent.com/u/78327970?v=4&s=64",
         name: "AdobeWallHacks",
@@ -230,11 +235,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Nekailrii",
         icon: "https://avatars.githubusercontent.com/u/77649295?v=4&s=64",
         name: "Nekailrii",
-    },
-    {
-        url: "https://github.com/NekoUwUGamerfnf",
-        icon: "https://avatars.githubusercontent.com/u/144500563?v=4&s=64",
-        name: "NekoUwUGamerfnf",
     },
     {
         url: "https://github.com/Neoministein",
@@ -520,6 +520,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/rwynx",
         icon: "https://avatars.githubusercontent.com/u/101754031?v=4&s=64",
         name: "rwynx",
+    },
+    {
+        url: "https://github.com/sandwh1ched",
+        icon: "https://avatars.githubusercontent.com/u/105081942?v=4&s=64",
+        name: "sandwh1ched",
     },
     {
         url: "https://github.com/sneakycrow",

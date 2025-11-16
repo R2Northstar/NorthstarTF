@@ -102,6 +102,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "DxsSucuk",
     },
     {
+        url: "https://github.com/Dys-lexi",
+        icon: "https://avatars.githubusercontent.com/u/141734152?v=4&s=64",
+        name: "Dys-lexi",
+    },
+    {
         url: "https://github.com/EnderBoy9217",
         icon: "https://avatars.githubusercontent.com/u/122132914?v=4&s=64",
         name: "EnderBoy9217",

@@ -47,6 +47,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "Anreol",
     },
     {
+        url: "https://github.com/Berdox",
+        icon: "https://avatars.githubusercontent.com/u/71092580?v=4&s=64",
+        name: "Berdox",
+    },
+    {
         url: "https://github.com/Bobbyperson",
         icon: "https://avatars.githubusercontent.com/u/23128094?v=4&s=64",
         name: "Bobbyperson",
@@ -65,6 +70,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Caznix",
         icon: "https://avatars.githubusercontent.com/u/131402549?v=4&s=64",
         name: "Caznix",
+    },
+    {
+        url: "https://github.com/CodyIBrealey",
+        icon: "https://avatars.githubusercontent.com/u/102683651?v=4&s=64",
+        name: "CodyIBrealey",
     },
     {
         url: "https://github.com/ConnorDoesDev",

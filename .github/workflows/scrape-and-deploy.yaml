@@ -21,7 +21,9 @@ jobs:
         python scrape-for-reviews.py ${{ secrets.GITHUB_TOKEN }}
 
     - name: Run Python script for scraping (contributors)
-      run: python scrape-for-contributors.py ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cd scripts
+        python scrape-for-contributors.py ${{ secrets.GITHUB_TOKEN }}
 
     - name: Check for changes
       id: git_diff

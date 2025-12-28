@@ -2,8 +2,8 @@ name: Periodically scrape repos
 
 on:
   workflow_dispatch: # Manual run
-  schedule:
-  - cron: '0 0 * * 0'
+  # schedule:
+  # - cron: '0 0 * * 0'
 
 jobs:
   scrape:

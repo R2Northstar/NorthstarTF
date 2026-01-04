@@ -7,9 +7,14 @@ export interface ReviewCount {
 }
 export const review_counts_monthly: ReviewCount[] = [
     {
+        url: "https://github.com/AllusiveWheat",
+        name: "AllusiveWheat",
+        count: 1,
+    },
+    {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 8,
+        count: 7,
     },
     {
         url: "https://github.com/ASillyNeko",
@@ -19,12 +24,12 @@ export const review_counts_monthly: ReviewCount[] = [
     {
         url: "https://github.com/ASpoonPlaysGames",
         name: "ASpoonPlaysGames",
-        count: 5,
+        count: 3,
     },
     {
         url: "https://github.com/catornot",
         name: "catornot",
-        count: 2,
+        count: 4,
     },
     {
         url: "https://github.com/NachosChipeados",
@@ -34,11 +39,6 @@ export const review_counts_monthly: ReviewCount[] = [
     {
         url: "https://github.com/RoyalBlue1",
         name: "RoyalBlue1",
-        count: 1,
-    },
-    {
-        url: "https://github.com/uniboi",
-        name: "uniboi",
         count: 2,
     },
 ]

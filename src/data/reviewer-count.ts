@@ -22,6 +22,11 @@ export const review_counts_total: ReviewCount[] = [
         count: 15,
     },
     {
+        url: "https://github.com/AllusiveWheat",
+        name: "AllusiveWheat",
+        count: 1,
+    },
+    {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
         count: 114,
@@ -64,7 +69,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/catornot",
         name: "catornot",
-        count: 41,
+        count: 43,
     },
     {
         url: "https://github.com/cpdt",
@@ -184,7 +189,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/RoyalBlue1",
         name: "RoyalBlue1",
-        count: 38,
+        count: 39,
     },
     {
         url: "https://github.com/ScureX",

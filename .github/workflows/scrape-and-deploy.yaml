@@ -40,7 +40,7 @@ jobs:
     - name: Commit changes
       if: ${{ steps.git_diff.outputs.changes == 'true' }}
       run: |
-          git commit -am "Update reviews and contributor list"
+          git commit -am "Update reviews/contributor list"
           git push
   deploy:
     needs: scrape

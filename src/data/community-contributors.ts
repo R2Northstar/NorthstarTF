@@ -127,9 +127,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "FerretWithAGun",
     },
     {
-        url: "https://github.com/GUSSlNATOR",
+        url: "https://github.com/GUSSYNATOR",
         icon: "https://avatars.githubusercontent.com/u/61028296?v=4&s=64",
-        name: "GUSSlNATOR",
+        name: "GUSSYNATOR",
     },
     {
         url: "https://github.com/GalacticMoblin",

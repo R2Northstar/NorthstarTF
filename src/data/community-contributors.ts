@@ -487,6 +487,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "lapaxx",
     },
     {
+        url: "https://github.com/lizardwithawizard",
+        icon: "https://avatars.githubusercontent.com/u/116909003?v=4&s=64",
+        name: "lizardwithawizard",
+    },
+    {
         url: "https://github.com/luludotdev",
         icon: "https://avatars.githubusercontent.com/u/2358182?v=4&s=64",
         name: "luludotdev",
@@ -550,11 +555,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/sonny-tel",
         icon: "https://avatars.githubusercontent.com/u/39478251?v=4&s=64",
         name: "sonny-tel",
-    },
-    {
-        url: "https://github.com/stygia-dev",
-        icon: "https://avatars.githubusercontent.com/u/116909003?v=4&s=64",
-        name: "stygia-dev",
     },
     {
         url: "https://github.com/sussyenby",

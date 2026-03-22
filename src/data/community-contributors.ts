@@ -17,6 +17,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "3top1a",
     },
     {
+        url: "https://github.com/86Yin",
+        icon: "https://avatars.githubusercontent.com/u/243050688?v=4&s=64",
+        name: "86Yin",
+    },
+    {
         url: "https://github.com/ASillyNeko",
         icon: "https://avatars.githubusercontent.com/u/144500563?v=4&s=64",
         name: "ASillyNeko",
@@ -520,6 +525,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/pcbmaster",
         icon: "https://avatars.githubusercontent.com/u/5921091?v=4&s=64",
         name: "pcbmaster",
+    },
+    {
+        url: "https://github.com/pellpk",
+        icon: "https://avatars.githubusercontent.com/u/117397809?v=4&s=64",
+        name: "pellpk",
     },
     {
         url: "https://github.com/piebaker",

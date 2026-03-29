@@ -24,12 +24,12 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/AllusiveWheat",
         name: "AllusiveWheat",
-        count: 2,
+        count: 3,
     },
     {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 115,
+        count: 116,
     },
     {
         url: "https://github.com/AnActualEmerald",
@@ -69,7 +69,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/catornot",
         name: "catornot",
-        count: 48,
+        count: 53,
     },
     {
         url: "https://github.com/cpdt",

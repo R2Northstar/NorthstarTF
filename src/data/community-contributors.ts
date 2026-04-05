@@ -482,6 +482,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "jeremychone",
     },
     {
+        url: "https://github.com/johndragstrafe",
+        icon: "https://avatars.githubusercontent.com/u/255956601?v=4&s=64",
+        name: "johndragstrafe",
+    },
+    {
         url: "https://github.com/lachlanmaclean",
         icon: "https://avatars.githubusercontent.com/u/15061511?v=4&s=64",
         name: "lachlanmaclean",

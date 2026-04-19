@@ -7,8 +7,8 @@ export interface ReviewCount {
 }
 export const review_counts_weekly: ReviewCount[] = [
     {
-        url: "https://github.com/copilot-pull-request-reviewer[bot]",
-        name: "copilot-pull-request-reviewer[bot]",
+        url: "https://github.com/catornot",
+        name: "catornot",
         count: 1,
     },
 ]

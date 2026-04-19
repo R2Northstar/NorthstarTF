@@ -592,6 +592,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "theunkn0wn1",
     },
     {
+        url: "https://github.com/username-generic",
+        icon: "https://avatars.githubusercontent.com/u/202454830?v=4&s=64",
+        name: "username-generic",
+    },
+    {
         url: "https://github.com/username24532",
         icon: "https://avatars.githubusercontent.com/u/112632813?v=4&s=64",
         name: "username24532",

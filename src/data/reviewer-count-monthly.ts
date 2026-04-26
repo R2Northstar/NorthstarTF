@@ -7,19 +7,14 @@ export interface ReviewCount {
 }
 export const review_counts_monthly: ReviewCount[] = [
     {
-        url: "https://github.com/AllusiveWheat",
-        name: "AllusiveWheat",
-        count: 1,
-    },
-    {
         url: "https://github.com/Alystrasz",
         name: "Alystrasz",
-        count: 2,
+        count: 1,
     },
     {
         url: "https://github.com/catornot",
         name: "catornot",
-        count: 9,
+        count: 4,
     },
     {
         url: "https://github.com/copilot-pull-request-reviewer[bot]",

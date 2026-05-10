@@ -432,6 +432,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "eve-v0",
     },
     {
+        url: "https://github.com/evelynburger",
+        icon: "https://avatars.githubusercontent.com/u/77130743?v=4&s=64",
+        name: "evelynburger",
+    },
+    {
         url: "https://github.com/faky1337",
         icon: "https://avatars.githubusercontent.com/u/2706225?v=4&s=64",
         name: "faky1337",
@@ -450,11 +455,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/hxdeci",
         icon: "https://avatars.githubusercontent.com/u/58310402?v=4&s=64",
         name: "hxdeci",
-    },
-    {
-        url: "https://github.com/imnotevelyn",
-        icon: "https://avatars.githubusercontent.com/u/77130743?v=4&s=64",
-        name: "imnotevelyn",
     },
     {
         url: "https://github.com/impliedgg",

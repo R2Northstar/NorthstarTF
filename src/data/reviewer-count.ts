@@ -49,7 +49,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/ASpoonPlaysGames",
         name: "ASpoonPlaysGames",
-        count: 194,
+        count: 195,
     },
     {
         url: "https://github.com/barnabwhy",
@@ -74,6 +74,11 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/copilot-pull-request-reviewer[bot]",
         name: "copilot-pull-request-reviewer[bot]",
+        count: 1,
+    },
+    {
+        url: "https://github.com/corinburger",
+        name: "corinburger",
         count: 1,
     },
     {
@@ -110,11 +115,6 @@ export const review_counts_total: ReviewCount[] = [
         url: "https://github.com/Erlite",
         name: "Erlite",
         count: 5,
-    },
-    {
-        url: "https://github.com/evelynburger",
-        name: "evelynburger",
-        count: 1,
     },
     {
         url: "https://github.com/F1F7Y",

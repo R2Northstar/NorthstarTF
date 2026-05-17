@@ -22,6 +22,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "86Yin",
     },
     {
+        url: "https://github.com/AA-EION",
+        icon: "https://avatars.githubusercontent.com/u/31860825?v=4&s=64",
+        name: "AA-EION",
+    },
+    {
         url: "https://github.com/ASillyNeko",
         icon: "https://avatars.githubusercontent.com/u/144500563?v=4&s=64",
         name: "ASillyNeko",
@@ -120,11 +125,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/Dys-lexi",
         icon: "https://avatars.githubusercontent.com/u/141734152?v=4&s=64",
         name: "Dys-lexi",
-    },
-    {
-        url: "https://github.com/EnderBoy9217",
-        icon: "https://avatars.githubusercontent.com/u/122132914?v=4&s=64",
-        name: "EnderBoy9217",
     },
     {
         url: "https://github.com/FerretWithAGun",
@@ -377,11 +377,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "WtzLAS",
     },
     {
-        url: "https://github.com/XNovaDelta",
-        icon: "https://avatars.githubusercontent.com/u/31860825?v=4&s=64",
-        name: "XNovaDelta",
-    },
-    {
         url: "https://github.com/Zetryox",
         icon: "https://avatars.githubusercontent.com/u/96758401?v=4&s=64",
         name: "Zetryox",
@@ -422,6 +417,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "cyrv6737",
     },
     {
+        url: "https://github.com/dbyale",
+        icon: "https://avatars.githubusercontent.com/u/122132914?v=4&s=64",
+        name: "dbyale",
+    },
+    {
         url: "https://github.com/dilirity",
         icon: "https://avatars.githubusercontent.com/u/11799079?v=4&s=64",
         name: "dilirity",
@@ -430,11 +430,6 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/eve-v0",
         icon: "https://avatars.githubusercontent.com/u/145144394?v=4&s=64",
         name: "eve-v0",
-    },
-    {
-        url: "https://github.com/evelynburger",
-        icon: "https://avatars.githubusercontent.com/u/77130743?v=4&s=64",
-        name: "evelynburger",
     },
     {
         url: "https://github.com/faky1337",

@@ -52,11 +52,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "AnActualEmerald",
     },
     {
-        url: "https://github.com/Anreol",
-        icon: "https://avatars.githubusercontent.com/u/12176932?v=4&s=64",
-        name: "Anreol",
-    },
-    {
         url: "https://github.com/Berdox",
         icon: "https://avatars.githubusercontent.com/u/71092580?v=4&s=64",
         name: "Berdox",

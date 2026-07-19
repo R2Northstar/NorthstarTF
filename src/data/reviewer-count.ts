@@ -42,6 +42,11 @@ export const review_counts_total: ReviewCount[] = [
         count: 1,
     },
     {
+        url: "https://github.com/ashleyburgers",
+        name: "ashleyburgers",
+        count: 1,
+    },
+    {
         url: "https://github.com/ASillyNeko",
         name: "ASillyNeko",
         count: 1,
@@ -99,7 +104,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/EM4Volts",
         name: "EM4Volts",
-        count: 9,
+        count: 10,
     },
     {
         url: "https://github.com/emma-miler",
@@ -110,11 +115,6 @@ export const review_counts_total: ReviewCount[] = [
         url: "https://github.com/Erlite",
         name: "Erlite",
         count: 5,
-    },
-    {
-        url: "https://github.com/evelynburger",
-        name: "evelynburger",
-        count: 1,
     },
     {
         url: "https://github.com/F1F7Y",
@@ -194,7 +194,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/RoyalBlue1",
         name: "RoyalBlue1",
-        count: 39,
+        count: 40,
     },
     {
         url: "https://github.com/ScureX",

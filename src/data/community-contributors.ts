@@ -487,9 +487,9 @@ export const community_contributors: CommunityContributor[] = [
         name: "lapaxx",
     },
     {
-        url: "https://github.com/lizardwithawizard",
+        url: "https://github.com/lizardwizardonthewall",
         icon: "https://avatars.githubusercontent.com/u/116909003?v=4&s=64",
-        name: "lizardwithawizard",
+        name: "lizardwizardonthewall",
     },
     {
         url: "https://github.com/luludotdev",

@@ -382,11 +382,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "alt4",
     },
     {
-        url: "https://github.com/anjannair",
-        icon: "https://avatars.githubusercontent.com/u/22571613?v=4&s=64",
-        name: "anjannair",
-    },
-    {
         url: "https://github.com/astrojuanlu",
         icon: "https://avatars.githubusercontent.com/u/316517?v=4&s=64",
         name: "astrojuanlu",
@@ -537,11 +532,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "popcar2",
     },
     {
-        url: "https://github.com/rrrfffrrr",
-        icon: "https://avatars.githubusercontent.com/u/11633118?v=4&s=64",
-        name: "rrrfffrrr",
-    },
-    {
         url: "https://github.com/rwynx",
         icon: "https://avatars.githubusercontent.com/u/101754031?v=4&s=64",
         name: "rwynx",
@@ -595,6 +585,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/varGeneric",
         icon: "https://avatars.githubusercontent.com/u/16168572?v=4&s=64",
         name: "varGeneric",
+    },
+    {
+        url: "https://github.com/vulpes33",
+        icon: "https://avatars.githubusercontent.com/u/11633118?v=4&s=64",
+        name: "vulpes33",
     },
     {
         url: "https://github.com/xCynDev",

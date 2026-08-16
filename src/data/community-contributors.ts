@@ -207,11 +207,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "Klemmbaustein",
     },
     {
-        url: "https://github.com/L1ghtman2k",
-        icon: "https://avatars.githubusercontent.com/u/35672535?v=4&s=64",
-        name: "L1ghtman2k",
-    },
-    {
         url: "https://github.com/LightBlueCube",
         icon: "https://avatars.githubusercontent.com/u/115393812?v=4&s=64",
         name: "LightBlueCube",
@@ -470,6 +465,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/johndragstrafe",
         icon: "https://avatars.githubusercontent.com/u/255956601?v=4&s=64",
         name: "johndragstrafe",
+    },
+    {
+        url: "https://github.com/l1ghtman2k",
+        icon: "https://avatars.githubusercontent.com/u/35672535?v=4&s=64",
+        name: "l1ghtman2k",
     },
     {
         url: "https://github.com/lachlanmaclean",

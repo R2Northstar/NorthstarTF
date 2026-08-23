@@ -69,7 +69,7 @@ export const review_counts_total: ReviewCount[] = [
     {
         url: "https://github.com/catornot",
         name: "catornot",
-        count: 63,
+        count: 66,
     },
     {
         url: "https://github.com/copilot-pull-request-reviewer[bot]",
@@ -222,8 +222,8 @@ export const review_counts_total: ReviewCount[] = [
         count: 80,
     },
     {
-        url: "https://github.com/uwuashley",
-        name: "uwuashley",
+        url: "https://github.com/uwuira",
+        name: "uwuira",
         count: 1,
     },
     {

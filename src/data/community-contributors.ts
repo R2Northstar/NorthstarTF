@@ -487,6 +487,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "lizardwizardonthewall",
     },
     {
+        url: "https://github.com/louvenarde",
+        icon: "https://avatars.githubusercontent.com/u/33836535?v=4&s=64",
+        name: "louvenarde",
+    },
+    {
         url: "https://github.com/luludotdev",
         icon: "https://avatars.githubusercontent.com/u/2358182?v=4&s=64",
         name: "luludotdev",

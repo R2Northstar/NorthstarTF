@@ -17,11 +17,6 @@ export const community_contributors: CommunityContributor[] = [
         name: "3top1a",
     },
     {
-        url: "https://github.com/86Yin",
-        icon: "https://avatars.githubusercontent.com/u/243050688?v=4&s=64",
-        name: "86Yin",
-    },
-    {
         url: "https://github.com/AA-EION",
         icon: "https://avatars.githubusercontent.com/u/31860825?v=4&s=64",
         name: "AA-EION",
@@ -430,6 +425,11 @@ export const community_contributors: CommunityContributor[] = [
         url: "https://github.com/gotimo2",
         icon: "https://avatars.githubusercontent.com/u/61739017?v=4&s=64",
         name: "gotimo2",
+    },
+    {
+        url: "https://github.com/huizhiyin86",
+        icon: "https://avatars.githubusercontent.com/u/243050688?v=4&s=64",
+        name: "huizhiyin86",
     },
     {
         url: "https://github.com/hxdeci",

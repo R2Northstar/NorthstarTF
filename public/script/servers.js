@@ -657,7 +657,10 @@ async function fetchServerList() {
         const servers = await res.json();
         uiState = {
             state: 'ready',
-            servers,
+            servers: servers.map((server) => ({
+                ...server,
+                name: stripColorCodes(server.name),
+            })),
             updated: new Date(),
         };
         document.body.classList.remove('loading-state');
@@ -670,6 +673,14 @@ async function fetchServerList() {
 
     uiUpdateSelectors();
     uiQueueRender();
+}
+
+function stripColorCodes(s) {
+    if (typeof s !== 'string') {
+        return s;
+    }
+
+    return s.replace(/\^[0-9A-Fa-f]{6}(?:[0-9A-Fa-f]{2})?/g, '')
 }
 
 let nextRefetchTimeout = 0;

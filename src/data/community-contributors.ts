@@ -327,6 +327,11 @@ export const community_contributors: CommunityContributor[] = [
         name: "Striketester",
     },
     {
+        url: "https://github.com/TB516",
+        icon: "https://avatars.githubusercontent.com/u/77514919?v=4&s=64",
+        name: "TB516",
+    },
+    {
         url: "https://github.com/TH3-S4LM0N",
         icon: "https://avatars.githubusercontent.com/u/99826409?v=4&s=64",
         name: "TH3-S4LM0N",

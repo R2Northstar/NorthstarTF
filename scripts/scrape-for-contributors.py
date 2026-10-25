@@ -22,6 +22,7 @@ additional_repos = [
 
 excluded_repos = [
     "R2Northstar/zlib",  # zlib is kind of empty, so we can exclude it
+    "R2Northstar/iroh",  # iroh is a fork
     "R2NorthstarTools/NorthstarProton",  # Ignore NorthstarProton as it's a fork and difficult to untangle contributions from upstream
 ]
 

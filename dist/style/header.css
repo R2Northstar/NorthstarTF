@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Titanfall;
+    src: url('/assets/titanfall_new.ttf');
+}
+
+input[type="checkbox"][id^="cb"] {
+    display: none;
+}
+
+#top label {
+    display: block;
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    cursor: pointer;
+    user-select: none !important;
+    display: none;
+}
+
+#top label img {
+    height: 2em;
+    width: 2em;
+    margin-left: 2em;
+    vertical-align: middle;
+    display: none;
+}
+
+#top {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    z-index: 100;
+    transition: background-color 0.2s;
+    background-color: rgba(8, 10, 20, 0.0);
+}
+
+#top.scroll {
+    background-color: rgba(8, 10, 20, 0.9);
+}
+
+.spacer {
+    width: 100%;
+}
+
+#toplinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-link {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 16px;
+    padding: 24px 32px;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    user-select: none !important;
+    font-family: Titanfall;
+}
+.top-link:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+.top-link:active {
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1430px) {
+    .menu-selector {
+        display: inline;
+    }
+    #toplinks {
+        width: 0vw;
+        height: 100vh;
+        overflow-x: hidden;
+        flex-direction: column;
+        transition: width 0.2s, background-color 1s;
+    }
+    #top label img {
+        display: inline;
+    }
+    #top label {
+        display: block;
+    }
+    #top:has(:checked) {
+        background-color: rgba(8, 10, 20, 0.9);
+    }
+    :checked ~ #toplinks {
+        display: flex;
+        background-color: rgba(8, 10, 20, 0.9);
+        height: 100vh;
+        width: 100vw;
+        transition: width 0.2s, background-color 0s;
+    }
+    .top-link {
+        display: inline;
+    }
+}

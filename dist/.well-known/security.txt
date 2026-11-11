@@ -1,0 +1,19 @@
+# If you would like to report or fix a bug
+# Create an issue or a pull request on the
+# Northstar Github page
+
+# Northstar Organisation
+https://github.com/R2Northstar
+
+# Northstar Atlas (Master Server)
+https://github.com/R2Northstar/Atlas
+
+# Northstar Launcher
+https://github.com/R2Northstar/NorthstarLauncher
+
+# Northstar Game Scripts
+https://github.com/R2Northstar/NorthstarMods
+
+# Or notify one of our developers on Discord
+Gecko#7945
+EmmaM#6474

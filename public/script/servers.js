@@ -79,7 +79,54 @@ const KNOWN_MAPS = {
     mp_rise: 'Rise',
     mp_thaw: 'Exoplanet',
     mp_wargames: 'War Games',
+    // Titanfall 2 Single Player maps
+    sp_training: 'The Pilot\'s Gauntlet',
+    sp_crashsite: 'BT-7274',
+    sp_sewers1: 'Blood and Rust',
+    sp_boomtown_start: 'Into the Abyss',
+    sp_boomtown: 'Into the Abyss',
+    sp_boomtown_end: 'Into the Abyss',
+    sp_hub_timeshift: 'Effect and Cause',
+    sp_timeshift_spoke02: 'Effect and Cause',
+    sp_beacon: 'The Beacon',
+    sp_beacon_spoke0: 'The Beacon',
+    sp_tday: 'Trial by Fire',
+    sp_s2s: 'The Ark',
+    sp_skyway_v1: 'The Fold Weapon',
+    // Titanfall 1 Multiplayer maps
+    mp_npe: 'Welcome to the Frontier',
+    mp_fracture: 'Fracture',
+    mp_colony: 'Colony',
+    mp_relic: 'Relic',
+    mp_outpost_207: 'Outpost 207',
+    mp_boneyard: 'Boneyard',
+    mp_airbase: 'Airbase',
+    mp_o2: 'Demeter',
+    mp_corporate: 'Corporate',
+    mp_mia: 'M.I.A.',
+    mp_smugglers_cove: 'Smuggler\'s Cove',
+    mp_nexus: 'Nexus',
+    mp_lagoon: 'Lagoon',
+    mp_nest2: 'Nest',
+    mp_overlook: 'Overlook',
+    mp_training_ground: 'Training Ground',
+    mp_swampland: 'Swampland',
+    mp_runoff: 'Runoff',
+    mp_harmony_mines: 'Dig Site',
+    mp_switchback: 'Export',
+    mp_haven: 'Haven',
+    mp_backwater: 'Backwater',
+    mp_sandtrap: 'Sand Trap',
+    mp_zone_18: 'Zone 18',
 };
+
+function extrapolateMapName(map) {
+    const mapName = map.replace('mp_', '').replace('sp_', '');
+    return mapName
+        .split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
 
 const $filterInput = document.getElementById('filter');
 const $setFiltersButton = document.getElementById('set-filters-button');
@@ -199,7 +246,8 @@ function displayGamemode(gamemode) {
 }
 
 function displayMap(map) {
-    return KNOWN_MAPS[map] || map;
+    if (!map) return '';
+    return KNOWN_MAPS[map] || extrapolateMapName(map);
 }
 
 function displayMod(mod) {
